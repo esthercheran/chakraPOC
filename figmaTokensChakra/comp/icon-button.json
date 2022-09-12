@@ -74,11 +74,11 @@
     },
     "disabled": {
       "border-color": {
-        "value": "{semantic.color.actions.primary.disabled.border}",
+        "value": "{semantic.color.actions.primary.disabled.text}",
         "type": "color"
       },
       "background-color": {
-        "value": "{semantic.color.actions.primary.default.quiet-background}",
+        "value": "{semantic.color.actions.primary.disabled.background}",
         "type": "color"
       },
       "icon-color": {
