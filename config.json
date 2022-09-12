@@ -1,0 +1,7 @@
+{
+  "tokenSetsDirPath": "figmaTokensChakra",
+  "tokenSetsPath": "figmaTokensChakra/*.json",
+  "tokenSetsThemeMetaPath": "figmaTokensChakra/$themes.json",
+  "owner": "Esther",
+  "repo": "sd-chakra"
+}
