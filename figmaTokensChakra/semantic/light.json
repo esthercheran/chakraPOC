@@ -838,6 +838,12 @@
           "value": "{semantic.fg.on-accent}",
           "type": "color"
         }
+      },
+      "focus": {
+        "border-color": {
+          "value": "{semantic.cta.subtle}",
+          "type": "color"
+        }
       }
     },
     "font-size": {
