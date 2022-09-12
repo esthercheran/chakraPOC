@@ -126,7 +126,7 @@
     },
     "ghost": {
       "background-color": {
-        "value": "{semantic.color.actions.primary.default.quiet-background-color}",
+        "value": "{semantic.color.actions.primary.default.quiet-background}",
         "type": "color"
       }
     }

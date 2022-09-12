@@ -474,7 +474,7 @@
               "value": "{semantic.primary.default}",
               "type": "color"
             },
-            "quiet-background-color": {
+            "quiet-background": {
               "value": "{color.neutrals.transparent}",
               "type": "color"
             }
@@ -491,6 +491,10 @@
             "background": {
               "value": "{semantic.primary.muted}",
               "type": "color"
+            },
+            "quiet-background": {
+              "value": "{semantic.primary.muted}",
+              "type": "color"
             }
           },
           "active": {
@@ -503,6 +507,10 @@
               "type": "color"
             },
             "background": {
+              "value": "{semantic.primary.emphasised}",
+              "type": "color"
+            },
+            "quiet-background": {
               "value": "{semantic.primary.emphasised}",
               "type": "color"
             }
