@@ -57,55 +57,55 @@
     "default": {
       "border-color": {
         "type": "color",
-        "value": "{select.color.inputs.default.border-color}"
+        "value": "{semantic.color.inputs.default.border-color}"
       },
       "background-color": {
         "type": "color",
-        "value": "{select.color.inputs.default.background-color}"
+        "value": "{semantic.color.inputs.default.background-color}"
       },
       "text-color": {
         "type": "color",
-        "value": "{select.color.inputs.default.text-color}"
+        "value": "{semantic.color.inputs.default.text-color}"
       },
       "icon-color": {
         "type": "color",
-        "value": "{select.color.inputs.default.icon-color}"
+        "value": "{semantic.color.inputs.default.icon-color}"
       }
     },
     "hover": {
       "border-color": {
         "type": "color",
-        "value": "{select.color.inputs.default.border-color}"
+        "value": "{semantic.color.inputs.default.border-color}"
       },
       "background-color": {
         "type": "color",
-        "value": "{select.color.inputs.hover.background-color}"
+        "value": "{semantic.color.inputs.hover.background-color}"
       },
       "text-color": {
         "type": "color",
-        "value": "{select.color.inputs.hover.text-color}"
+        "value": "{semantic.color.inputs.hover.text-color}"
       },
       "icon-color": {
         "type": "color",
-        "value": "{select.color.inputs.default.icon-color}"
+        "value": "{semantic.color.inputs.default.icon-color}"
       }
     },
     "focus": {
       "border-color": {
         "type": "color",
-        "value": "{select.color.inputs.focus.focus-ring}"
+        "value": "{semantic.color.inputs.focus.focus-ring}"
       },
       "background-color": {
         "type": "color",
-        "value": "{select.color.inputs.default.background-color}"
+        "value": "{semantic.color.inputs.default.background-color}"
       },
       "text-color": {
         "type": "color",
-        "value": "{select.color.inputs.default.text-color}"
+        "value": "{semantic.color.inputs.default.text-color}"
       },
       "icon-color": {
         "type": "color",
-        "value": "{select.color.inputs.default.icon-color}"
+        "value": "{semantic.color.inputs.default.icon-color}"
       },
       "border-width": {
         "value": "{semantic.border-width.focus}",
@@ -115,37 +115,37 @@
     "invalid": {
       "border-color": {
         "type": "color",
-        "value": "{select.color.inputs.error.border-color}"
+        "value": "{semantic.color.inputs.error.border-color}"
       },
       "background-color": {
         "type": "color",
-        "value": "{select.color.inputs.error.background-color}"
+        "value": "{semantic.color.inputs.error.background-color}"
       },
       "text-color": {
         "type": "color",
-        "value": "{select.color.inputs.error.text-color}"
+        "value": "{semantic.color.inputs.error.text-color}"
       },
       "icon-color": {
         "type": "color",
-        "value": "{select.color.inputs.error.icon-color}"
+        "value": "{semantic.color.inputs.error.icon-color}"
       }
     },
     "disabled": {
       "border-color": {
         "type": "color",
-        "value": "{select.color.inputs.disabled.border-color}"
+        "value": "{semantic.color.inputs.disabled.border-color}"
       },
       "background-color": {
         "type": "color",
-        "value": "{select.color.inputs.disabled.background-color}"
+        "value": "{semantic.color.inputs.disabled.background-color}"
       },
       "text-color": {
         "type": "color",
-        "value": "{select.color.inputs.disabled.text-color}"
+        "value": "{semantic.color.inputs.disabled.text-color}"
       },
       "icon-color": {
         "type": "color",
-        "value": "{select.color.inputs.disabled.icon-color}"
+        "value": "{semantic.color.inputs.disabled.icon-color}"
       }
     },
     "font-weight": {
