@@ -41,7 +41,7 @@
       "comp/select": "enabled",
       "comp/switch": "enabled",
       "comp/avatar": "enabled",
-      "comp/icon-button": "disabled"
+      "comp/icon-button": "enabled"
     },
     "$figmaStyleReferences": {}
   }
