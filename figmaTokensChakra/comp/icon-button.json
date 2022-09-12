@@ -127,6 +127,12 @@
         "value": "{semantic.sizing.actions.md}",
         "type": "sizing"
       }
+    },
+    "ghost": {
+      "background-color": {
+        "value": "{semantic.color.actions.primary.default.quiet-background-color}",
+        "type": "color"
+      }
     }
   }
 }

@@ -473,6 +473,10 @@
             "background": {
               "value": "{semantic.primary.default}",
               "type": "color"
+            },
+            "quiet-background-color": {
+              "value": "{color.neutrals.transparent}",
+              "type": "color"
             }
           },
           "hover": {
