@@ -3,6 +3,7 @@
     "comp/avatar",
     "comp/button",
     "comp/checkbox",
+    "comp/icon-button",
     "comp/input",
     "comp/radio",
     "comp/select",
@@ -14,7 +15,6 @@
     "core/space",
     "core/typography",
     "semantic/light",
-    "semantic/dark",
-    "comp/icon-button"
+    "semantic/dark"
   ]
 }
