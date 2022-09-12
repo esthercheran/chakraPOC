@@ -1,6 +1,12 @@
 {
   "tokenSetOrder": [
+    "comp/avatar",
     "comp/button",
+    "comp/checkbox",
+    "comp/input",
+    "comp/radio",
+    "comp/select",
+    "comp/switch",
     "core/border",
     "core/color",
     "core/opacity",
