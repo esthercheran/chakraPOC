@@ -74,7 +74,7 @@
     },
     "xs": {
       "icon-size": {
-        "value": "{semantic.sizing.actions.icon-size.small}",
+        "value": "{size.150}",
         "type": "sizing"
       },
       "height": {
@@ -88,7 +88,7 @@
     },
     "sm": {
       "icon-size": {
-        "value": "{semantic.sizing.actions.icon-size.small}",
+        "value": "{semantic.sizing.actions.icon-size.xs}",
         "type": "sizing"
       },
       "height": {
@@ -102,7 +102,7 @@
     },
     "md": {
       "icon-size": {
-        "value": "{semantic.sizing.actions.icon-size.medium}",
+        "value": "{size.250}",
         "type": "sizing"
       },
       "height": {
@@ -116,7 +116,7 @@
     },
     "lg": {
       "icon-size": {
-        "value": "{semantic.sizing.actions.icon-size.large}",
+        "value": "{semantic.sizing.actions.icon-size.sm}",
         "type": "sizing"
       },
       "height": {
