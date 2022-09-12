@@ -125,13 +125,13 @@
       },
       "sm": {
         "border-width": {
-          "value": "4px",
+          "value": "{border-width.3}",
           "type": "borderWidth"
         }
       },
       "md": {
         "border-width": {
-          "value": "5px",
+          "value": "{border-width.4}",
           "type": "borderWidth"
         }
       },
