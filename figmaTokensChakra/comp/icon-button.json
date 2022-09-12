@@ -2,7 +2,7 @@
   "icon-button": {
     "default": {
       "border-color": {
-        "value": "{semantic.color.actions.cta.default.border-color}",
+        "value": "{semantic.color.actions.primary.default.border}",
         "type": "color"
       },
       "icon-color": {
@@ -10,13 +10,13 @@
         "type": "color"
       },
       "background-color": {
-        "value": "{semantic.color.actions.cta.default.background-color}",
+        "value": "{semantic.color.actions.primary.default.background}",
         "type": "color"
       }
     },
     "hover": {
       "border-color": {
-        "value": "{semantic.color.actions.cta.hover.border-color}",
+        "value": "{semantic.color.actions.primary.hover.border}",
         "type": "color"
       },
       "icon-color": {
@@ -24,13 +24,13 @@
         "type": "color"
       },
       "background-color": {
-        "value": "{semantic.color.actions.cta.hover.background-color}",
+        "value": "{semantic.color.actions.primary.hover.background}",
         "type": "color"
       }
     },
     "active": {
       "border-color": {
-        "value": "{semantic.color.actions.cta.active.border-color}",
+        "value": "{semantic.color.actions.primary.active.border}",
         "type": "color"
       },
       "icon-color": {
@@ -38,7 +38,7 @@
         "type": "color"
       },
       "background-color": {
-        "value": "{semantic.color.actions.cta.active.background-color}",
+        "value": "{semantic.color.actions.primary.active.background}",
         "type": "color"
       }
     },
