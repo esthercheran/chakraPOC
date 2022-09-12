@@ -6,7 +6,7 @@ const Checkbox: ComponentStyleConfig = {
     borderRadius: 'semantic.border-radius.inputs',
     borderWidth: 'checkbox.border-width'
   },
-  // Three sizes: sm md and large
+  // Three sizes: sm md and large 
   sizes: {
     small: {
         checkmarkHeight:'checkbox.sm.checkmark.height',
