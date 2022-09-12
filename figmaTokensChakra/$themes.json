@@ -17,7 +17,8 @@
       "comp/radio": "disabled",
       "comp/select": "disabled",
       "comp/switch": "disabled",
-      "comp/avatar": "disabled"
+      "comp/avatar": "disabled",
+      "comp/icon-button": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -39,7 +40,8 @@
       "comp/radio": "enabled",
       "comp/select": "enabled",
       "comp/switch": "enabled",
-      "comp/avatar": "enabled"
+      "comp/avatar": "enabled",
+      "comp/icon-button": "disabled"
     },
     "$figmaStyleReferences": {}
   }
