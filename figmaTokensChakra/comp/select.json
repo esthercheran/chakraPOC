@@ -9,7 +9,7 @@
         "value": "{size.250}",
         "type": "sizing"
       },
-      "font-size": {
+      "text-size": {
         "type": "fontSizes",
         "value": "{semantic.font-size.inputs.xs}"
       }
@@ -23,7 +23,7 @@
         "value": "{size.250}",
         "type": "sizing"
       },
-      "font-size": {
+      "text-size": {
         "type": "fontSizes",
         "value": "{semantic.font-size.inputs.sm}"
       }
@@ -37,7 +37,7 @@
         "value": "{size.250}",
         "type": "sizing"
       },
-      "font-size": {
+      "text-size": {
         "type": "fontSizes",
         "value": "{semantic.font-size.inputs.md}"
       }
