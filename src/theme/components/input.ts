@@ -1,6 +1,6 @@
 import { ComponentStyleConfig, SliderProvider } from '@chakra-ui/react'
 
-const Checkbox: ComponentStyleConfig = {
+const Input: ComponentStyleConfig = {
   // The styles all Input have in common
   baseStyle: {
     borderRadius: 'input.border-radius',
@@ -44,35 +44,35 @@ const Checkbox: ComponentStyleConfig = {
      iconColor: 'input.default.outlined.icon-color',
       borderColor: 'input.default.outlined.border-color',
       itemSpacing:'input.space-between',
-      textColor:'input.default.outlined.text-color'
+      Color:'input.default.outlined.text-color'
         },
       _hover: {
         bg: 'input.hover.outlined.background-color',
         iconColor: 'input.hover.outlined.icon-color',
          borderColor: 'input.default.outlined.border-color',
          itemSpacing:'input.space-between',
-         textColor:'input.hover.outlined.text-color'
+         Color:'input.hover.outlined.text-color'
       },
       _focus: {
         bg: 'input.focus.outlined.background-color',
         iconColor: 'input.focus.outlined.icon-color',
          borderColor: 'input.focus.outlined.border-color',
          itemSpacing:'input.space-between',
-         textColor:'input.focus.outlined.text-color'
+         Color:'input.focus.outlined.text-color'
       },
       _invalid: {
         bg: 'input.invalid.outlined.background-color',
         iconColor: 'input.invalid.outlined.icon-color',
          borderColor: 'input.invalid.outlined.border-color',
          itemSpacing:'input.space-between',
-         textColor:'input.invalid.outlined.text-color'
+         Color:'input.invalid.outlined.text-color'
       },
       _disabled: {
         bg: 'input.disabled.outlined.background-color',
         iconColor: 'input.disabled.outlined.icon-color',
          borderColor: 'input.disabled.outlined.border-color',
          itemSpacing:'input.space-between',
-         textColor:'input..outlined.text-color'
+         Color:'input..outlined.text-color'
     }
 },
 filled: {
@@ -81,35 +81,35 @@ filled: {
  iconColor: 'input.default.filled.icon-color',
   borderColor: 'input.default.filled.border-color',
   itemSpacing:'input.space-between',
-  textColor:'input.default.filled.text-color'
+  Color:'input.default.filled.text-color'
     },
   _hover: {
     bg: 'input.hover.filled.background-color',
     iconColor: 'input.hover.filled.icon-color',
      borderColor: 'input.default.filled.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.hover.filled.text-color'
+     Color:'input.hover.filled.text-color'
   },
   _focus: {
     bg: 'input.focus.filled.background-color',
     iconColor: 'input.focus.filled.icon-color',
      borderColor: 'input.focus.filled.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.focus.filled.text-color'
+     Color:'input.focus.filled.text-color'
   },
   _invalid: {
     bg: 'input.invalid.filled.background-color',
     iconColor: 'input.invalid.filled.icon-color',
      borderColor: 'input.invalid.filled.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.invalid.filled.text-color'
+     Color:'input.invalid.filled.text-color'
   },
   _disabled: {
     bg: 'input.disabled.filled.background-color',
     iconColor: 'input.disabled.filled.icon-color',
      borderColor: 'input.disabled.filled.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input..filled.text-color'
+     Color:'input..filled.text-color'
 }
 },
 flushed: {
@@ -118,35 +118,35 @@ flushed: {
  iconColor: 'input.default.flushed.icon-color',
   borderColor: 'input.default.flushed.border-color',
   itemSpacing:'input.space-between',
-  textColor:'input.default.flushed.text-color'
+  Color:'input.default.flushed.text-color'
     },
   _hover: {
     bg: 'input.hover.flushed.background-color',
     iconColor: 'input.hover.flushed.icon-color',
      borderColor: 'input.default.flushed.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.hover.flushed.text-color'
+     Color:'input.hover.flushed.text-color'
   },
   _focus: {
     bg: 'input.focus.flushed.background-color',
     iconColor: 'input.focus.flushed.icon-color',
      borderColor: 'input.focus.flushed.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.focus.flushed.text-color'
+     Color:'input.focus.flushed.text-color'
   },
   _invalid: {
     bg: 'input.invalid.flushed.background-color',
     iconColor: 'input.invalid.flushed.icon-color',
      borderColor: 'input.invalid.flushed.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.invalid.flushed.text-color'
+     Color:'input.invalid.flushed.text-color'
   },
   _disabled: {
     bg: 'input.disabled.flushed.background-color',
     iconColor: 'input.disabled.flushed.icon-color',
      borderColor: 'input.disabled.flushed.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.flushed.text-color'
+     Color:'input.flushed.text-color'
 }
 },
 addonOutlined: {
@@ -155,7 +155,7 @@ addonOutlined: {
  iconColor: 'input.default.outlined.icon-color',
   borderColor: 'input.default.outlined.border-color',
   itemSpacing:'input.space-between',
-  textColor:'input.default.outlined.text-color',
+  Color:'input.default.outlined.text-color',
   backgroundColor:'input.add-on.background-color '
     },
   _hover: {
@@ -163,7 +163,7 @@ addonOutlined: {
     iconColor: 'input.hover.outlined.icon-color',
      borderColor: 'input.default.outlined.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.hover.outlined.text-color',
+     Color:'input.hover.outlined.text-color',
      backgroundColor:'input.add-on.background-color'
   },
   _focus: {
@@ -171,7 +171,7 @@ addonOutlined: {
     iconColor: 'input.focus.outlined.icon-color',
      borderColor: 'input.focus.outlined.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.focus.outlined.text-color',
+     Color:'input.focus.outlined.text-color',
      backgroundColor:'input.add-on.background-color'
   },
   _invalid: {
@@ -179,7 +179,7 @@ addonOutlined: {
     iconColor: 'input.invalid.outlined.icon-color',
      borderColor: 'input.invalid.outlined.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input.invalid.outlined.text-color',
+     Color:'input.invalid.outlined.text-color',
      backgroundColor:'input.add-on.background-color'
   },
   _disabled: {
@@ -187,7 +187,7 @@ addonOutlined: {
     iconColor: 'input.disabled.outlined.icon-color',
      borderColor: 'input.disabled.outlined.border-color',
      itemSpacing:'input.space-between',
-     textColor:'input..outlined.text-color',
+     Color:'input..outlined.text-color',
      backgroundColor:'input.add-on.background-color'
 }
 },
@@ -198,4 +198,4 @@ addonOutlined: {
   }
 }
 
-export default Checkbox
+export default Input

@@ -4,21 +4,21 @@ const Checkbox: ComponentStyleConfig = {
   // The styles all Checkbox have in common
   baseStyle: {
     borderRadius: 'semantic.border-radius.inputs',
-    borderWidth: 'checkbox.border-width'
+    Width: 'checkbox.border-width'
   },
   // Three sizes: sm md and large 
   sizes: {
     small: {
-        checkmarkHeight:'checkbox.sm.checkmark.height',
-        checkmarkWidth:'checkbox.sm.checkmark.width'
+        height:'checkbox.sm.checkmark.height',
+        width:'checkbox.sm.checkmark.width'
     },
     md: {
-        checkmarkHeight:'checkbox.md.checkmark.height',
-        checkmarkWidth:'checkbox.md.checkmark.width'
+        height:'checkbox.md.checkmark.height',
+        width:'checkbox.md.checkmark.width'
     },
     lg: {
-        checkmarkHeight:'checkbox.lg.checkmark.height',
-        checkmarkWidth:'checkbox.lg.checkmark.width'
+        height:'checkbox.lg.checkmark.height',
+        width:'checkbox.lg.checkmark.width'
     }
   },
   // Two variants: Checked and Unchecked
