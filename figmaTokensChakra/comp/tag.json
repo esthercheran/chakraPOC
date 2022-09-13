@@ -1,1 +1,22 @@
-{}
+{
+  "tag": {
+    "sm": {
+      "height": {
+        "value": "{semantic.sizing.status.s.height}",
+        "type": "sizing"
+      }
+    },
+    "md": {
+      "height": {
+        "value": "{semantic.sizing.status.m.height}",
+        "type": "sizing"
+      }
+    },
+    "lg": {
+      "height": {
+        "value": "{semantic.sizing.status.l.height}",
+        "type": "sizing"
+      }
+    }
+  }
+}
