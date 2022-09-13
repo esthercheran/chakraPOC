@@ -303,20 +303,14 @@
         "value": "{semantic.neutral.subtle}",
         "type": "color"
       }
-    }
-  },
-  "semantic": {
+    },
     "font-weight": {
-      "inputs": {
-        "value": "{font-weight.regular}",
-        "type": "fontWeights"
-      }
+      "value": "{semantic.font-weight.inputs}",
+      "type": "fontWeights"
     },
     "font-family": {
-      "inputs": {
-        "value": "{font-family.sans-serif}",
-        "type": "fontFamilies"
-      }
+      "value": "{semantic.font-family.inputs}",
+      "type": "fontFamilies"
     }
   }
 }
