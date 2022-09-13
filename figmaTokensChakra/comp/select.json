@@ -148,17 +148,13 @@
         "value": "{semantic.color.inputs.disabled.icon-color}"
       }
     },
-    "font-weight": {
-      "inputs": {
-        "value": "{font-weight.regular}",
-        "type": "fontWeights"
-      }
-    },
     "font-family": {
-      "inputs": {
-        "value": "{font-family.sans-serif}",
-        "type": "fontFamilies"
-      }
+      "value": "{semantic.font-family.inputs}",
+      "type": "fontFamilies"
+    },
+    "font-weight": {
+      "value": "{semantic.font-weight.inputs}",
+      "type": "fontWeights"
     }
   }
 }
