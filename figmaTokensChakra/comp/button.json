@@ -354,5 +354,13 @@
       "value": "100%",
       "type": "lineHeights"
     }
+  },
+  "semantic": {
+    "border-width": {
+      "inputs": {
+        "value": "{border-width.1}",
+        "type": "borderWidth"
+      }
+    }
   }
 }

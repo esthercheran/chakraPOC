@@ -13,7 +13,7 @@ interface SemanticTokens {
   fontWeights: Record<string, any>
 }
 
-export default (figmaTokens: any): SemanticTokens => {
+const getChakraSemanticTokens = (figmaTokens: any): SemanticTokens => {
   const semanticTokens: SemanticTokens = {
     radii: {},
     colors: {},
@@ -29,18 +29,23 @@ export default (figmaTokens: any): SemanticTokens => {
 
   for (const category in figmaTokens) {
     for (const property in figmaTokens[category]) {
-      if (property === 'light') {
+      if (category === 'colors') {
         for (const token in figmaTokens[category].light) {
           semanticTokens[category][token] = {
             default: figmaTokens[category].light[token],
             _dark: figmaTokens[category].dark[token]
           }
         }
-      } else if (property !== 'dark') {
-        semanticTokens[category][property] = figmaTokens[category][property]
+      } else {
+        const tokens = figmaTokens[category].light || figmaTokens[category]
+
+        for (const token in tokens) {
+          semanticTokens[category][token] = tokens[token]
+        }
       }
     }
   }
-
   return semanticTokens
 }
+
+export default getChakraSemanticTokens

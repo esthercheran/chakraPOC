@@ -1,0 +1,172 @@
+{
+  "icon-button": {
+    "default": {
+      "border-color": {
+        "value": "{semantic.color.focus.border-color}",
+        "type": "color"
+      },
+      "background-color": {
+        "value": "{semantic.color.actions.primary.default.background}",
+        "type": "color"
+      },
+      "icon-color": {
+        "value": "{semantic.color.actions.primary.default.text}",
+        "type": "color"
+      },
+      "ghost": {
+        "background-color": {
+          "value": "{semantic.color.actions.primary.default.quiet-background}",
+          "type": "color"
+        },
+        "icon-color": {
+          "value": "{semantic.color.actions.primary.default.background}",
+          "type": "color"
+        }
+      }
+    },
+    "hover": {
+      "border-color": {
+        "value": "{semantic.color.focus.border-color}",
+        "type": "color"
+      },
+      "background-color": {
+        "value": "{semantic.color.actions.primary.hover.background}",
+        "type": "color"
+      },
+      "icon-color": {
+        "value": "{semantic.color.actions.primary.hover.text}",
+        "type": "color"
+      },
+      "ghost": {
+        "background-color": {
+          "value": "{semantic.color.actions.primary.hover.quiet-background}",
+          "type": "color"
+        },
+        "icon-color": {
+          "value": "{semantic.color.actions.primary.hover.text}",
+          "type": "color"
+        }
+      }
+    },
+    "active": {
+      "border-color": {
+        "value": "{semantic.color.focus.border-color}",
+        "type": "color"
+      },
+      "background-color": {
+        "value": "{semantic.color.actions.primary.active.background}",
+        "type": "color"
+      },
+      "icon-color": {
+        "value": "{semantic.color.actions.primary.active.text}",
+        "type": "color"
+      },
+      "ghost": {
+        "background-color": {
+          "value": "{semantic.color.actions.primary.active.quiet-background}",
+          "type": "color"
+        },
+        "icocn-color": {
+          "value": "{semantic.color.actions.primary.hover.text}",
+          "type": "color"
+        }
+      }
+    },
+    "disabled": {
+      "border-color": {
+        "value": "{semantic.color.actions.primary.disabled.text}",
+        "type": "color"
+      },
+      "background-color": {
+        "value": "{semantic.color.actions.primary.disabled.background}",
+        "type": "color"
+      },
+      "icon-color": {
+        "value": "{semantic.color.actions.primary.disabled.text}",
+        "type": "color"
+      },
+      "ghost": {
+        "background-color": {
+          "value": "{semantic.color.actions.primary.default.quiet-background}",
+          "type": "color"
+        },
+        "icon-color": {
+          "value": "{semantic.color.actions.primary.disabled.text}",
+          "type": "color"
+        }
+      }
+    },
+    "icon-button": {
+      "border-radius": {
+        "value": "{semantic.border-radius.actions}",
+        "type": "borderRadius"
+      }
+    },
+    "round": {
+      "border-radius": {
+        "value": "{semantic.border.radius.round}",
+        "type": "borderRadius"
+      }
+    },
+    "border-width": {
+      "value": "{semantic.border-width.actions}",
+      "type": "borderWidth"
+    },
+    "xs": {
+      "icon-size": {
+        "value": "{size.150}",
+        "type": "sizing"
+      },
+      "height": {
+        "value": "{size.300}",
+        "type": "sizing"
+      },
+      "width": {
+        "value": "{size.300}",
+        "type": "sizing"
+      }
+    },
+    "sm": {
+      "icon-size": {
+        "value": "{semantic.sizing.actions.icon-size.xs}",
+        "type": "sizing"
+      },
+      "height": {
+        "value": "{semantic.sizing.actions.xs}",
+        "type": "sizing"
+      },
+      "width": {
+        "value": "{semantic.sizing.actions.xs}",
+        "type": "sizing"
+      }
+    },
+    "md": {
+      "icon-size": {
+        "value": "{size.250}",
+        "type": "sizing"
+      },
+      "height": {
+        "value": "{semantic.sizing.actions.sm}",
+        "type": "sizing"
+      },
+      "width": {
+        "value": "{semantic.sizing.actions.sm}",
+        "type": "sizing"
+      }
+    },
+    "lg": {
+      "icon-size": {
+        "value": "{semantic.sizing.actions.icon-size.sm}",
+        "type": "sizing"
+      },
+      "height": {
+        "value": "{semantic.sizing.actions.md}",
+        "type": "sizing"
+      },
+      "width": {
+        "value": "{semantic.sizing.actions.md}",
+        "type": "sizing"
+      }
+    }
+  }
+}

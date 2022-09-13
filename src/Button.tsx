@@ -10,7 +10,6 @@ import { InfoIcon } from '@chakra-ui/icons'
 //       Toggle theme
 //     </Button>
 //   )
-  
 // }
 
 export function ButtonChakra(props: ButtonProps) {

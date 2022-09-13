@@ -1,21 +1,5 @@
 [
   {
-    "id": "b9d577a0fc351944cee77506bfb7d66d1fc419f7",
-    "name": "light",
-    "selectedTokenSets": {
-      "comp/button": "enabled",
-      "core/border": "source",
-      "core/color": "source",
-      "core/opacity": "source",
-      "core/size": "source",
-      "core/space": "source",
-      "core/typography": "source",
-      "semantic/light": "enabled",
-      "semantic/dark": "disabled"
-    },
-    "$figmaStyleReferences": {}
-  },
-  {
     "id": "fb45d30f0ac850488c23227943cf3be075a6191d",
     "name": "dark",
     "selectedTokenSets": {
@@ -27,7 +11,39 @@
       "core/space": "source",
       "core/typography": "source",
       "semantic/light": "enabled",
-      "semantic/dark": "enabled"
+      "semantic/dark": "enabled",
+      "comp/checkbox": "disabled",
+      "comp/input": "disabled",
+      "comp/radio": "disabled",
+      "comp/select": "disabled",
+      "comp/switch": "disabled",
+      "comp/avatar": "disabled",
+      "comp/icon-button": "disabled",
+      "comp/tag": "disabled"
+    },
+    "$figmaStyleReferences": {}
+  },
+  {
+    "id": "b9d577a0fc351944cee77506bfb7d66d1fc419f7",
+    "name": "light",
+    "selectedTokenSets": {
+      "comp/button": "enabled",
+      "core/border": "source",
+      "core/color": "source",
+      "core/opacity": "source",
+      "core/size": "source",
+      "core/space": "source",
+      "core/typography": "source",
+      "semantic/light": "enabled",
+      "semantic/dark": "disabled",
+      "comp/checkbox": "enabled",
+      "comp/input": "enabled",
+      "comp/radio": "enabled",
+      "comp/select": "enabled",
+      "comp/switch": "enabled",
+      "comp/avatar": "enabled",
+      "comp/icon-button": "enabled",
+      "comp/tag": "enabled"
     },
     "$figmaStyleReferences": {}
   }
