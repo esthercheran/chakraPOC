@@ -8,6 +8,7 @@
     "comp/radio",
     "comp/select",
     "comp/switch",
+    "comp/tag",
     "core/border",
     "core/color",
     "core/opacity",
