@@ -1,7 +1,6 @@
 import * as React from 'react'
-import { Button, ChakraProvider, ButtonProps } from '@chakra-ui/react'
+import { Avatar, ChakraProvider, AvatarProps } from '@chakra-ui/react'
 import theme from './theme/index'
-// import { InfoIcon } from '@chakra-ui/icons'
 
 // const ThemeSwitcher = () => {
 //   const { toggleColorMode } = useColorMode()
@@ -12,12 +11,12 @@ import theme from './theme/index'
 //   )
 // }
 
-export function ButtonChakra(props: ButtonProps) {
+export function AvatarChakra(props: AvatarProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Button {...props}>
+      <Avatar size='sm'>
           {props.title}
-        </Button>
+        </Avatar>
       
       {/* <ThemeSwitcher /> */}
     </ChakraProvider>

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Button, ChakraProvider, ButtonProps } from '@chakra-ui/react'
+import { Tag, ChakraProvider, TagProps } from '@chakra-ui/react'
 import theme from './theme/index'
 // import { InfoIcon } from '@chakra-ui/icons'
 
@@ -12,12 +12,12 @@ import theme from './theme/index'
 //   )
 // }
 
-export function ButtonChakra(props: ButtonProps) {
+export function TagChakra(props: TagProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Button {...props}>
+      <Tag {...props}>
           {props.title}
-        </Button>
+        </Tag>
       
       {/* <ThemeSwitcher /> */}
     </ChakraProvider>

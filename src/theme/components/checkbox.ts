@@ -1,30 +1,62 @@
 import { ComponentStyleConfig, SliderProvider } from '@chakra-ui/react'
-
+import { cssVar } from '@chakra-ui/react'
+const $size = cssVar("checkbox-size")
 const Checkbox: ComponentStyleConfig = {
   // The styles all Checkbox have in common
-  baseStyle: {
-    borderRadius: 'semantic.border-radius.inputs',
-    Width: 'checkbox.border-width'
-  },
+  parts:['control','label','icon'],
+  // baseStyle: {
+  //   borderRadius: 'semantic.border-radius.inputs',
+  //   Width: 'checkbox.border-width',
+  //   _checked: {
+  //     bg: 'btn-negative-default-background-color',
+  //     borderColor: 'btn-primary-default-background-color',
+  //     color: 'btn-primary-default-background-color',
+  //   }
+  // },
   // Three sizes: sm md and large 
+  // sizes: {
+  //   small: {
+  //       height:'checkbox.sm.checkmark.height',
+  //       width:'checkbox.sm.checkmark.width'
+  //   },
+  //   md: {
+  //       height:'checkbox.md.checkmark.height',
+  //       width:'checkbox.md.checkmark.width'
+  //   },
+  //   lg: {
+  //       height:'checkbox.lg.checkmark.height',
+  //       width:'checkbox.lg.checkmark.width'
+  //   }
+  // },
   sizes: {
-    small: {
+    sm: ({
+      control: { 
+        [$size.variable]:'btn-xs-height',
+        width:'checkbox.sm.checkmark.width' },
+      label: { fontSize: "btn-xs-text-size" },
+      icon: { fontSize: "3xs" },
+    }),
+    md: ({
+      control: { 
         height:'checkbox.sm.checkmark.height',
         width:'checkbox.sm.checkmark.width'
-    },
-    md: {
-        height:'checkbox.md.checkmark.height',
-        width:'checkbox.md.checkmark.width'
-    },
-    lg: {
-        height:'checkbox.lg.checkmark.height',
-        width:'checkbox.lg.checkmark.width'
-    }
+      },
+      label: { fontSize: "md" },
+      icon: { fontSize: "2xs" },
+    }),
+    lg: ({
+      control: { 
+        height:'checkbox.sm.checkmark.height',
+        width:'checkbox.sm.checkmark.width'
+       },
+      label: { fontSize: "lg" },
+      icon: { fontSize: "2xs" },
+    }),
   },
   // Two variants: Checked and Unchecked
   variants: {
     selected: {
-        _defaut:{
+      _checked:{
       bg: 'checkbox.selected.default.background-color',
      iconColor: 'checkbox.checkmark.selected.default.icon-color',
       borderColor: 'checkbox.selected.default.border-color'

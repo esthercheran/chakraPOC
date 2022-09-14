@@ -1,7 +1,6 @@
 import * as React from 'react'
-import { Button, ChakraProvider, ButtonProps } from '@chakra-ui/react'
+import { Checkbox, ChakraProvider, CheckboxProps } from '@chakra-ui/react'
 import theme from './theme/index'
-// import { InfoIcon } from '@chakra-ui/icons'
 
 // const ThemeSwitcher = () => {
 //   const { toggleColorMode } = useColorMode()
@@ -12,12 +11,12 @@ import theme from './theme/index'
 //   )
 // }
 
-export function ButtonChakra(props: ButtonProps) {
+export function CheckboxChakra(props: CheckboxProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Button {...props}>
+      <Checkbox size='sm'>
           {props.title}
-        </Button>
+        </Checkbox>
       
       {/* <ThemeSwitcher /> */}
     </ChakraProvider>

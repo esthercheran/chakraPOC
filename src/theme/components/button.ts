@@ -6,7 +6,6 @@ const Button: ComponentStyleConfig = {
     fontWeight: 'btn-font-weight',
     textTransform: 'uppercase',
     width: 'auto',
-    paddingLeft: 'btn-xs-padding-left',
     borderRadius: 'btn-border-radius',
     fontFamily: 'btn-font-family',
     border: 'btn-border-width',
@@ -20,7 +19,7 @@ const Button: ComponentStyleConfig = {
       h: 'btn-xs-height',
       fontSize: 'btn-xs-text-size'
     },
-    small: {
+    sm: {
       paddingLeft: 'btn-sm-padding-left',
       paddingRight: 'btn-sm-padding-right',
       height: 'btn-sm-height',
@@ -42,13 +41,10 @@ const Button: ComponentStyleConfig = {
   // Two variants: outline and solid
   variants: {
     primary: {
-      _default:{
       bg: 'btn-primary-default-background-color',
       color: 'btn-primary-default-text-color',
       borderColor: 'btn-primary-default-border-color',
-      iconColor:"btn-primary-default-icon-color"
-
-      },
+      iconColor:"btn-primary-default-icon-color",
       _hover: {
         bg: 'btn-primary-hover-background-color',
         color: 'btn-primary-hover-text-color',
@@ -69,12 +65,10 @@ const Button: ComponentStyleConfig = {
       }
     },
     secondary: {
-      _default: {
       bg: 'btn-secondary-default-background-color',
       color: 'btn-secondary-default-text-color',
       borderColor: 'btn-secondary-default-border-color',
-      iconColor:'btn-secondary-default-icon-color'
-      },
+      iconColor:'btn-secondary-default-icon-color',
       _hover: {
         bg: 'btn-secondary-hover-background-color',
         color: 'btn-secondary-hover-text-color',
@@ -95,12 +89,10 @@ const Button: ComponentStyleConfig = {
       }
     },
     negative: {
-      _default:{
       bg: 'btn-negative-default-background-color',
       color: 'btn-negative-default-text-color',
       borderColor: 'btn-negative-default-border-color',
-      iconColor:'btn-negative-default-icon-color'
-      },
+      iconColor:'btn-negative-default-icon-color',
       _hover: {
         bg: 'btn-negative-hover-background-color',
         color: 'btn-negative-hover-text-color',
