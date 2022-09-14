@@ -8,59 +8,74 @@ const Checkbox: ComponentStyleConfig = {
   parts: ['control', 'label', 'icon'],
   baseStyle: {
     control: {
-      background: 'green',
-      borderColor: 'grey',
+      background: 'checkbox-unselected-default-background-color',
+      borderColor: 'checkbox-unselected-default-border-color',
       _checked: {
-        background: 'blue',
-        borderColor: 'cyan',
+        background: 'checkbox-selected-default-background-color',
+        borderColor: 'checkbox-selected-default-border-color',
         _hover: {
-          background: '#bada55',
-          borderColor: 'black'
+          background: 'checkbox-selected-hover-background-color',
+          borderColor: 'checkbox-selected-hover-border-color'
         }
       },
       _indeterminate: {
         background: 'purple'
       },
       _invalid: {
-        background: 'orange'
+        borderColor: 'checkbox-unselected-disabled-border-color',
+        background: 'checkbox-unselected-disabled-background-color'
       },
       _focusVisible: {}
     },
     label: {
-      color: 'red'
+      color: 'semantic-fg-default'
     },
-    icon: {}
+    icon: {
+      color: 'checkbox-checkmark-selected-default-icon-color',
+      _checked: {
+        _hover: {
+        color: 'checkbox-checkmark-selected-hover-icon-color'
+      }
+    },
+
+    }
   },
   sizes: {
     sm: {
       control: {
-        height: '12px',
-        width: '12px'
+        height: 'checkbox-sm-height',
+        width: 'checkbox-sm-height'
       },
       label: {
         fontSize: '12px'
       },
-      icon: {}
+      icon: {
+        fontSize: 'checkbox-sm-checkmark-width'
+      }
     },
     md: {
       control: {
-        height: '16px',
-        width: '16px'
+        height: 'checkbox-md-height',
+        width: 'checkbox-md-height'
       },
       label: {
         fontSize: '16px'
       },
-      icon: {}
+      icon: {
+        fontSize: 'checkbox-md-checkmark-width'
+      }
     },
     lg: {
       control: {
-        height: '18px',
-        width: '18px'
+        height: 'checkbox-lg-heightx',
+        width: 'checkbox-lg-height'
       },
       label: {
         fontSize: '18px'
       },
-      icon: {}
+      icon: {
+        fontSize: 'checkbox-lg-checkmark-width'
+      }
     }
   },
   variants: {
