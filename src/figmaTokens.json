@@ -466,8 +466,7 @@
       "color-rose-900": "#881337",
       "color-neutrals-black": "#000000",
       "color-neutrals-white": "#ffffff",
-      "color-neutrals-transparent": "hsla(255,0%,100%,0.01)",
-      "avatar-background-color": "#0284c7"
+      "color-neutrals-transparent": "hsla(255,0%,100%,0.01)"
     },
     "light": {
       "btn-primary-default-background-color": "#0ea5e9",

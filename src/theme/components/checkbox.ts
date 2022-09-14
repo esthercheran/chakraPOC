@@ -1,97 +1,96 @@
-import { ComponentStyleConfig, SliderProvider } from '@chakra-ui/react'
-import { cssVar } from '@chakra-ui/react'
-const $size = cssVar("checkbox-size")
+import { ComponentStyleConfig } from '@chakra-ui/react'
+
+// You can also use the more specific type for
+// a multipart component: ComponentMultiStyleConfig
 const Checkbox: ComponentStyleConfig = {
-  // The styles all Checkbox have in common
-  parts:['control','label','icon'],
-  // baseStyle: {
-  //   borderRadius: 'semantic.border-radius.inputs',
-  //   Width: 'checkbox.border-width',
-  //   _checked: {
-  //     bg: 'btn-negative-default-background-color',
-  //     borderColor: 'btn-primary-default-background-color',
-  //     color: 'btn-primary-default-background-color',
-  //   }
-  // },
-  // Three sizes: sm md and large 
-  // sizes: {
-  //   small: {
-  //       height:'checkbox.sm.checkmark.height',
-  //       width:'checkbox.sm.checkmark.width'
-  //   },
-  //   md: {
-  //       height:'checkbox.md.checkmark.height',
-  //       width:'checkbox.md.checkmark.width'
-  //   },
-  //   lg: {
-  //       height:'checkbox.lg.checkmark.height',
-  //       width:'checkbox.lg.checkmark.width'
-  //   }
-  // },
-  sizes: {
-    sm: ({
-      control: { 
-        [$size.variable]:'btn-xs-height',
-        width:'checkbox.sm.checkmark.width' },
-      label: { fontSize: "btn-xs-text-size" },
-      icon: { fontSize: "3xs" },
-    }),
-    md: ({
-      control: { 
-        height:'checkbox.sm.checkmark.height',
-        width:'checkbox.sm.checkmark.width'
+  // All parts of multipart components can be found in the @chakra-ui/anatomy package,
+  // the menuAnatomy has as well these parts: button, list, groupTitle, command, divider
+  parts: ['control', 'label', 'icon'],
+  baseStyle: {
+    control: {
+      background: 'green',
+      borderColor: 'grey',
+      _checked: {
+        background: 'blue',
+        borderColor: 'cyan',
+        _hover: {
+          background: '#bada55',
+          borderColor: 'black'
+        }
       },
-      label: { fontSize: "md" },
-      icon: { fontSize: "2xs" },
-    }),
-    lg: ({
-      control: { 
-        height:'checkbox.sm.checkmark.height',
-        width:'checkbox.sm.checkmark.width'
-       },
-      label: { fontSize: "lg" },
-      icon: { fontSize: "2xs" },
-    }),
-  },
-  // Two variants: Checked and Unchecked
-  variants: {
-    selected: {
-      _checked:{
-      bg: 'checkbox.selected.default.background-color',
-     iconColor: 'checkbox.checkmark.selected.default.icon-color',
-      borderColor: 'checkbox.selected.default.border-color'
-        },
+      _indeterminate: {
+        background: 'purple'
+      },
       _invalid: {
+        background: 'orange'
       },
-      _hover: {
-        bg: 'checkbox.selected.hover.background-color',
-     iconColor: 'checkbox.checkmark.selected.hover.icon-color',
-      borderColor: 'checkbox.selected.hover.border-color'
-      },
-      _disabled: {
-        bg: 'checkbox.selected.disabled.background-color',
-     iconColor: 'checkbox.checkmark.selected.disabled.icon-color',
-      borderColor: 'checkbox.selected.disabled.border-color'
-      }
+      _focusVisible: {}
     },
-    unselected: {
-        _default:{
-      bg: 'checkbox.unselected.default.background-color',
-      borderColor: 'checkbox.unselected.default.border-color',
-        },
-        _invalid: {
-            bg: 'checkbox.unselected.error.background-color',
-            borderColor: 'checkbox.unselected.error.border-color',
+    label: {
+      color: 'red'
+    },
+    icon: {}
+  },
+  sizes: {
+    sm: {
+      control: {
+        height: '12px',
+        width: '12px'
       },
-      _disabled: {
-        bg: 'checkbox.unselected.disabled.background-color',
-            borderColor: 'checkbox.unselected.disabled.border-color',
-      }
+      label: {
+        fontSize: '12px'
+      },
+      icon: {}
+    },
+    md: {
+      control: {
+        height: '16px',
+        width: '16px'
+      },
+      label: {
+        fontSize: '16px'
+      },
+      icon: {}
+    },
+    lg: {
+      control: {
+        height: '18px',
+        width: '18px'
+      },
+      label: {
+        fontSize: '18px'
+      },
+      icon: {}
     }
   },
-  // The default size and variant values
+  variants: {
+    bold: {
+      control: {
+        // these 4 are from the tokens json just wanted to make sure tokens work too
+        background: 'color-rose-700',
+        borderColor: 'color-rose-900',
+        _checked: {
+          background: 'semantic-warning-fg',
+          borderColor: 'semantic-warning-emphasised',
+          _hover: {}
+        },
+        _indeterminate: {},
+        _invalid: {},
+        _focusVisible: {}
+      },
+      label: {
+        color: 'blue'
+      },
+      icon: {}
+    },
+    colorful: {
+      control: {},
+      label: {},
+      icon: {}
+    }
+  },
   defaultProps: {
-    variant: 'unselected'
+    size: 'md'
   }
 }
 
