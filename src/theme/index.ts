@@ -9,6 +9,9 @@ import styles from './styles'
 
 // Component style overrides
 import Button from './components/button'
+import Avatar from './components/avatar'
+import Checkbox from './components/checkbox'
+import Tag from './components/tag'
 import getChakraSemanticTokens from '../getChakraSemanticTokens'
 import figmaTokensJson from '../figmaTokens.json'
 const semanticTokens = getChakraSemanticTokens(figmaTokensJson)
@@ -18,7 +21,10 @@ const overrides = {
   semanticTokens,
   // Other foundational style overrides go here
   components: {
-    Button
+    Button,
+    Avatar,
+    Checkbox,
+    Tag
     // Other components go here
   }
 }
