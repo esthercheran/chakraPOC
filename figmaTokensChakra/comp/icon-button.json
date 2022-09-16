@@ -96,11 +96,9 @@
         }
       }
     },
-    "icon-button": {
-      "border-radius": {
-        "value": "{semantic.border-radius.actions}",
-        "type": "borderRadius"
-      }
+    "border-radius": {
+      "value": "{semantic.border-radius.actions}",
+      "type": "borderRadius"
     },
     "round": {
       "border-radius": {
