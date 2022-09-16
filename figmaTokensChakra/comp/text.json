@@ -84,7 +84,7 @@
     },
     "bold": {
       "font-weight": {
-        "value": "{semantic.font-weight.typography.bold}",
+        "value": "Bold",
         "type": "fontWeights"
       }
     },
