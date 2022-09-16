@@ -2,14 +2,15 @@ import { ComponentStyleConfig } from '@chakra-ui/react'
 
 const Tag: ComponentStyleConfig = {
     parts:['container','label','closeButton'],
-  // The styles all button have in common
-  // Four sizes: xs,sm,md and large
+  // The styles all tag have in common
+  
   baseStyle: {
     container: {
         background: 'btn-primary-default-background-color',
         bgColor: 'btn-primary-default-background-color'
     }
   },
+  // Four sizes: sm,md and lg
   sizes: {
     sm: {
       container: {

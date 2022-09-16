@@ -14,7 +14,7 @@ import theme from './theme/index'
 export function AvatarChakra(props: AvatarProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Avatar size='sm'>
+      <Avatar {...props}>
           {props.title}
         </Avatar>
       
