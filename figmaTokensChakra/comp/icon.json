@@ -1,1 +1,16 @@
-{}
+{
+  "height": {
+    "value": "{size.300}",
+    "type": "sizing"
+  },
+  "width": {
+    "value": "{size.300}",
+    "type": "sizing"
+  },
+  "icon": {
+    "icon-color": {
+      "value": "{semantic.fg.accent}",
+      "type": "color"
+    }
+  }
+}
