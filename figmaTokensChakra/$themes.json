@@ -18,7 +18,13 @@
       "comp/select": "disabled",
       "comp/switch": "disabled",
       "comp/avatar": "disabled",
-      "comp/tag": "disabled"
+      "comp/tag": "disabled",
+      "comp/heading": "disabled",
+      "comp/icon": "disabled",
+      "comp/icon-button": "disabled",
+      "comp/tab": "disabled",
+      "comp/text": "disabled",
+      "comp/tooltip": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -41,7 +47,13 @@
       "comp/select": "enabled",
       "comp/switch": "enabled",
       "comp/avatar": "enabled",
-      "comp/tag": "enabled"
+      "comp/tag": "enabled",
+      "comp/heading": "enabled",
+      "comp/icon": "enabled",
+      "comp/icon-button": "enabled",
+      "comp/tab": "enabled",
+      "comp/text": "enabled",
+      "comp/tooltip": "enabled"
     },
     "$figmaStyleReferences": {}
   }
