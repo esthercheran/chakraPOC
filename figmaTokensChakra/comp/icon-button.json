@@ -129,7 +129,7 @@
           "type": "color"
         },
         "icon-color": {
-          "value": "{semantic.color.actions.negative.default.text}",
+          "value": "{semantic.color.actions.negative.default.icon}",
           "type": "color"
         }
       },
