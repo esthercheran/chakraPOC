@@ -21,6 +21,9 @@
     "core/space",
     "core/typography",
     "semantic/light",
-    "semantic/dark"
+    "semantic/dark",
+    "Brand-ChakraDemo",
+    "Brand-ChakraDemo/light",
+    "Brand-ChakraDemo/dark"
   ]
 }
