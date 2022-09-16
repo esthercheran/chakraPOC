@@ -12,6 +12,8 @@ import Button from './components/button'
 import Avatar from './components/avatar'
 import Checkbox from './components/checkbox'
 import Tag from './components/tag'
+import Switch from './components/switch'
+import IconButton from './components/iconbutton'
 import getChakraSemanticTokens from '../getChakraSemanticTokens'
 import figmaTokensJson from '../figmaTokens.json'
 const semanticTokens = getChakraSemanticTokens(figmaTokensJson)
@@ -24,7 +26,9 @@ const overrides = {
     Button,
     Avatar,
     Checkbox,
-    Tag
+    Tag,
+    Switch,
+    IconButton
     // Other components go here
   }
 }
