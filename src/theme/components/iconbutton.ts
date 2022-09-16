@@ -3,48 +3,44 @@ import { ComponentStyleConfig } from '@chakra-ui/react'
 const IconButton: ComponentStyleConfig = {
   // The styles all button have in common
   baseStyle: {
-    fontWeight: 'btn-font-weight',
-    textTransform: 'uppercase',
     width: 'auto',
-    borderRadius: 'btn-border-radius',
-    fontFamily: 'btn-font-family',
+    borderRadius: 'icon-button-border-radius',
     border: 'btn-border-width',
-    borderStyle: 'solid'
+    borderStyle: 'solid',
+    _isRound: {
+        borderRadius: 'icon-button-round-border-radius'
+    }
   },
   // Four sizes: xs,sm,md and large
   sizes: {
     xs: {
-      paddingLeft: 'btn-xs-padding-left',
-      paddingRight: 'btn-xs-padding-right',
-      h: 'btn-xs-height',
-      fontSize: 'btn-xs-text-size'
+      height: 'icon-button-xs-height',
+      width: 'icon-button-xs-width',
+      fontSize: 'icon-button-xs-icon-size'
     },
     sm: {
-      paddingLeft: 'btn-sm-padding-left',
-      paddingRight: 'btn-sm-padding-right',
-      height: 'btn-sm-height',
-      fontSize: 'btn-sm-text-size'
+        h: 'icon-button-sm-height',
+        minW: 'icon-button-sm-width',
+        fontSize: 'icon-button-sm-icon-size'
     },
     md: {
-      paddingLeft: 'btn-md-padding-left',
-      paddingRight: 'btn-md-padding-right',
-      height: 'btn-md-height',
-      fontSize: 'btn-md-text-size'
+        h: 'icon-button-md-height',
+        minW: 'icon-button-md-width',
+        fontSize: 'icon-button-md-icon-size'
     },
     lg: {
-      paddingLeft: 'btn-lg-padding-left',
-      paddingRight: 'btn-lg-padding-right',
-      height: 'btn-lg-height',
-      fontSize: 'btn-lg-text-size'
+        h: 'icon-button-lg-height',
+        minW: 'icon-button-lg-width',
+        fontSize: 'icon-button-lg-icon-size'
     }
   },
   // Two variants: outline and solid
   variants: {
     primary: {
-      bg: 'btn-primary-default-background-color',
-      color: 'btn-primary-default-text-color',
-      borderColor: 'btn-primary-default-border-color',
-      iconColor:"btn-primary-default-icon-color",
+      bg: 'icon-button-default-background-color',
+      color: 'icon-button-default-icon-color',
+      borderColor: 'icon-button-default-border-color',
+      iconColor:"icon-button-default-icon-color",
       _hover: {
         bg: 'btn-primary-hover-background-color',
         color: 'btn-primary-hover-text-color',
