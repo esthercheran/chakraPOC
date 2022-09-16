@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Button, ChakraProvider, ButtonProps } from '@chakra-ui/react'
 import theme from './theme/index'
+import { Search2Icon, SearchIcon } from '@chakra-ui/icons'
 // import { InfoIcon } from '@chakra-ui/icons'
 
 // const ThemeSwitcher = () => {
@@ -15,7 +16,7 @@ import theme from './theme/index'
 export function ButtonChakra(props: ButtonProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Button {...props}>
+      <Button {...props} leftIcon={<SearchIcon/>} rightIcon={<Search2Icon/>}>
           {props.title}
         </Button>
       
