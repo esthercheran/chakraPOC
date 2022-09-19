@@ -18,10 +18,6 @@
           "background-color": {
             "value": "{semantic.color.actions.primary.default.quiet-background}",
             "type": "color"
-          },
-          "icon-color": {
-            "value": "{semantic.color.actions.primary.default.background}",
-            "type": "color"
           }
         }
       },
@@ -42,10 +38,6 @@
           "background-color": {
             "value": "{semantic.color.actions.primary.hover.quiet-background}",
             "type": "color"
-          },
-          "icon-color": {
-            "value": "{semantic.color.actions.primary.hover.text}",
-            "type": "color"
           }
         }
       },
@@ -65,10 +57,6 @@
         "ghost": {
           "background-color": {
             "value": "{semantic.color.actions.primary.active.quiet-background}",
-            "type": "color"
-          },
-          "icocn-color": {
-            "value": "{semantic.color.actions.primary.hover.text}",
             "type": "color"
           }
         }
@@ -92,10 +80,6 @@
           "background": {
             "value": "{semantic.color.actions.secondary.default.background}",
             "type": "color"
-          },
-          "icon-color": {
-            "value": "{semantic.color.actions.secondary.default.text}",
-            "type": "color"
           }
         }
       },
@@ -116,10 +100,6 @@
           "background-color": {
             "value": "{semantic.color.actions.secondary.hover.background}",
             "type": "color"
-          },
-          "icon-color": {
-            "value": "{semantic.color.actions.secondary.hover.text}",
-            "type": "color"
           }
         }
       },
@@ -139,10 +119,6 @@
         "ghost": {
           "background-color": {
             "value": "{semantic.color.actions.secondary.active.background}",
-            "type": "color"
-          },
-          "icon-clor": {
-            "value": "{semantic.color.actions.secondary.active.text}",
             "type": "color"
           }
         }
@@ -166,10 +142,6 @@
           "background-color": {
             "value": "{color.neutrals.transparent}",
             "type": "color"
-          },
-          "icon-color": {
-            "value": "{semantic.color.actions.negative.default.icon}",
-            "type": "color"
           }
         }
       },
@@ -189,10 +161,6 @@
         "ghost": {
           "background-color": {
             "value": "{semantic.color.actions.negative.hover.background}",
-            "type": "color"
-          },
-          "icon-color": {
-            "value": "{semantic.color.actions.negative.hover.text}",
             "type": "color"
           }
         }
@@ -214,10 +182,6 @@
           "background-color": {
             "value": "{semantic.color.actions.negative.active.background}",
             "type": "color"
-          },
-          "icon-color": {
-            "value": "{semantic.color.actions.negative.active.text}",
-            "type": "color"
           }
         }
       }
@@ -238,10 +202,6 @@
       "ghost": {
         "background-color": {
           "value": "{semantic.color.actions.primary.default.quiet-background}",
-          "type": "color"
-        },
-        "icon-color": {
-          "value": "{semantic.color.actions.primary.disabled.text}",
           "type": "color"
         }
       }
