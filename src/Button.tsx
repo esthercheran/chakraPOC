@@ -16,7 +16,7 @@ import { Search2Icon, SearchIcon } from '@chakra-ui/icons'
 export function ButtonChakra(props: ButtonProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Button {...props} leftIcon={<SearchIcon/>} rightIcon={<Search2Icon/>}>
+      <Button {...props} leftIcon={props.leftIcon?<SearchIcon/>:undefined} rightIcon={props.rightIcon?<Search2Icon/>:undefined}>
           {props.title}
         </Button>
       
