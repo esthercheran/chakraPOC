@@ -315,6 +315,12 @@
         "value": "{semantic.sizing.actions.md}",
         "type": "sizing"
       }
+    },
+    "outline": {
+      "border-width": {
+        "value": "{semantic.border-width.focus}",
+        "type": "borderWidth"
+      }
     }
   }
 }
