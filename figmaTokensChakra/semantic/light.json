@@ -1729,7 +1729,7 @@
           "type": "fontWeights"
         },
         "bold": {
-          "value": "{font-weight.semi-bold}",
+          "value": "{font-weight.semiBold}",
           "type": "fontWeights"
         }
       },
@@ -1747,7 +1747,7 @@
           "type": "fontWeights"
         },
         "bold": {
-          "value": "{font-weight.semi-bold}",
+          "value": "{font-weight.semiBold}",
           "type": "fontWeights"
         }
       },
