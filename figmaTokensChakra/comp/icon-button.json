@@ -3,15 +3,11 @@
     "primary": {
       "default": {
         "border-color": {
-          "value": "{semantic.color.focus.border-color}",
-          "type": "color"
-        },
-        "background-color": {
-          "value": "{semantic.color.actions.primary.default.background}",
+          "value": "{semantic.color.actions.primary.default.border}",
           "type": "color"
         },
         "icon-color": {
-          "value": "{semantic.color.actions.primary.default.text}",
+          "value": "{semantic.color.actions.primary.default.background}",
           "type": "color"
         },
         "ghost": {
@@ -85,7 +81,7 @@
       },
       "hover": {
         "border-color": {
-          "value": "{semantic.color.actions.secondary.hover.border}",
+          "value": "{semantic.color.focus.border-color}",
           "type": "color"
         },
         "background-color": {
@@ -105,7 +101,7 @@
       },
       "active": {
         "border-color": {
-          "value": "{semantic.color.actions.secondary.active.border}",
+          "value": "{semantic.color.focus.border-color}",
           "type": "color"
         },
         "background-color": {
@@ -160,6 +156,10 @@
         },
         "ghost": {
           "background-color": {
+            "value": "{color.neutrals.transparent}",
+            "type": "color"
+          },
+          "icon-color": {
             "value": "{semantic.color.actions.negative.hover.background}",
             "type": "color"
           }
@@ -167,7 +167,7 @@
       },
       "active": {
         "border-color": {
-          "value": "{semantic.color.actions.negative.active.border}",
+          "value": "{semantic.color.focus.border-color}",
           "type": "color"
         },
         "background-color": {
@@ -180,6 +180,10 @@
         },
         "ghost": {
           "background-color": {
+            "value": "{color.neutrals.transparent}",
+            "type": "color"
+          },
+          "icon-color": {
             "value": "{semantic.color.actions.negative.active.background}",
             "type": "color"
           }
@@ -280,6 +284,10 @@
       "border-width": {
         "value": "{semantic.border-width.focus}",
         "type": "borderWidth"
+      },
+      "border-color": {
+        "value": "{semantic.color.focus.border-color}",
+        "type": "color"
       }
     }
   }
