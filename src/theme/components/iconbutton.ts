@@ -47,7 +47,7 @@ const IconButton: ComponentStyleConfig = {
         borderColor: 'btn-primary-hover-border-color',
         iconColor:'btn-primary-hover-icon-color'
       },
-      _active: {
+      _isActive: {
         bg: 'btn-primary-active-background-color',
         color: 'btn-primary-active-text-color',
         borderColor: 'btn-primary-active-border-color',
@@ -71,7 +71,7 @@ const IconButton: ComponentStyleConfig = {
         borderColor: 'btn-secondary-hover-border-color',
         iconColor:'btn-secondary-hover-icon-color'
       },
-      _active: {
+      _isActive: {
         bg: 'btn-secondary-active-background-color',
         color: 'btn-secondary-active-text-color',
         borderColor: 'btn-secondary-active-border-color',
@@ -97,9 +97,9 @@ const IconButton: ComponentStyleConfig = {
 
         
       },
-      _acive: {
-        bg: 'btn-negative-acive-background-color',
-        color: 'btn-negative-acive-text-color',
+      _isActive: {
+        bg: 'btn-negative-active-background-color',
+        color: 'btn-negative-active-text-color',
         borderColor: 'btn-negative-active-border-color',
         iconColor:'btn-negative-active-icon-color'
 
