@@ -18,7 +18,7 @@
             "type": "color"
           },
           "background-color": {
-            "value": "{semantic.color.actions.Secondary.default.quiet-background}",
+            "value": "{semantic.color.actions.secondary.default.quiet-background}",
             "type": "color"
           },
           "icon-color": {
