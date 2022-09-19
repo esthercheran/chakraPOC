@@ -1,5 +1,11 @@
 {
   "tokenSetOrder": [
+    "core/border",
+    "core/color",
+    "core/opacity",
+    "core/size",
+    "core/space",
+    "core/typography",
     "comp/avatar",
     "comp/button",
     "comp/checkbox",
@@ -14,15 +20,8 @@
     "comp/tag",
     "comp/text",
     "comp/tooltip",
-    "core/border",
-    "core/color",
-    "core/opacity",
-    "core/size",
-    "core/space",
-    "core/typography",
     "semantic/light",
     "semantic/dark",
-    "Brand-ChakraDemo",
     "Brand-ChakraDemo/light",
     "Brand-ChakraDemo/dark"
   ]

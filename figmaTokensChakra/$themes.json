@@ -25,7 +25,6 @@
       "comp/tab": "disabled",
       "comp/text": "disabled",
       "comp/tooltip": "disabled",
-      "Brand-ChakraDemo": "disabled",
       "Brand-ChakraDemo/light": "disabled",
       "Brand-ChakraDemo/dark": "disabled"
     },
@@ -57,7 +56,6 @@
       "comp/tab": "enabled",
       "comp/text": "enabled",
       "comp/tooltip": "enabled",
-      "Brand-ChakraDemo": "disabled",
       "Brand-ChakraDemo/light": "disabled",
       "Brand-ChakraDemo/dark": "disabled"
     },
