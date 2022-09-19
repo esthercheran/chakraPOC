@@ -343,6 +343,10 @@
             "background": {
               "value": "{semantic.error.fg}",
               "type": "color"
+            },
+            "icon": {
+              "value": "{semantic.error.fg}",
+              "type": "color"
             }
           },
           "hover": {
@@ -355,6 +359,10 @@
               "type": "color"
             },
             "background": {
+              "value": "{semantic.error.muted}",
+              "type": "color"
+            },
+            "icon": {
               "value": "{semantic.error.muted}",
               "type": "color"
             }
@@ -371,6 +379,10 @@
             "background": {
               "value": "{semantic.error.emphasised}",
               "type": "color"
+            },
+            "icon": {
+              "value": "{semantic.error.emphasised}",
+              "type": "color"
             }
           },
           "focus": {
@@ -385,6 +397,10 @@
             "background": {
               "value": "{semantic.error.fg}",
               "type": "color"
+            },
+            "icon": {
+              "value": "{semantic.error.fg}",
+              "type": "color"
             }
           },
           "disabled": {
@@ -397,6 +413,10 @@
               "type": "color"
             },
             "border": {
+              "value": "{semantic.fg.disabled}",
+              "type": "color"
+            },
+            "icon": {
               "value": "{semantic.fg.disabled}",
               "type": "color"
             }
@@ -1709,7 +1729,7 @@
           "type": "fontWeights"
         },
         "bold": {
-          "value": "{font-weight.semiBold}",
+          "value": "{font-weight.semi-bold}",
           "type": "fontWeights"
         }
       },
@@ -1727,7 +1747,7 @@
           "type": "fontWeights"
         },
         "bold": {
-          "value": "{font-weight.semiBold}",
+          "value": "{font-weight.semi-bold}",
           "type": "fontWeights"
         }
       },
