@@ -633,7 +633,7 @@
       "icon-button-primary-disabled-icon-color": "#94a3b8",
       "icon-button-primary-disabled-ghost-background-color": "hsla(255,0%,100%,0.01)",
       "icon-button-secondary-default-solid-background-color": "#4b5563",
-      "icon-button-secondary-default-solid-icon-color": "#4b5563",
+      "icon-button-secondary-default-solid-icon-color": "#ffffff",
       "icon-button-secondary-default-outlined-border-color": "#4b5563",
       "icon-button-secondary-default-outlined-background-color": "hsla(255,0%,100%,0.01)",
       "icon-button-secondary-default-outlined-icon-color": "#4b5563",
