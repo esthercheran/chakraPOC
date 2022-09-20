@@ -1104,7 +1104,7 @@
         }
       },
       "focus": {
-        "border-color": {
+        "border": {
           "value": "{semantic.cta.subtle}",
           "type": "color"
         }
