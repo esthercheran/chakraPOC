@@ -81,6 +81,46 @@
           }
         }
       }
+    },
+    "error": {
+      "emphasised": {
+        "value": "{color.red.500}",
+        "type": "color"
+      },
+      "fg": {
+        "value": "{color.red.400}",
+        "type": "color"
+      }
+    },
+    "warning": {
+      "emphasised": {
+        "value": "{color.amber.500}",
+        "type": "color"
+      },
+      "fg": {
+        "value": "{color.amber.400}",
+        "type": "color"
+      }
+    },
+    "info": {
+      "emphasised": {
+        "value": "{color.blue.500}",
+        "type": "color"
+      },
+      "fg": {
+        "value": "{color.blue.400}",
+        "type": "color"
+      }
+    },
+    "success": {
+      "emphasised": {
+        "value": "{color.emerald.500}",
+        "type": "color"
+      },
+      "fg": {
+        "value": "{color.emerald.400}",
+        "type": "color"
+      }
     }
   },
   "font-family": {
