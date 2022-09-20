@@ -47,14 +47,6 @@
         "value": "{border-radius.4}",
         "type": "borderRadius"
       }
-    },
-    "border": {
-      "radius": {
-        "round": {
-          "value": "{border-radius.4}",
-          "type": "borderRadius"
-        }
-      }
     }
   }
 }
