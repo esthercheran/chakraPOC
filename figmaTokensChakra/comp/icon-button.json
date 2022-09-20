@@ -343,7 +343,7 @@
       },
       "outlined": {
         "border-color": {
-          "value": "{semantic.color.actions.primary.disabled.text}",
+          "value": "{semantic.color.actions.primary.disabled.border}",
           "type": "color"
         },
         "background-color": {
@@ -356,12 +356,12 @@
         }
       },
       "ghost": {
-        "border-color": {
-          "value": "{semantic.color.actions.primary.disabled.background}",
+        "background-color": {
+          "value": "{color.neutrals.transparent}",
           "type": "color"
         },
-        "background-color": {
-          "value": "{semantic.color.actions.primary.disabled.text}",
+        "icon-color": {
+          "value": "{semantic.color.actions.primary.disabled.background}",
           "type": "color"
         }
       }
