@@ -6,7 +6,7 @@ export function HeadingChakra(props: HeadingProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <Heading {...props}>
-          This is a heading
+          {props.title}
         </Heading>
       
       {/* <ThemeSwitcher /> */}

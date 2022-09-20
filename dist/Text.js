@@ -3734,7 +3734,7 @@ var require_react_dom = __commonJS({
   }
 });
 
-// src/Heading.tsx
+// src/Text.tsx
 var React14 = __toModule(require_react());
 
 // node_modules/@chakra-ui/react/dist/index.esm.js
@@ -14274,16 +14274,16 @@ function ChakraProvider2({
   }));
 }
 
-// src/Heading.tsx
+// src/Text.tsx
 import theme2 from "./theme/index.js";
-function HeadingChakra(props) {
+function TextChakra(props) {
   return /* @__PURE__ */ React14.createElement(ChakraProvider2, {
     resetCSS: true,
     theme: theme2
-  }, /* @__PURE__ */ React14.createElement(Heading, __spreadValues({}, props), props.title));
+  }, /* @__PURE__ */ React14.createElement(Text, __spreadValues({}, props), props.title));
 }
 export {
-  HeadingChakra
+  TextChakra
 };
 /**
  * @license React

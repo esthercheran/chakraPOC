@@ -1268,7 +1268,7 @@
   dependencies:
     "@chakra-ui/icon" "3.0.9"
 
-"@chakra-ui/image@2.0.10":
+"@chakra-ui/image@2.0.10", "@chakra-ui/image@^2.0.10":
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/@chakra-ui/image/-/image-2.0.10.tgz#712c0e1c579d959225bd8316d8d8f66cbeb95bb8"
   integrity sha512-Atc1bdog4V5xv7IbpF2F2UkKWfgG/TD74cIac09JuSpQcYyh7lrJ7iVvhTkeP+LDdCs+QCD7SnTUM4Y0ZlaHbA==
