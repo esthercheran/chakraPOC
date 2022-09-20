@@ -108,7 +108,7 @@
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.secondary.default.text}",
+            "value": "{color.neutrals.white}",
             "type": "color"
           }
         },
