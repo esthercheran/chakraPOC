@@ -335,12 +335,12 @@
       },
       "active": {
         "solid": {
-          "icon-color": {
-            "value": "{semantic.color.actions.negative.active.text}",
-            "type": "color"
-          },
           "background-color": {
             "value": "{semantic.color.actions.negative.active.background}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{semantic.color.actions.negative.active.text}",
             "type": "color"
           }
         },
