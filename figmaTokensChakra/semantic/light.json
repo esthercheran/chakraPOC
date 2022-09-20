@@ -347,6 +347,14 @@
             "icon": {
               "value": "{semantic.error.fg}",
               "type": "color"
+            },
+            "quiet-background": {
+              "value": "{color.neutrals.transparent}",
+              "type": "color"
+            },
+            "quiet-text": {
+              "value": "{semantic.error.fg}",
+              "type": "color"
             }
           },
           "hover": {
@@ -365,6 +373,14 @@
             "icon": {
               "value": "{semantic.error.muted}",
               "type": "color"
+            },
+            "quiet-background": {
+              "value": "{semantic.error.muted}",
+              "type": "color"
+            },
+            "quiet-text": {
+              "value": "{color.neutrals.white}",
+              "type": "color"
             }
           },
           "active": {
@@ -382,6 +398,14 @@
             },
             "icon": {
               "value": "{semantic.error.emphasised}",
+              "type": "color"
+            },
+            "quiet-background": {
+              "value": "{semantic.error.emphasised}",
+              "type": "color"
+            },
+            "quiet-text": {
+              "value": "{color.neutrals.white}",
               "type": "color"
             }
           },
@@ -1080,7 +1104,7 @@
         }
       },
       "focus": {
-        "border-color": {
+        "border": {
           "value": "{semantic.cta.subtle}",
           "type": "color"
         }
