@@ -29,14 +29,6 @@
       }
     },
     "border-radius": {
-      "actions": {
-        "value": "{border-radius.4}",
-        "type": "borderRadius"
-      },
-      "inputs": {
-        "value": "{border-radius.4}",
-        "type": "borderRadius"
-      },
       "ui-card": {
         "value": "{border-radius.4}",
         "type": "borderRadius"
@@ -46,14 +38,6 @@
       "border-radius": {
         "value": "{border-radius.4}",
         "type": "borderRadius"
-      }
-    },
-    "border": {
-      "radius": {
-        "round": {
-          "value": "{border-radius.4}",
-          "type": "borderRadius"
-        }
       }
     }
   }

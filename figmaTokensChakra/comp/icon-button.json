@@ -442,7 +442,7 @@
         "type": "borderWidth"
       },
       "border-color": {
-        "value": "{semantic.color.focus.border-color}",
+        "value": "{semantic.color.focus.border}",
         "type": "color"
       }
     }

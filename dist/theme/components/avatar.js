@@ -26,7 +26,9 @@ var Avatar = {
       }
     }
   },
-  defaultProps: {}
+  defaultProps: {
+    size: "sm"
+  }
 };
 var avatar_default = Avatar;
 export {

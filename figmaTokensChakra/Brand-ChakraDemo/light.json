@@ -81,14 +81,6 @@
           }
         }
       }
-    },
-    "border": {
-      "radius": {
-        "round": {
-          "value": "{border-radius.9}",
-          "type": "borderRadius"
-        }
-      }
     }
   },
   "font-family": {

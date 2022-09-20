@@ -33,6 +33,7 @@ const Avatar: ComponentStyleConfig = {
     }
   },
   defaultProps: {
+    size: 'sm'
   }
 }
 

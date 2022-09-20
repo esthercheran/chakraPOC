@@ -6305,6 +6305,8 @@ import Checkbox from "./components/checkbox.js";
 import Tag from "./components/tag.js";
 import Switch from "./components/switch.js";
 import IconButton from "./components/iconbutton.js";
+import Heading from "./components/heading.js";
+import Text from "./components/text.js";
 import getChakraSemanticTokens from "../getChakraSemanticTokens.js";
 
 // src/figmaTokens.json
@@ -8954,7 +8956,9 @@ var overrides = {
     Checkbox,
     Tag,
     Switch,
-    IconButton
+    IconButton,
+    Heading,
+    Text
   }
 };
 var theme_default = extendTheme(overrides);
