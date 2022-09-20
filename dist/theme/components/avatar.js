@@ -1,26 +1,33 @@
 // src/theme/components/avatar.ts
 var Avatar = {
+  parts: ["container", "badge"],
   baseStyle: {
-    borderRadius: "avatar-border-radius",
-    bg: "btn-primary-default-background-color",
-    borderColor: "btn-primary-default-background-color"
+    badge: {
+      borderRadius: "avatar-border-radius"
+    }
   },
   sizes: {
     sm: {
-      height: "avatar-s-height",
-      width: "avatar-s-width"
+      container: {
+        height: "avatar-s-height",
+        width: "avatar-s-width"
+      }
     },
     md: {
-      height: "avatar-m-height",
-      width: "avatar-m-height"
+      container: {
+        height: "avatar-m-height",
+        width: "avatar-m-width"
+      }
     },
     lg: {
-      height: "avatar-l-height",
-      width: "avatar-l-height"
+      container: {
+        height: "avatar-l-height",
+        width: "avatar-l-width"
+      }
     }
   },
   defaultProps: {
-    sizes: "md"
+    size: "sm"
   }
 };
 var avatar_default = Avatar;

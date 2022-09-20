@@ -1,6 +1,12 @@
 // src/theme/components/tag.ts
 var Tag = {
   parts: ["container", "label", "closeButton"],
+  baseStyle: {
+    container: {
+      background: "btn-primary-default-background-color",
+      bgColor: "btn-primary-default-background-color"
+    }
+  },
   sizes: {
     sm: {
       container: {

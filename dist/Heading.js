@@ -174,7 +174,7 @@ var require_lodash = __commonJS({
       function object() {
       }
       return function(proto) {
-        if (!isObject4(proto)) {
+        if (!isObject5(proto)) {
           return {};
         }
         if (objectCreate) {
@@ -312,7 +312,7 @@ var require_lodash = __commonJS({
     MapCache.prototype.get = mapCacheGet;
     MapCache.prototype.has = mapCacheHas;
     MapCache.prototype.set = mapCacheSet;
-    function Stack(entries) {
+    function Stack2(entries) {
       var data = this.__data__ = new ListCache(entries);
       this.size = data.size;
     }
@@ -346,11 +346,11 @@ var require_lodash = __commonJS({
       this.size = data.size;
       return this;
     }
-    Stack.prototype.clear = stackClear;
-    Stack.prototype["delete"] = stackDelete;
-    Stack.prototype.get = stackGet;
-    Stack.prototype.has = stackHas;
-    Stack.prototype.set = stackSet;
+    Stack2.prototype.clear = stackClear;
+    Stack2.prototype["delete"] = stackDelete;
+    Stack2.prototype.get = stackGet;
+    Stack2.prototype.has = stackHas;
+    Stack2.prototype.set = stackSet;
     function arrayLikeKeys(value, inherited) {
       var isArr = isArray(value), isArg = !isArr && isArguments(value), isBuff = !isArr && !isArg && isBuffer(value), isType = !isArr && !isArg && !isBuff && isTypedArray(value), skipIndexes = isArr || isArg || isBuff || isType, result = skipIndexes ? baseTimes(value.length, String) : [], length = result.length;
       for (var key in value) {
@@ -403,7 +403,7 @@ var require_lodash = __commonJS({
       return isObjectLike(value) && baseGetTag(value) == argsTag;
     }
     function baseIsNative(value) {
-      if (!isObject4(value) || isMasked(value)) {
+      if (!isObject5(value) || isMasked(value)) {
         return false;
       }
       var pattern = isFunction5(value) ? reIsNative : reIsHostCtor;
@@ -413,7 +413,7 @@ var require_lodash = __commonJS({
       return isObjectLike(value) && isLength(value.length) && !!typedArrayTags[baseGetTag(value)];
     }
     function baseKeysIn(object) {
-      if (!isObject4(object)) {
+      if (!isObject5(object)) {
         return nativeKeysIn(object);
       }
       var isProto = isPrototype(object), result = [];
@@ -429,8 +429,8 @@ var require_lodash = __commonJS({
         return;
       }
       baseFor(source, function(srcValue, key) {
-        stack || (stack = new Stack());
-        if (isObject4(srcValue)) {
+        stack || (stack = new Stack2());
+        if (isObject5(srcValue)) {
           baseMergeDeep(object, source, key, srcIndex, baseMerge, customizer, stack);
         } else {
           var newValue = customizer ? customizer(safeGet(object, key), srcValue, key + "", object, source, stack) : void 0;
@@ -470,7 +470,7 @@ var require_lodash = __commonJS({
           newValue = objValue;
           if (isArguments(objValue)) {
             newValue = toPlainObject(objValue);
-          } else if (!isObject4(objValue) || isFunction5(objValue)) {
+          } else if (!isObject5(objValue) || isFunction5(objValue)) {
             newValue = initCloneObject(srcValue);
           }
         } else {
@@ -602,7 +602,7 @@ var require_lodash = __commonJS({
       return !!length && (type == "number" || type != "symbol" && reIsUint.test(value)) && (value > -1 && value % 1 == 0 && value < length);
     }
     function isIterateeCall(value, index, object) {
-      if (!isObject4(object)) {
+      if (!isObject5(object)) {
         return false;
       }
       var type = typeof index;
@@ -705,7 +705,7 @@ var require_lodash = __commonJS({
     }
     var isBuffer = nativeIsBuffer || stubFalse;
     function isFunction5(value) {
-      if (!isObject4(value)) {
+      if (!isObject5(value)) {
         return false;
       }
       var tag = baseGetTag(value);
@@ -714,7 +714,7 @@ var require_lodash = __commonJS({
     function isLength(value) {
       return typeof value == "number" && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
     }
-    function isObject4(value) {
+    function isObject5(value) {
       var type = typeof value;
       return value != null && (type == "object" || type == "function");
     }
@@ -1766,7 +1766,7 @@ var require_emotion_cache_cjs_dev = __commonJS({
         var stylis$1 = function stylis$12(styles2) {
           return stylis.serialize(stylis.compile(styles2), serializer);
         };
-        _insert = function insert(selector, serialized, sheet2, shouldCache) {
+        _insert = function insert(selector2, serialized, sheet2, shouldCache) {
           currentSheet = sheet2;
           if (serialized.map !== void 0) {
             currentSheet = {
@@ -1775,7 +1775,7 @@ var require_emotion_cache_cjs_dev = __commonJS({
               }
             };
           }
-          stylis$1(selector ? selector + "{" + serialized.styles + "}" : serialized.styles);
+          stylis$1(selector2 ? selector2 + "{" + serialized.styles + "}" : serialized.styles);
           if (shouldCache) {
             cache.inserted[serialized.name] = true;
           }
@@ -1787,16 +1787,16 @@ var require_emotion_cache_cjs_dev = __commonJS({
           return stylis.serialize(stylis.compile(styles2), _serializer);
         };
         var serverStylisCache = getServerStylisCache(stylisPlugins)(key);
-        var getRules2 = function getRules3(selector, serialized) {
+        var getRules2 = function getRules3(selector2, serialized) {
           var name = serialized.name;
           if (serverStylisCache[name] === void 0) {
-            serverStylisCache[name] = _stylis(selector ? selector + "{" + serialized.styles + "}" : serialized.styles);
+            serverStylisCache[name] = _stylis(selector2 ? selector2 + "{" + serialized.styles + "}" : serialized.styles);
           }
           return serverStylisCache[name];
         };
-        _insert = function _insert2(selector, serialized, sheet2, shouldCache) {
+        _insert = function _insert2(selector2, serialized, sheet2, shouldCache) {
           var name = serialized.name;
-          var rules = getRules2(selector, serialized);
+          var rules = getRules2(selector2, serialized);
           if (cache.compat === void 0) {
             if (shouldCache) {
               cache.inserted[name] = true;
@@ -1937,7 +1937,7 @@ var require_react_is_development = __commonJS({
         var ContextProvider = REACT_PROVIDER_TYPE;
         var Element2 = REACT_ELEMENT_TYPE;
         var ForwardRef = REACT_FORWARD_REF_TYPE;
-        var Fragment = REACT_FRAGMENT_TYPE;
+        var Fragment3 = REACT_FRAGMENT_TYPE;
         var Lazy = REACT_LAZY_TYPE;
         var Memo = REACT_MEMO_TYPE;
         var Portal2 = REACT_PORTAL_TYPE;
@@ -1996,7 +1996,7 @@ var require_react_is_development = __commonJS({
         exports.ContextProvider = ContextProvider;
         exports.Element = Element2;
         exports.ForwardRef = ForwardRef;
-        exports.Fragment = Fragment;
+        exports.Fragment = Fragment3;
         exports.Lazy = Lazy;
         exports.Memo = Memo;
         exports.Portal = Portal2;
@@ -2595,7 +2595,7 @@ var require_emotion_use_insertion_effect_with_fallbacks_cjs_dev = __commonJS({
   "node_modules/@emotion/use-insertion-effect-with-fallbacks/dist/emotion-use-insertion-effect-with-fallbacks.cjs.dev.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    var React16 = require_react();
+    var React15 = require_react();
     function _interopNamespace(e) {
       if (e && e.__esModule)
         return e;
@@ -2616,14 +2616,14 @@ var require_emotion_use_insertion_effect_with_fallbacks_cjs_dev = __commonJS({
       n["default"] = e;
       return Object.freeze(n);
     }
-    var React__namespace = /* @__PURE__ */ _interopNamespace(React16);
+    var React__namespace = /* @__PURE__ */ _interopNamespace(React15);
     var isBrowser = typeof document !== "undefined";
     var syncFallback = function syncFallback2(create) {
       return create();
     };
     var useInsertionEffect = React__namespace["useInsertionEffect"] ? React__namespace["useInsertionEffect"] : false;
     var useInsertionEffectAlwaysWithSyncFallback = !isBrowser ? syncFallback : useInsertionEffect || syncFallback;
-    var useInsertionEffectWithLayoutFallback = useInsertionEffect || React16.useLayoutEffect;
+    var useInsertionEffectWithLayoutFallback = useInsertionEffect || React15.useLayoutEffect;
     exports.useInsertionEffectAlwaysWithSyncFallback = useInsertionEffectAlwaysWithSyncFallback;
     exports.useInsertionEffectWithLayoutFallback = useInsertionEffectWithLayoutFallback;
   }
@@ -2645,7 +2645,7 @@ var require_emotion_use_insertion_effect_with_fallbacks_cjs = __commonJS({
 var require_emotion_element_b63ca7c6_cjs_dev = __commonJS({
   "node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js"(exports) {
     "use strict";
-    var React16 = require_react();
+    var React15 = require_react();
     var createCache = require_emotion_cache_cjs();
     var _extends = require_extends();
     var weakMemoize = require_emotion_weak_memoize_cjs();
@@ -2660,7 +2660,7 @@ var require_emotion_element_b63ca7c6_cjs_dev = __commonJS({
     var weakMemoize__default = /* @__PURE__ */ _interopDefault(weakMemoize);
     var isBrowser = typeof document !== "undefined";
     var hasOwnProperty = {}.hasOwnProperty;
-    var EmotionCacheContext = /* @__PURE__ */ React16.createContext(typeof HTMLElement !== "undefined" ? /* @__PURE__ */ createCache__default["default"]({
+    var EmotionCacheContext = /* @__PURE__ */ React15.createContext(typeof HTMLElement !== "undefined" ? /* @__PURE__ */ createCache__default["default"]({
       key: "css"
     }) : null);
     if (true) {
@@ -2668,23 +2668,23 @@ var require_emotion_element_b63ca7c6_cjs_dev = __commonJS({
     }
     var CacheProvider = EmotionCacheContext.Provider;
     var __unsafe_useEmotionCache = function useEmotionCache() {
-      return React16.useContext(EmotionCacheContext);
+      return React15.useContext(EmotionCacheContext);
     };
     exports.withEmotionCache = function withEmotionCache(func) {
-      return /* @__PURE__ */ React16.forwardRef(function(props, ref) {
-        var cache = React16.useContext(EmotionCacheContext);
+      return /* @__PURE__ */ React15.forwardRef(function(props, ref) {
+        var cache = React15.useContext(EmotionCacheContext);
         return func(props, cache, ref);
       });
     };
     if (!isBrowser) {
       exports.withEmotionCache = function withEmotionCache(func) {
         return function(props) {
-          var cache = React16.useContext(EmotionCacheContext);
+          var cache = React15.useContext(EmotionCacheContext);
           if (cache === null) {
             cache = createCache__default["default"]({
               key: "css"
             });
-            return /* @__PURE__ */ React16.createElement(EmotionCacheContext.Provider, {
+            return /* @__PURE__ */ React15.createElement(EmotionCacheContext.Provider, {
               value: cache
             }, func(props, cache));
           } else {
@@ -2693,12 +2693,12 @@ var require_emotion_element_b63ca7c6_cjs_dev = __commonJS({
         };
       };
     }
-    var ThemeContext2 = /* @__PURE__ */ React16.createContext({});
+    var ThemeContext2 = /* @__PURE__ */ React15.createContext({});
     if (true) {
       ThemeContext2.displayName = "EmotionThemeContext";
     }
     var useTheme2 = function useTheme3() {
-      return React16.useContext(ThemeContext2);
+      return React15.useContext(ThemeContext2);
     };
     var getTheme2 = function getTheme3(outerTheme, theme3) {
       if (typeof theme3 === "function") {
@@ -2719,24 +2719,24 @@ var require_emotion_element_b63ca7c6_cjs_dev = __commonJS({
       });
     });
     var ThemeProvider2 = function ThemeProvider3(props) {
-      var theme3 = React16.useContext(ThemeContext2);
+      var theme3 = React15.useContext(ThemeContext2);
       if (props.theme !== theme3) {
         theme3 = createCacheWithTheme(theme3)(props.theme);
       }
-      return /* @__PURE__ */ React16.createElement(ThemeContext2.Provider, {
+      return /* @__PURE__ */ React15.createElement(ThemeContext2.Provider, {
         value: theme3
       }, props.children);
     };
     function withTheme(Component) {
       var componentName = Component.displayName || Component.name || "Component";
       var render = function render2(props, ref) {
-        var theme3 = React16.useContext(ThemeContext2);
-        return /* @__PURE__ */ React16.createElement(Component, _extends({
+        var theme3 = React15.useContext(ThemeContext2);
+        return /* @__PURE__ */ React15.createElement(Component, _extends({
           theme: theme3,
           ref
         }, props));
       };
-      var WithTheme = /* @__PURE__ */ React16.forwardRef(render);
+      var WithTheme = /* @__PURE__ */ React15.forwardRef(render);
       WithTheme.displayName = "WithTheme(" + componentName + ")";
       return _isolatedHnrs_dist_emotionReact_isolatedHnrs["default"](WithTheme, Component);
     }
@@ -2806,7 +2806,7 @@ var require_emotion_element_b63ca7c6_cjs_dev = __commonJS({
           serializedNames += " " + next.name;
           next = next.next;
         }
-        return /* @__PURE__ */ React16.createElement("style", (_ref2 = {}, _ref2["data-emotion"] = cache.key + " " + serializedNames, _ref2.dangerouslySetInnerHTML = {
+        return /* @__PURE__ */ React15.createElement("style", (_ref2 = {}, _ref2["data-emotion"] = cache.key + " " + serializedNames, _ref2.dangerouslySetInnerHTML = {
           __html: rules
         }, _ref2.nonce = cache.sheet.nonce, _ref2));
       }
@@ -2825,7 +2825,7 @@ var require_emotion_element_b63ca7c6_cjs_dev = __commonJS({
       } else if (props.className != null) {
         className = props.className + " ";
       }
-      var serialized = serialize.serializeStyles(registeredStyles, void 0, React16.useContext(ThemeContext2));
+      var serialized = serialize.serializeStyles(registeredStyles, void 0, React15.useContext(ThemeContext2));
       if (serialized.name.indexOf("-") === -1) {
         var labelFromStack = props[labelPropName];
         if (labelFromStack) {
@@ -2841,11 +2841,11 @@ var require_emotion_element_b63ca7c6_cjs_dev = __commonJS({
       }
       newProps.ref = ref;
       newProps.className = className;
-      return /* @__PURE__ */ React16.createElement(React16.Fragment, null, /* @__PURE__ */ React16.createElement(Insertion, {
+      return /* @__PURE__ */ React15.createElement(React15.Fragment, null, /* @__PURE__ */ React15.createElement(Insertion, {
         cache,
         serialized,
         isStringTag: typeof WrappedComponent === "string"
-      }), /* @__PURE__ */ React16.createElement(WrappedComponent, newProps));
+      }), /* @__PURE__ */ React15.createElement(WrappedComponent, newProps));
     });
     if (true) {
       Emotion.displayName = "EmotionCssPropInternal";
@@ -2868,7 +2868,7 @@ var require_emotion_react_cjs_dev = __commonJS({
   "node_modules/@emotion/react/dist/emotion-react.cjs.dev.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    var React16 = require_react();
+    var React15 = require_react();
     require_emotion_cache_cjs();
     var emotionElement = require_emotion_element_b63ca7c6_cjs_dev();
     require_extends();
@@ -3003,7 +3003,7 @@ var require_emotion_react_cjs_dev = __commonJS({
     var jsx = function jsx2(type, props) {
       var args = arguments;
       if (props == null || !emotionElement.hasOwnProperty.call(props, "css")) {
-        return React16.createElement.apply(void 0, args);
+        return React15.createElement.apply(void 0, args);
       }
       var argsLength = args.length;
       var createElementArgArray = new Array(argsLength);
@@ -3012,7 +3012,7 @@ var require_emotion_react_cjs_dev = __commonJS({
       for (var i = 2; i < argsLength; i++) {
         createElementArgArray[i] = args[i];
       }
-      return React16.createElement.apply(null, createElementArgArray);
+      return React15.createElement.apply(null, createElementArgArray);
     };
     var warnedAboutCssPropForGlobal = false;
     var Global3 = /* @__PURE__ */ emotionElement.withEmotionCache(function(props, cache) {
@@ -3021,7 +3021,7 @@ var require_emotion_react_cjs_dev = __commonJS({
         warnedAboutCssPropForGlobal = true;
       }
       var styles2 = props.styles;
-      var serialized = serialize.serializeStyles([styles2], void 0, React16.useContext(emotionElement.ThemeContext));
+      var serialized = serialize.serializeStyles([styles2], void 0, React15.useContext(emotionElement.ThemeContext));
       if (!emotionElement.isBrowser) {
         var _ref;
         var serializedNames = serialized.name;
@@ -3040,11 +3040,11 @@ var require_emotion_react_cjs_dev = __commonJS({
         if (shouldCache) {
           return null;
         }
-        return /* @__PURE__ */ React16.createElement("style", (_ref = {}, _ref["data-emotion"] = cache.key + "-global " + serializedNames, _ref.dangerouslySetInnerHTML = {
+        return /* @__PURE__ */ React15.createElement("style", (_ref = {}, _ref["data-emotion"] = cache.key + "-global " + serializedNames, _ref.dangerouslySetInnerHTML = {
           __html: rules
         }, _ref.nonce = cache.sheet.nonce, _ref));
       }
-      var sheetRef = React16.useRef();
+      var sheetRef = React15.useRef();
       useInsertionEffectWithFallbacks.useInsertionEffectWithLayoutFallback(function() {
         var key = cache.key + "-global";
         var sheet = new cache.sheet.constructor({
@@ -3172,7 +3172,7 @@ var require_emotion_react_cjs_dev = __commonJS({
       });
       if (!emotionElement.isBrowser && rules.length !== 0) {
         var _ref2;
-        return /* @__PURE__ */ React16.createElement("style", (_ref2 = {}, _ref2["data-emotion"] = cache.key + " " + serializedArr.map(function(serialized) {
+        return /* @__PURE__ */ React15.createElement("style", (_ref2 = {}, _ref2["data-emotion"] = cache.key + " " + serializedArr.map(function(serialized) {
           return serialized.name;
         }).join(" "), _ref2.dangerouslySetInnerHTML = {
           __html: rules
@@ -3195,7 +3195,7 @@ var require_emotion_react_cjs_dev = __commonJS({
         utils.registerStyles(cache, serialized, false);
         return cache.key + "-" + serialized.name;
       };
-      var cx5 = function cx6() {
+      var cx4 = function cx5() {
         if (hasRendered && true) {
           throw new Error("cx can only be used during render");
         }
@@ -3206,12 +3206,12 @@ var require_emotion_react_cjs_dev = __commonJS({
       };
       var content = {
         css: css3,
-        cx: cx5,
-        theme: React16.useContext(emotionElement.ThemeContext)
+        cx: cx4,
+        theme: React15.useContext(emotionElement.ThemeContext)
       };
       var ele = props.children(content);
       hasRendered = true;
-      return /* @__PURE__ */ React16.createElement(React16.Fragment, null, /* @__PURE__ */ React16.createElement(Insertion, {
+      return /* @__PURE__ */ React15.createElement(React15.Fragment, null, /* @__PURE__ */ React15.createElement(Insertion, {
         cache,
         serializedArr
       }), ele);
@@ -3304,7 +3304,7 @@ var require_emotion_styled_base_cjs_dev = __commonJS({
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var _extends = require_extends();
-    var React16 = require_react();
+    var React15 = require_react();
     var isPropValid = require_emotion_is_prop_valid_cjs();
     var react = require_emotion_react_cjs();
     var utils = require_emotion_utils_cjs();
@@ -3353,7 +3353,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
           serializedNames += " " + next.name;
           next = next.next;
         }
-        return /* @__PURE__ */ React16.createElement("style", (_ref2 = {}, _ref2["data-emotion"] = cache.key + " " + serializedNames, _ref2.dangerouslySetInnerHTML = {
+        return /* @__PURE__ */ React15.createElement("style", (_ref2 = {}, _ref2["data-emotion"] = cache.key + " " + serializedNames, _ref2.dangerouslySetInnerHTML = {
           __html: rules
         }, _ref2.nonce = cache.sheet.nonce, _ref2));
       }
@@ -3408,7 +3408,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
             for (var key in props) {
               mergedProps[key] = props[key];
             }
-            mergedProps.theme = React16.useContext(react.ThemeContext);
+            mergedProps.theme = React15.useContext(react.ThemeContext);
           }
           if (typeof props.className === "string") {
             className = utils.getRegisteredStyles(cache.registered, classInterpolations, props.className);
@@ -3431,11 +3431,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
           }
           newProps.className = className;
           newProps.ref = ref;
-          return /* @__PURE__ */ React16.createElement(React16.Fragment, null, /* @__PURE__ */ React16.createElement(Insertion, {
+          return /* @__PURE__ */ React15.createElement(React15.Fragment, null, /* @__PURE__ */ React15.createElement(Insertion, {
             cache,
             serialized,
             isStringTag: typeof FinalTag === "string"
-          }), /* @__PURE__ */ React16.createElement(FinalTag, newProps));
+          }), /* @__PURE__ */ React15.createElement(FinalTag, newProps));
         });
         Styled.displayName = identifierName !== void 0 ? identifierName : "Styled(" + (typeof baseTag === "string" ? baseTag : baseTag.displayName || baseTag.name || "Component") + ")";
         Styled.defaultProps = tag.defaultProps;
@@ -3734,8 +3734,8 @@ var require_react_dom = __commonJS({
   }
 });
 
-// src/Avatar.tsx
-var React15 = __toModule(require_react());
+// src/Heading.tsx
+var React14 = __toModule(require_react());
 
 // node_modules/@chakra-ui/react/dist/index.esm.js
 var import_react41 = __toModule(require_react());
@@ -5577,6 +5577,39 @@ function useChakra() {
   const theme3 = useTheme();
   return { ...colorModeResult, theme: theme3 };
 }
+function getBreakpointValue(theme3, value, fallback) {
+  if (value == null)
+    return value;
+  const getValue = (val) => {
+    var _a7, _b3;
+    return (_b3 = (_a7 = theme3.__breakpoints) == null ? void 0 : _a7.asArray) == null ? void 0 : _b3[val];
+  };
+  return getValue(value) ?? getValue(fallback) ?? fallback;
+}
+function getTokenValue(theme3, value, fallback) {
+  if (value == null)
+    return value;
+  const getValue = (val) => {
+    var _a7, _b3;
+    return (_b3 = (_a7 = theme3.__cssMap) == null ? void 0 : _a7[val]) == null ? void 0 : _b3.value;
+  };
+  return getValue(value) ?? getValue(fallback) ?? fallback;
+}
+function getToken(scale, token, fallback) {
+  const _token = Array.isArray(token) ? token : [token];
+  const _fallback = Array.isArray(fallback) ? fallback : [fallback];
+  return (theme3) => {
+    const fallbackArr = _fallback.filter(Boolean);
+    const result = _token.map((token2, index) => {
+      if (scale === "breakpoints") {
+        return getBreakpointValue(theme3, token2, fallbackArr[index] ?? token2);
+      }
+      const path = `${scale}.${token2}`;
+      return getTokenValue(theme3, path, fallbackArr[index] ?? token2);
+    });
+    return Array.isArray(token) ? result : result[0];
+  };
+}
 function ThemeProvider(props) {
   const { cssVarsRoot, theme: theme3, children } = props;
   const computedTheme = (0, import_react12.useMemo)(() => toCSSVar(theme3), [theme3]);
@@ -5587,9 +5620,9 @@ function ThemeProvider(props) {
   }), children);
 }
 function CSSVars({ root = ":host, :root" }) {
-  const selector = [root, `[data-theme]`].join(",");
+  const selector2 = [root, `[data-theme]`].join(",");
   return /* @__PURE__ */ import_react7.default.createElement(import_react11.Global, {
-    styles: (theme3) => ({ [selector]: theme3.__cssVars })
+    styles: (theme3) => ({ [selector2]: theme3.__cssVars })
   });
 }
 var [StylesProvider, useStyles] = createContext2({
@@ -5964,153 +5997,6 @@ var AlertTitle = forwardRef(function AlertTitle2(props, ref) {
   });
 });
 AlertTitle.displayName = "AlertTitle";
-
-// node_modules/@chakra-ui/avatar/dist/index.esm.js
-var import_react24 = __toModule(require_react());
-
-// node_modules/@chakra-ui/image/dist/index.esm.js
-var import_react21 = __toModule(require_react());
-var import_react22 = __toModule(require_react());
-function omit3(object, keysToOmit = []) {
-  const clone = Object.assign({}, object);
-  for (const key of keysToOmit) {
-    if (key in clone)
-      delete clone[key];
-  }
-  return clone;
-}
-function useImage(props) {
-  const {
-    loading,
-    src,
-    srcSet,
-    onLoad,
-    onError,
-    crossOrigin,
-    sizes: sizes23,
-    ignoreFallback
-  } = props;
-  const [status, setStatus] = (0, import_react22.useState)("pending");
-  (0, import_react22.useEffect)(() => {
-    setStatus(src ? "loading" : "pending");
-  }, [src]);
-  const imageRef = (0, import_react22.useRef)();
-  const load = (0, import_react22.useCallback)(() => {
-    if (!src)
-      return;
-    flush();
-    const img = new Image();
-    img.src = src;
-    if (crossOrigin)
-      img.crossOrigin = crossOrigin;
-    if (srcSet)
-      img.srcset = srcSet;
-    if (sizes23)
-      img.sizes = sizes23;
-    if (loading)
-      img.loading = loading;
-    img.onload = (event) => {
-      flush();
-      setStatus("loaded");
-      onLoad == null ? void 0 : onLoad(event);
-    };
-    img.onerror = (error) => {
-      flush();
-      setStatus("failed");
-      onError == null ? void 0 : onError(error);
-    };
-    imageRef.current = img;
-  }, [src, crossOrigin, srcSet, sizes23, onLoad, onError, loading]);
-  const flush = () => {
-    if (imageRef.current) {
-      imageRef.current.onload = null;
-      imageRef.current.onerror = null;
-      imageRef.current = null;
-    }
-  };
-  useSafeLayoutEffect(() => {
-    if (ignoreFallback)
-      return void 0;
-    if (status === "loading") {
-      load();
-    }
-    return () => {
-      flush();
-    };
-  }, [status, load, ignoreFallback]);
-  return ignoreFallback ? "loaded" : status;
-}
-var shouldShowFallbackImage = (status, fallbackStrategy) => status !== "loaded" && fallbackStrategy === "beforeLoadOrError" || status === "failed" && fallbackStrategy === "onError";
-var NativeImage = forwardRef(function NativeImage2(props, ref) {
-  const { htmlWidth, htmlHeight, alt, ...rest } = props;
-  return /* @__PURE__ */ import_react21.default.createElement("img", {
-    width: htmlWidth,
-    height: htmlHeight,
-    ref,
-    alt,
-    ...rest
-  });
-});
-NativeImage.displayName = "NativeImage";
-var Image2 = forwardRef(function Image3(props, ref) {
-  const {
-    fallbackSrc,
-    fallback,
-    src,
-    srcSet,
-    align,
-    fit,
-    loading,
-    ignoreFallback,
-    crossOrigin,
-    fallbackStrategy = "beforeLoadOrError",
-    referrerPolicy,
-    ...rest
-  } = props;
-  const providedFallback = fallbackSrc !== void 0 || fallback !== void 0;
-  const shouldIgnoreFallbackImage = loading != null || ignoreFallback || !providedFallback;
-  const status = useImage({
-    ...props,
-    ignoreFallback: shouldIgnoreFallbackImage
-  });
-  const showFallbackImage = shouldShowFallbackImage(status, fallbackStrategy);
-  const shared = {
-    ref,
-    objectFit: fit,
-    objectPosition: align,
-    ...shouldIgnoreFallbackImage ? rest : omit3(rest, ["onError", "onLoad"])
-  };
-  if (showFallbackImage) {
-    if (fallback)
-      return fallback;
-    return /* @__PURE__ */ import_react21.default.createElement(chakra.img, {
-      as: NativeImage,
-      className: "chakra-image__placeholder",
-      src: fallbackSrc,
-      ...shared
-    });
-  }
-  return /* @__PURE__ */ import_react21.default.createElement(chakra.img, {
-    as: NativeImage,
-    src,
-    srcSet,
-    crossOrigin,
-    loading,
-    referrerPolicy,
-    className: "chakra-image",
-    ...shared
-  });
-});
-Image2.displayName = "Image";
-var Img = forwardRef((props, ref) => /* @__PURE__ */ import_react21.default.createElement(chakra.img, {
-  ref,
-  as: NativeImage,
-  className: "chakra-image",
-  ...props
-}));
-
-// node_modules/@chakra-ui/avatar/dist/index.esm.js
-var import_react25 = __toModule(require_react());
 
 // node_modules/@chakra-ui/react-children-utils/dist/index.esm.js
 var __create2 = Object.create;
@@ -6919,7 +6805,7 @@ var require_react_development = __commonJS2({
           var newElement = ReactElement(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
           return newElement;
         }
-        function cloneElement3(element, config2, children) {
+        function cloneElement2(element, config2, children) {
           if (element === null || element === void 0) {
             throw new Error("React.cloneElement(...): The argument must be a React element, but you passed " + element + ".");
           }
@@ -7401,7 +7287,7 @@ var require_react_development = __commonJS2({
           }
           return dispatcher.useContext(Context);
         }
-        function useState6(initialState2) {
+        function useState5(initialState2) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useState(initialState2);
         }
@@ -7409,11 +7295,11 @@ var require_react_development = __commonJS2({
           var dispatcher = resolveDispatcher();
           return dispatcher.useReducer(reducer, initialArg, init);
         }
-        function useRef6(initialValue) {
+        function useRef5(initialValue) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useRef(initialValue);
         }
-        function useEffect10(create, deps) {
+        function useEffect9(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useEffect(create, deps);
         }
@@ -7425,11 +7311,11 @@ var require_react_development = __commonJS2({
           var dispatcher = resolveDispatcher();
           return dispatcher.useLayoutEffect(create, deps);
         }
-        function useCallback4(callback, deps) {
+        function useCallback3(callback, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useCallback(callback, deps);
         }
-        function useMemo6(create, deps) {
+        function useMemo7(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useMemo(create, deps);
         }
@@ -7963,7 +7849,7 @@ var require_react_development = __commonJS2({
           return validatedFactory;
         }
         function cloneElementWithValidation(element, props, children) {
-          var newElement = cloneElement3.apply(this, arguments);
+          var newElement = cloneElement2.apply(this, arguments);
           for (var i = 2; i < arguments.length; i++) {
             validateChildKeys(arguments[i], newElement.type);
           }
@@ -8163,14 +8049,14 @@ var require_react_development = __commonJS2({
         var createElement$1 = createElementWithValidation;
         var cloneElement$1 = cloneElementWithValidation;
         var createFactory = createFactoryWithValidation;
-        var Children22 = {
+        var Children23 = {
           map: mapChildren,
           forEach: forEachChildren,
           count: countChildren,
           toArray,
           only: onlyChild
         };
-        exports.Children = Children22;
+        exports.Children = Children23;
         exports.Component = Component;
         exports.Fragment = REACT_FRAGMENT_TYPE;
         exports.Profiler = REACT_PROFILER_TYPE;
@@ -8189,19 +8075,19 @@ var require_react_development = __commonJS2({
         exports.memo = memo2;
         exports.startTransition = startTransition2;
         exports.unstable_act = act;
-        exports.useCallback = useCallback4;
+        exports.useCallback = useCallback3;
         exports.useContext = useContext4;
         exports.useDebugValue = useDebugValue;
         exports.useDeferredValue = useDeferredValue;
-        exports.useEffect = useEffect10;
+        exports.useEffect = useEffect9;
         exports.useId = useId;
         exports.useImperativeHandle = useImperativeHandle;
         exports.useInsertionEffect = useInsertionEffect;
         exports.useLayoutEffect = useLayoutEffect2;
-        exports.useMemo = useMemo6;
+        exports.useMemo = useMemo7;
         exports.useReducer = useReducer;
-        exports.useRef = useRef6;
-        exports.useState = useState6;
+        exports.useRef = useRef5;
+        exports.useState = useState5;
         exports.useSyncExternalStore = useSyncExternalStore2;
         exports.useTransition = useTransition;
         exports.version = ReactVersion;
@@ -8222,254 +8108,17 @@ var require_react2 = __commonJS2({
     }
   }
 });
-var import_react23 = __toESM(require_react2());
+var import_react21 = __toESM(require_react2());
 function getValidChildren(children) {
-  return import_react23.Children.toArray(children).filter((child) => (0, import_react23.isValidElement)(child));
+  return import_react21.Children.toArray(children).filter((child) => (0, import_react21.isValidElement)(child));
 }
-
-// node_modules/@chakra-ui/avatar/dist/index.esm.js
-var import_react26 = __toModule(require_react());
-var cx4 = (...classNames2) => classNames2.filter(Boolean).join(" ");
-var [AvatarStylesProvider, useAvatarStyles] = createContext3({
-  name: `AvatarStylesContext`,
-  hookName: `useAvatarStyles`,
-  providerName: "<Avatar/>"
-});
-function initials(name) {
-  const [firstName, lastName] = name.split(" ");
-  return firstName && lastName ? `${firstName.charAt(0)}${lastName.charAt(0)}` : firstName.charAt(0);
-}
-function AvatarName(props) {
-  const { name, getInitials, ...rest } = props;
-  const styles2 = useAvatarStyles();
-  return /* @__PURE__ */ import_react24.default.createElement(chakra.div, {
-    role: "img",
-    "aria-label": name,
-    ...rest,
-    __css: styles2.label
-  }, name ? getInitials == null ? void 0 : getInitials(name) : null);
-}
-AvatarName.displayName = "AvatarName";
-var GenericAvatarIcon = (props) => /* @__PURE__ */ import_react24.default.createElement(chakra.svg, {
-  viewBox: "0 0 128 128",
-  color: "#fff",
-  width: "100%",
-  height: "100%",
-  className: "chakra-avatar__svg",
-  ...props
-}, /* @__PURE__ */ import_react24.default.createElement("path", {
-  fill: "currentColor",
-  d: "M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"
-}), /* @__PURE__ */ import_react24.default.createElement("path", {
-  fill: "currentColor",
-  d: "M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"
-}));
-function AvatarImage(props) {
-  const {
-    src,
-    srcSet,
-    onError,
-    getInitials,
-    name,
-    borderRadius,
-    loading,
-    iconLabel,
-    icon = /* @__PURE__ */ import_react24.default.createElement(GenericAvatarIcon, null),
-    ignoreFallback,
-    referrerPolicy
-  } = props;
-  const status = useImage({ src, onError, ignoreFallback });
-  const hasLoaded = status === "loaded";
-  const showFallback = !src || !hasLoaded;
-  if (showFallback) {
-    return name ? /* @__PURE__ */ import_react24.default.createElement(AvatarName, {
-      className: "chakra-avatar__initials",
-      getInitials,
-      name
-    }) : (0, import_react25.cloneElement)(icon, {
-      role: "img",
-      "aria-label": iconLabel
-    });
-  }
-  return /* @__PURE__ */ import_react24.default.createElement(chakra.img, {
-    src,
-    srcSet,
-    alt: name,
-    referrerPolicy,
-    className: "chakra-avatar__img",
-    loading,
-    __css: {
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-      borderRadius
-    }
-  });
-}
-AvatarImage.displayName = "AvatarImage";
-var baseStyle = {
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",
-  textAlign: "center",
-  textTransform: "uppercase",
-  fontWeight: "medium",
-  position: "relative",
-  flexShrink: 0
-};
-var Avatar = forwardRef((props, ref) => {
-  const styles2 = useMultiStyleConfig("Avatar", props);
-  const {
-    src,
-    srcSet,
-    name,
-    showBorder,
-    borderRadius = "full",
-    onError,
-    getInitials = initials,
-    icon = /* @__PURE__ */ import_react24.default.createElement(GenericAvatarIcon, null),
-    iconLabel = " avatar",
-    loading,
-    children,
-    borderColor,
-    ignoreFallback,
-    ...rest
-  } = omitThemingProps(props);
-  const avatarStyles = {
-    borderRadius,
-    borderWidth: showBorder ? "2px" : void 0,
-    ...baseStyle,
-    ...styles2.container
-  };
-  if (borderColor) {
-    avatarStyles.borderColor = borderColor;
-  }
-  return /* @__PURE__ */ import_react24.default.createElement(chakra.span, {
-    ref,
-    ...rest,
-    className: cx4("chakra-avatar", props.className),
-    __css: avatarStyles
-  }, /* @__PURE__ */ import_react24.default.createElement(AvatarStylesProvider, {
-    value: styles2
-  }, /* @__PURE__ */ import_react24.default.createElement(AvatarImage, {
-    src,
-    srcSet,
-    loading,
-    onError,
-    getInitials,
-    name,
-    borderRadius,
-    icon,
-    iconLabel,
-    ignoreFallback
-  }), children));
-});
-Avatar.displayName = "Avatar";
-function compact(object) {
-  const clone = Object.assign({}, object);
-  for (let key in clone) {
-    if (clone[key] === void 0)
-      delete clone[key];
-  }
-  return clone;
-}
-var AvatarGroup = forwardRef(function AvatarGroup2(props, ref) {
-  const styles2 = useMultiStyleConfig("Avatar", props);
-  const {
-    children,
-    borderColor,
-    max,
-    spacing: spacing2 = "-0.75rem",
-    borderRadius = "full",
-    ...rest
-  } = omitThemingProps(props);
-  const validChildren = getValidChildren(children);
-  const childrenWithinMax = max ? validChildren.slice(0, max) : validChildren;
-  const excess = max != null && validChildren.length - max;
-  const reversedChildren = childrenWithinMax.reverse();
-  const clones = reversedChildren.map((child, index) => {
-    const isFirstAvatar = index === 0;
-    const childProps = {
-      marginEnd: isFirstAvatar ? 0 : spacing2,
-      size: props.size,
-      borderColor: child.props.borderColor ?? borderColor,
-      showBorder: true
-    };
-    return (0, import_react26.cloneElement)(child, compact(childProps));
-  });
-  const groupStyles = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-end",
-    flexDirection: "row-reverse"
-  };
-  const excessStyles = {
-    borderRadius,
-    marginStart: spacing2,
-    ...baseStyle,
-    ...styles2.excessLabel
-  };
-  return /* @__PURE__ */ import_react24.default.createElement(chakra.div, {
-    ref,
-    role: "group",
-    __css: groupStyles,
-    ...rest,
-    className: cx4("chakra-avatar__group", props.className)
-  }, excess > 0 && /* @__PURE__ */ import_react24.default.createElement(chakra.span, {
-    className: "chakra-avatar__excess",
-    __css: excessStyles
-  }, `+${excess}`), clones);
-});
-AvatarGroup.displayName = "AvatarGroup";
-var placementMap = {
-  "top-start": {
-    top: "0",
-    insetStart: "0",
-    transform: "translate(-25%, -25%)"
-  },
-  "top-end": {
-    top: "0",
-    insetEnd: "0",
-    transform: "translate(25%, -25%)"
-  },
-  "bottom-start": {
-    bottom: "0",
-    insetStart: "0",
-    transform: "translate(-25%, 25%)"
-  },
-  "bottom-end": {
-    bottom: "0",
-    insetEnd: "0",
-    transform: "translate(25%, 25%)"
-  }
-};
-var AvatarBadge = forwardRef(function AvatarBadge2(props, ref) {
-  const { placement = "bottom-end", className, ...rest } = props;
-  const styles2 = useAvatarStyles();
-  const placementStyles = placementMap[placement];
-  const badgeStyles = {
-    position: "absolute",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    ...placementStyles,
-    ...styles2.badge
-  };
-  return /* @__PURE__ */ import_react24.default.createElement(chakra.div, {
-    ref,
-    ...rest,
-    className: cx4("chakra-avatar__badge", className),
-    __css: badgeStyles
-  });
-});
-AvatarBadge.displayName = "AvatarBadge";
 
 // node_modules/@chakra-ui/react-use-update-effect/dist/index.esm.js
-var import_react27 = __toModule(require_react());
+var import_react22 = __toModule(require_react());
 function useUpdateEffect(callback, deps) {
-  const renderCycleRef = (0, import_react27.useRef)(false);
-  const effectCycleRef = (0, import_react27.useRef)(false);
-  (0, import_react27.useEffect)(() => {
+  const renderCycleRef = (0, import_react22.useRef)(false);
+  const effectCycleRef = (0, import_react22.useRef)(false);
+  (0, import_react22.useEffect)(() => {
     const mounted = renderCycleRef.current;
     const run = mounted && effectCycleRef.current;
     if (run) {
@@ -8477,7 +8126,7 @@ function useUpdateEffect(callback, deps) {
     }
     effectCycleRef.current = true;
   }, deps);
-  (0, import_react27.useEffect)(() => {
+  (0, import_react22.useEffect)(() => {
     renderCycleRef.current = true;
     return () => {
       renderCycleRef.current = false;
@@ -8486,13 +8135,13 @@ function useUpdateEffect(callback, deps) {
 }
 
 // node_modules/@chakra-ui/close-button/dist/index.esm.js
-var import_react28 = __toModule(require_react());
+var import_react23 = __toModule(require_react());
 function CloseIcon(props) {
-  return /* @__PURE__ */ import_react28.default.createElement(Icon, {
+  return /* @__PURE__ */ import_react23.default.createElement(Icon, {
     focusable: "false",
     "aria-hidden": true,
     ...props
-  }, /* @__PURE__ */ import_react28.default.createElement("path", {
+  }, /* @__PURE__ */ import_react23.default.createElement("path", {
     fill: "currentColor",
     d: "M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
   }));
@@ -8507,7 +8156,7 @@ var CloseButton = forwardRef(function CloseButton2(props, ref) {
     justifyContent: "center",
     flexShrink: 0
   };
-  return /* @__PURE__ */ import_react28.default.createElement(chakra.button, {
+  return /* @__PURE__ */ import_react23.default.createElement(chakra.button, {
     type: "button",
     "aria-label": "Close",
     ref,
@@ -8518,7 +8167,7 @@ var CloseButton = forwardRef(function CloseButton2(props, ref) {
       ...__css
     },
     ...rest
-  }, children || /* @__PURE__ */ import_react28.default.createElement(CloseIcon, {
+  }, children || /* @__PURE__ */ import_react23.default.createElement(CloseIcon, {
     width: "1em",
     height: "1em"
   }));
@@ -8526,8 +8175,8 @@ var CloseButton = forwardRef(function CloseButton2(props, ref) {
 CloseButton.displayName = "CloseButton";
 
 // node_modules/@chakra-ui/css-reset/dist/index.esm.js
-var import_react29 = __toModule(require_react());
-var import_react30 = __toModule(require_emotion_react_cjs());
+var import_react24 = __toModule(require_react());
+var import_react25 = __toModule(require_emotion_react_cjs());
 var vhPolyfill = `
   :root {
     --chakra-vh: 100vh;
@@ -8551,10 +8200,10 @@ var vhPolyfill = `
     }
   }
 `;
-var CSSPolyfill = () => /* @__PURE__ */ import_react29.default.createElement(import_react30.Global, {
+var CSSPolyfill = () => /* @__PURE__ */ import_react24.default.createElement(import_react25.Global, {
   styles: vhPolyfill
 });
-var CSSReset = () => /* @__PURE__ */ import_react29.default.createElement(import_react30.Global, {
+var CSSReset = () => /* @__PURE__ */ import_react24.default.createElement(import_react25.Global, {
   styles: `
       html {
         line-height: 1.5;
@@ -8836,6 +8485,745 @@ var CSSReset = () => /* @__PURE__ */ import_react29.default.createElement(import
     `
 });
 
+// node_modules/@chakra-ui/object-utils/dist/index.esm.js
+function compact(object) {
+  const clone = Object.assign({}, object);
+  for (let key in clone) {
+    if (clone[key] === void 0)
+      delete clone[key];
+  }
+  return clone;
+}
+
+// node_modules/@chakra-ui/layout/dist/index.esm.js
+var import_react26 = __toModule(require_react());
+
+// node_modules/@chakra-ui/breakpoint-utils/dist/index.esm.js
+function isObject3(value) {
+  const type = typeof value;
+  return value != null && (type === "object" || type === "function") && !Array.isArray(value);
+}
+var breakpoints3 = Object.freeze([
+  "base",
+  "sm",
+  "md",
+  "lg",
+  "xl",
+  "2xl"
+]);
+function mapResponsive(prop, mapper) {
+  if (Array.isArray(prop)) {
+    return prop.map((item) => item === null ? null : mapper(item));
+  }
+  if (isObject3(prop)) {
+    return Object.keys(prop).reduce((result, key) => {
+      result[key] = mapper(prop[key]);
+      return result;
+    }, {});
+  }
+  if (prop != null) {
+    return mapper(prop);
+  }
+  return null;
+}
+
+// node_modules/@chakra-ui/layout/dist/index.esm.js
+var import_react27 = __toModule(require_react());
+var import_react28 = __toModule(require_react());
+var import_react29 = __toModule(require_react());
+var import_react30 = __toModule(require_react());
+var AspectRatio = forwardRef(function(props, ref) {
+  const { ratio = 4 / 3, children, className, ...rest } = props;
+  const child = import_react27.Children.only(children);
+  const _className = cx("chakra-aspect-ratio", className);
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+    ref,
+    position: "relative",
+    className: _className,
+    _before: {
+      height: 0,
+      content: `""`,
+      display: "block",
+      paddingBottom: mapResponsive(ratio, (r) => `${1 / r * 100}%`)
+    },
+    __css: {
+      "& > *:not(style)": {
+        overflow: "hidden",
+        position: "absolute",
+        top: "0",
+        right: "0",
+        bottom: "0",
+        left: "0",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        height: "100%"
+      },
+      "& > img, & > video": {
+        objectFit: "cover"
+      }
+    },
+    ...rest
+  }, child);
+});
+AspectRatio.displayName = "AspectRatio";
+var Badge = forwardRef(function Badge2(props, ref) {
+  const styles2 = useStyleConfig("Badge", props);
+  const { className, ...rest } = omitThemingProps(props);
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.span, {
+    ref,
+    className: cx("chakra-badge", props.className),
+    ...rest,
+    __css: {
+      display: "inline-block",
+      whiteSpace: "nowrap",
+      verticalAlign: "middle",
+      ...styles2
+    }
+  });
+});
+Badge.displayName = "Badge";
+var Box = chakra("div");
+Box.displayName = "Box";
+var Square = forwardRef(function Square2(props, ref) {
+  const { size: size2, centerContent = true, ...rest } = props;
+  const styles2 = centerContent ? { display: "flex", alignItems: "center", justifyContent: "center" } : {};
+  return /* @__PURE__ */ import_react26.default.createElement(Box, {
+    ref,
+    boxSize: size2,
+    __css: {
+      ...styles2,
+      flexShrink: 0,
+      flexGrow: 0
+    },
+    ...rest
+  });
+});
+Square.displayName = "Square";
+var Circle = forwardRef(function Circle2(props, ref) {
+  const { size: size2, ...rest } = props;
+  return /* @__PURE__ */ import_react26.default.createElement(Square, {
+    size: size2,
+    ref,
+    borderRadius: "9999px",
+    ...rest
+  });
+});
+Circle.displayName = "Circle";
+var Center = chakra("div", {
+  baseStyle: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  }
+});
+Center.displayName = "Center";
+var centerStyles = {
+  horizontal: {
+    insetStart: "50%",
+    transform: "translateX(-50%)"
+  },
+  vertical: {
+    top: "50%",
+    transform: "translateY(-50%)"
+  },
+  both: {
+    insetStart: "50%",
+    top: "50%",
+    transform: "translate(-50%, -50%)"
+  }
+};
+var AbsoluteCenter = forwardRef(function AbsoluteCenter2(props, ref) {
+  const { axis = "both", ...rest } = props;
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+    ref,
+    __css: centerStyles[axis],
+    ...rest,
+    position: "absolute"
+  });
+});
+var Code = forwardRef(function Code2(props, ref) {
+  const styles2 = useStyleConfig("Code", props);
+  const { className, ...rest } = omitThemingProps(props);
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.code, {
+    ref,
+    className: cx("chakra-code", props.className),
+    ...rest,
+    __css: {
+      display: "inline-block",
+      ...styles2
+    }
+  });
+});
+Code.displayName = "Code";
+var Container = forwardRef(function Container2(props, ref) {
+  const { className, centerContent, ...rest } = omitThemingProps(props);
+  const styles2 = useStyleConfig("Container", props);
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+    ref,
+    className: cx("chakra-container", className),
+    ...rest,
+    __css: {
+      ...styles2,
+      ...centerContent && {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
+      }
+    }
+  });
+});
+Container.displayName = "Container";
+var Divider = forwardRef(function Divider2(props, ref) {
+  const {
+    borderLeftWidth,
+    borderBottomWidth,
+    borderTopWidth,
+    borderRightWidth,
+    borderWidth,
+    borderStyle,
+    borderColor,
+    ...styles2
+  } = useStyleConfig("Divider", props);
+  const {
+    className,
+    orientation = "horizontal",
+    __css,
+    ...rest
+  } = omitThemingProps(props);
+  const dividerStyles = {
+    vertical: {
+      borderLeftWidth: borderLeftWidth || borderRightWidth || borderWidth || "1px",
+      height: "100%"
+    },
+    horizontal: {
+      borderBottomWidth: borderBottomWidth || borderTopWidth || borderWidth || "1px",
+      width: "100%"
+    }
+  };
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.hr, {
+    ref,
+    "aria-orientation": orientation,
+    ...rest,
+    __css: {
+      ...styles2,
+      border: "0",
+      borderColor,
+      borderStyle,
+      ...dividerStyles[orientation],
+      ...__css
+    },
+    className: cx("chakra-divider", className)
+  });
+});
+Divider.displayName = "Divider";
+var Flex = forwardRef(function Flex2(props, ref) {
+  const { direction: direction2, align, justify, wrap: wrap2, basis, grow, shrink, ...rest } = props;
+  const styles2 = {
+    display: "flex",
+    flexDirection: direction2,
+    alignItems: align,
+    justifyContent: justify,
+    flexWrap: wrap2,
+    flexBasis: basis,
+    flexGrow: grow,
+    flexShrink: shrink
+  };
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+    ref,
+    __css: styles2,
+    ...rest
+  });
+});
+Flex.displayName = "Flex";
+var Grid = forwardRef(function Grid2(props, ref) {
+  const {
+    templateAreas,
+    gap,
+    rowGap,
+    columnGap,
+    column,
+    row,
+    autoFlow,
+    autoRows,
+    templateRows,
+    autoColumns,
+    templateColumns,
+    ...rest
+  } = props;
+  const styles2 = {
+    display: "grid",
+    gridTemplateAreas: templateAreas,
+    gridGap: gap,
+    gridRowGap: rowGap,
+    gridColumnGap: columnGap,
+    gridAutoColumns: autoColumns,
+    gridColumn: column,
+    gridRow: row,
+    gridAutoFlow: autoFlow,
+    gridAutoRows: autoRows,
+    gridTemplateRows: templateRows,
+    gridTemplateColumns: templateColumns
+  };
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+    ref,
+    __css: styles2,
+    ...rest
+  });
+});
+Grid.displayName = "Grid";
+function spanFn(span) {
+  return mapResponsive(span, (value) => value === "auto" ? "auto" : `span ${value}/span ${value}`);
+}
+var GridItem = forwardRef(function GridItem2(props, ref) {
+  const {
+    area,
+    colSpan,
+    colStart,
+    colEnd,
+    rowEnd,
+    rowSpan,
+    rowStart,
+    ...rest
+  } = props;
+  const styles2 = compact({
+    gridArea: area,
+    gridColumn: spanFn(colSpan),
+    gridRow: spanFn(rowSpan),
+    gridColumnStart: colStart,
+    gridColumnEnd: colEnd,
+    gridRowStart: rowStart,
+    gridRowEnd: rowEnd
+  });
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+    ref,
+    __css: styles2,
+    ...rest
+  });
+});
+GridItem.displayName = "GridItem";
+var Heading = forwardRef(function Heading2(props, ref) {
+  const styles2 = useStyleConfig("Heading", props);
+  const { className, ...rest } = omitThemingProps(props);
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.h2, {
+    ref,
+    className: cx("chakra-heading", props.className),
+    ...rest,
+    __css: styles2
+  });
+});
+Heading.displayName = "Heading";
+var Mark = forwardRef(function Mark2(props, ref) {
+  const styles2 = useStyleConfig("Mark", props);
+  const ownProps = omitThemingProps(props);
+  return /* @__PURE__ */ import_react26.default.createElement(Box, {
+    ref,
+    ...ownProps,
+    as: "mark",
+    __css: { bg: "transparent", whiteSpace: "nowrap", ...styles2 }
+  });
+});
+var Kbd = forwardRef(function Kbd2(props, ref) {
+  const styles2 = useStyleConfig("Kbd", props);
+  const { className, ...rest } = omitThemingProps(props);
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.kbd, {
+    ref,
+    className: cx("chakra-kbd", className),
+    ...rest,
+    __css: {
+      fontFamily: "mono",
+      ...styles2
+    }
+  });
+});
+Kbd.displayName = "Kbd";
+var Link = forwardRef(function Link2(props, ref) {
+  const styles2 = useStyleConfig("Link", props);
+  const { className, isExternal, ...rest } = omitThemingProps(props);
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.a, {
+    target: isExternal ? "_blank" : void 0,
+    rel: isExternal ? "noopener" : void 0,
+    ref,
+    className: cx("chakra-link", className),
+    ...rest,
+    __css: styles2
+  });
+});
+Link.displayName = "Link";
+var LinkOverlay = forwardRef(function LinkOverlay2(props, ref) {
+  const { isExternal, target, rel, className, ...rest } = props;
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.a, {
+    ...rest,
+    ref,
+    className: cx("chakra-linkbox__overlay", className),
+    rel: isExternal ? "noopener noreferrer" : rel,
+    target: isExternal ? "_blank" : target,
+    __css: {
+      position: "static",
+      "&::before": {
+        content: "''",
+        cursor: "inherit",
+        display: "block",
+        position: "absolute",
+        top: 0,
+        left: 0,
+        zIndex: 0,
+        width: "100%",
+        height: "100%"
+      }
+    }
+  });
+});
+var LinkBox = forwardRef(function LinkBox2(props, ref) {
+  const { className, ...rest } = props;
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+    ref,
+    position: "relative",
+    ...rest,
+    className: cx("chakra-linkbox", className),
+    __css: {
+      "a[href]:not(.chakra-linkbox__overlay), abbr[title]": {
+        position: "relative",
+        zIndex: 1
+      }
+    }
+  });
+});
+var [ListStylesProvider, useListStyles] = createContext3({
+  name: `ListStylesContext`,
+  errorMessage: `useListStyles returned is 'undefined'. Seems you forgot to wrap the components in "<List />" `
+});
+var List = forwardRef(function List2(props, ref) {
+  const styles2 = useMultiStyleConfig("List", props);
+  const {
+    children,
+    styleType = "none",
+    stylePosition,
+    spacing: spacing2,
+    ...rest
+  } = omitThemingProps(props);
+  const validChildren = getValidChildren(children);
+  const selector2 = "& > *:not(style) ~ *:not(style)";
+  const spacingStyle = spacing2 ? { [selector2]: { mt: spacing2 } } : {};
+  return /* @__PURE__ */ import_react26.default.createElement(ListStylesProvider, {
+    value: styles2
+  }, /* @__PURE__ */ import_react26.default.createElement(chakra.ul, {
+    ref,
+    listStyleType: styleType,
+    listStylePosition: stylePosition,
+    role: "list",
+    __css: { ...styles2.container, ...spacingStyle },
+    ...rest
+  }, validChildren));
+});
+List.displayName = "List";
+var OrderedList = forwardRef((props, ref) => {
+  const { as, ...rest } = props;
+  return /* @__PURE__ */ import_react26.default.createElement(List, {
+    ref,
+    as: "ol",
+    styleType: "decimal",
+    marginStart: "1em",
+    ...rest
+  });
+});
+OrderedList.displayName = "OrderedList";
+var UnorderedList = forwardRef(function UnorderedList2(props, ref) {
+  const { as, ...rest } = props;
+  return /* @__PURE__ */ import_react26.default.createElement(List, {
+    ref,
+    as: "ul",
+    styleType: "initial",
+    marginStart: "1em",
+    ...rest
+  });
+});
+UnorderedList.displayName = "UnorderedList";
+var ListItem = forwardRef(function ListItem2(props, ref) {
+  const styles2 = useListStyles();
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.li, {
+    ref,
+    ...props,
+    __css: styles2.item
+  });
+});
+ListItem.displayName = "ListItem";
+var ListIcon = forwardRef(function ListIcon2(props, ref) {
+  const styles2 = useListStyles();
+  return /* @__PURE__ */ import_react26.default.createElement(Icon, {
+    ref,
+    role: "presentation",
+    ...props,
+    __css: styles2.icon
+  });
+});
+ListIcon.displayName = "ListIcon";
+var SimpleGrid = forwardRef(function SimpleGrid2(props, ref) {
+  const { columns, spacingX, spacingY, spacing: spacing2, minChildWidth, ...rest } = props;
+  const theme3 = useTheme();
+  const templateColumns = minChildWidth ? widthToColumns(minChildWidth, theme3) : countToColumns(columns);
+  return /* @__PURE__ */ import_react26.default.createElement(Grid, {
+    ref,
+    gap: spacing2,
+    columnGap: spacingX,
+    rowGap: spacingY,
+    templateColumns,
+    ...rest
+  });
+});
+SimpleGrid.displayName = "SimpleGrid";
+function toPx(n) {
+  return typeof n === "number" ? `${n}px` : n;
+}
+function widthToColumns(width, theme3) {
+  return mapResponsive(width, (value) => {
+    const _value = getToken("sizes", value, toPx(value))(theme3);
+    return value === null ? null : `repeat(auto-fit, minmax(${_value}, 1fr))`;
+  });
+}
+function countToColumns(count) {
+  return mapResponsive(count, (value) => value === null ? null : `repeat(${value}, minmax(0, 1fr))`);
+}
+var Spacer = chakra("div", {
+  baseStyle: {
+    flex: 1,
+    justifySelf: "stretch",
+    alignSelf: "stretch"
+  }
+});
+Spacer.displayName = "Spacer";
+var selector = "& > *:not(style) ~ *:not(style)";
+function getStackStyles(options) {
+  const { spacing: spacing2, direction: direction2 } = options;
+  const directionStyles = {
+    column: {
+      marginTop: spacing2,
+      marginEnd: 0,
+      marginBottom: 0,
+      marginStart: 0
+    },
+    row: { marginTop: 0, marginEnd: 0, marginBottom: 0, marginStart: spacing2 },
+    "column-reverse": {
+      marginTop: 0,
+      marginEnd: 0,
+      marginBottom: spacing2,
+      marginStart: 0
+    },
+    "row-reverse": {
+      marginTop: 0,
+      marginEnd: spacing2,
+      marginBottom: 0,
+      marginStart: 0
+    }
+  };
+  return {
+    flexDirection: direction2,
+    [selector]: mapResponsive(direction2, (value) => directionStyles[value])
+  };
+}
+function getDividerStyles(options) {
+  const { spacing: spacing2, direction: direction2 } = options;
+  const dividerStyles = {
+    column: {
+      my: spacing2,
+      mx: 0,
+      borderLeftWidth: 0,
+      borderBottomWidth: "1px"
+    },
+    "column-reverse": {
+      my: spacing2,
+      mx: 0,
+      borderLeftWidth: 0,
+      borderBottomWidth: "1px"
+    },
+    row: {
+      mx: spacing2,
+      my: 0,
+      borderLeftWidth: "1px",
+      borderBottomWidth: 0
+    },
+    "row-reverse": {
+      mx: spacing2,
+      my: 0,
+      borderLeftWidth: "1px",
+      borderBottomWidth: 0
+    }
+  };
+  return {
+    "&": mapResponsive(direction2, (value) => dividerStyles[value])
+  };
+}
+var StackItem = (props) => /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+  className: "chakra-stack__item",
+  ...props,
+  __css: {
+    display: "inline-block",
+    flex: "0 0 auto",
+    minWidth: 0,
+    ...props["__css"]
+  }
+});
+StackItem.displayName = "StackItem";
+var Stack = forwardRef((props, ref) => {
+  const {
+    isInline,
+    direction: directionProp,
+    align,
+    justify,
+    spacing: spacing2 = "0.5rem",
+    wrap: wrap2,
+    children,
+    divider,
+    className,
+    shouldWrapChildren,
+    ...rest
+  } = props;
+  const direction2 = isInline ? "row" : directionProp ?? "column";
+  const styles2 = (0, import_react29.useMemo)(() => getStackStyles({ direction: direction2, spacing: spacing2 }), [direction2, spacing2]);
+  const dividerStyle = (0, import_react29.useMemo)(() => getDividerStyles({ spacing: spacing2, direction: direction2 }), [spacing2, direction2]);
+  const hasDivider = !!divider;
+  const shouldUseChildren = !shouldWrapChildren && !hasDivider;
+  const validChildren = getValidChildren(children);
+  const clones = shouldUseChildren ? validChildren : validChildren.map((child, index) => {
+    const key = typeof child.key !== "undefined" ? child.key : index;
+    const isLast = index + 1 === validChildren.length;
+    const wrappedChild = /* @__PURE__ */ import_react26.default.createElement(StackItem, {
+      key
+    }, child);
+    const _child = shouldWrapChildren ? wrappedChild : child;
+    if (!hasDivider)
+      return _child;
+    const clonedDivider = (0, import_react29.cloneElement)(divider, {
+      __css: dividerStyle
+    });
+    const _divider = isLast ? null : clonedDivider;
+    return /* @__PURE__ */ import_react26.default.createElement(import_react29.Fragment, {
+      key
+    }, _child, _divider);
+  });
+  const _className = cx("chakra-stack", className);
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+    ref,
+    display: "flex",
+    alignItems: align,
+    justifyContent: justify,
+    flexDirection: styles2.flexDirection,
+    flexWrap: wrap2,
+    className: _className,
+    __css: hasDivider ? {} : { [selector]: styles2[selector] },
+    ...rest
+  }, clones);
+});
+Stack.displayName = "Stack";
+var HStack = forwardRef((props, ref) => /* @__PURE__ */ import_react26.default.createElement(Stack, {
+  align: "center",
+  ...props,
+  direction: "row",
+  ref
+}));
+HStack.displayName = "HStack";
+var StackDivider = (props) => /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+  className: "chakra-stack__divider",
+  ...props,
+  __css: {
+    ...props["__css"],
+    borderWidth: 0,
+    alignSelf: "stretch",
+    borderColor: "inherit",
+    width: "auto",
+    height: "auto"
+  }
+});
+StackDivider.displayName = "StackDivider";
+var VStack = forwardRef((props, ref) => /* @__PURE__ */ import_react26.default.createElement(Stack, {
+  align: "center",
+  ...props,
+  direction: "column",
+  ref
+}));
+VStack.displayName = "VStack";
+var Text = forwardRef(function Text2(props, ref) {
+  const styles2 = useStyleConfig("Text", props);
+  const { className, align, decoration, casing, ...rest } = omitThemingProps(props);
+  const aliasedProps = compact({
+    textAlign: props.align,
+    textDecoration: props.decoration,
+    textTransform: props.casing
+  });
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.p, {
+    ref,
+    className: cx("chakra-text", props.className),
+    ...aliasedProps,
+    ...rest,
+    __css: styles2
+  });
+});
+Text.displayName = "Text";
+function px2(value) {
+  return typeof value === "number" ? `${value}px` : value;
+}
+var Wrap = forwardRef(function Wrap2(props, ref) {
+  const {
+    spacing: spacing2 = "0.5rem",
+    spacingX,
+    spacingY,
+    children,
+    justify,
+    direction: direction2,
+    align,
+    className,
+    shouldWrapChildren,
+    ...rest
+  } = props;
+  const styles2 = (0, import_react30.useMemo)(() => {
+    const { spacingX: x = spacing2, spacingY: y = spacing2 } = {
+      spacingX,
+      spacingY
+    };
+    return {
+      "--chakra-wrap-x-spacing": (theme3) => mapResponsive(x, (value) => px2(tokenToCSSVar("space", value)(theme3))),
+      "--chakra-wrap-y-spacing": (theme3) => mapResponsive(y, (value) => px2(tokenToCSSVar("space", value)(theme3))),
+      "--wrap-x-spacing": "calc(var(--chakra-wrap-x-spacing) / 2)",
+      "--wrap-y-spacing": "calc(var(--chakra-wrap-y-spacing) / 2)",
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: justify,
+      alignItems: align,
+      flexDirection: direction2,
+      listStyleType: "none",
+      padding: "0",
+      margin: "calc(var(--wrap-y-spacing) * -1) calc(var(--wrap-x-spacing) * -1)",
+      "& > *:not(style)": {
+        margin: "var(--wrap-y-spacing) var(--wrap-x-spacing)"
+      }
+    };
+  }, [spacing2, spacingX, spacingY, justify, align, direction2]);
+  const childrenToRender = shouldWrapChildren ? import_react30.Children.map(children, (child, index) => /* @__PURE__ */ import_react26.default.createElement(WrapItem, {
+    key: index
+  }, child)) : children;
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.div, {
+    ref,
+    className: cx("chakra-wrap", className),
+    overflow: "hidden",
+    ...rest
+  }, /* @__PURE__ */ import_react26.default.createElement(chakra.ul, {
+    className: "chakra-wrap__list",
+    __css: styles2
+  }, childrenToRender));
+});
+Wrap.displayName = "Wrap";
+var WrapItem = forwardRef(function WrapItem2(props, ref) {
+  const { className, ...rest } = props;
+  return /* @__PURE__ */ import_react26.default.createElement(chakra.li, {
+    ref,
+    __css: { display: "flex", alignItems: "flex-start" },
+    className: cx("chakra-wrap__listitem", className),
+    ...rest
+  });
+});
+WrapItem.displayName = "WrapItem";
+
 // node_modules/@chakra-ui/react-env/dist/index.esm.js
 var import_react31 = __toModule(require_react());
 var import_react32 = __toModule(require_react());
@@ -8987,7 +9375,7 @@ var [PortalContextProvider, usePortalContext] = createContext3({
 });
 var PORTAL_CLASSNAME = "chakra-portal";
 var PORTAL_SELECTOR = `.chakra-portal`;
-var Container = (props) => /* @__PURE__ */ import_react33.default.createElement("div", {
+var Container3 = (props) => /* @__PURE__ */ import_react33.default.createElement("div", {
   className: "chakra-portal-zIndex",
   style: {
     position: "absolute",
@@ -9023,7 +9411,7 @@ var DefaultPortal = (props) => {
       }
     };
   }, [tempNode]);
-  const _children = (manager == null ? void 0 : manager.zIndex) ? /* @__PURE__ */ import_react33.default.createElement(Container, {
+  const _children = (manager == null ? void 0 : manager.zIndex) ? /* @__PURE__ */ import_react33.default.createElement(Container3, {
     zIndex: manager == null ? void 0 : manager.zIndex
   }, children) : children;
   return portal.current ? (0, import_react_dom.createPortal)(/* @__PURE__ */ import_react33.default.createElement(PortalContextProvider, {
@@ -10401,12 +10789,12 @@ function orient(options) {
     return {};
   return orientation === "vertical" ? vertical : horizontal;
 }
-function isObject3(value) {
+function isObject4(value) {
   const type = typeof value;
   return value != null && (type === "object" || type === "function") && !Array.isArray(value);
 }
 function toRef(operand) {
-  if (isObject3(operand) && operand.reference) {
+  if (isObject4(operand) && operand.reference) {
     return operand.reference;
   }
   return String(operand);
@@ -10505,17 +10893,17 @@ var baseStylePanel = defineStyle({
 var baseStyleIcon = defineStyle({
   fontSize: "1.25em"
 });
-var baseStyle2 = definePartsStyle({
+var baseStyle = definePartsStyle({
   container: baseStyleContainer,
   button: baseStyleButton,
   panel: baseStylePanel,
   icon: baseStyleIcon
 });
-var accordionTheme = defineMultiStyleConfig({ baseStyle: baseStyle2 });
+var accordionTheme = defineMultiStyleConfig({ baseStyle });
 var { definePartsStyle: definePartsStyle2, defineMultiStyleConfig: defineMultiStyleConfig2 } = createMultiStyleConfigHelpers(alertAnatomy.keys);
 var $fg = cssVar("alert-fg");
 var $bg = cssVar("alert-bg");
-var baseStyle22 = definePartsStyle2({
+var baseStyle2 = definePartsStyle2({
   container: {
     bg: $bg.reference,
     px: "4",
@@ -10605,7 +10993,7 @@ var variants = {
   solid: variantSolid
 };
 var alertTheme = defineMultiStyleConfig2({
-  baseStyle: baseStyle22,
+  baseStyle: baseStyle2,
   variants,
   defaultProps: {
     variant: "subtle",
@@ -11668,7 +12056,7 @@ var baseStyleButton2 = defineStyle({
   transitionProperty: "common",
   transitionDuration: "normal"
 });
-var baseStyle222 = definePartsStyle12((props) => ({
+var baseStyle22 = definePartsStyle12((props) => ({
   button: baseStyleButton2,
   list: runIfFn3(baseStyleList, props),
   item: runIfFn3(baseStyleItem, props),
@@ -11677,7 +12065,7 @@ var baseStyle222 = definePartsStyle12((props) => ({
   divider: baseStyleDivider
 }));
 var menuTheme = defineMultiStyleConfig12({
-  baseStyle: baseStyle222
+  baseStyle: baseStyle22
 });
 var { defineMultiStyleConfig: defineMultiStyleConfig13, definePartsStyle: definePartsStyle13 } = createMultiStyleConfigHelpers(modalAnatomy.keys);
 var baseStyleOverlay2 = defineStyle({
@@ -13098,7 +13486,7 @@ var borders = {
   "8px": "8px solid"
 };
 var borders_default = borders;
-var breakpoints3 = {
+var breakpoints4 = {
   base: "0em",
   sm: "30em",
   md: "48em",
@@ -13106,7 +13494,7 @@ var breakpoints3 = {
   xl: "80em",
   "2xl": "96em"
 };
-var breakpoints_default = breakpoints3;
+var breakpoints_default = breakpoints4;
 var colors = {
   transparent: "transparent",
   current: "currentColor",
@@ -13886,16 +14274,16 @@ function ChakraProvider2({
   }));
 }
 
-// src/Avatar.tsx
+// src/Heading.tsx
 import theme2 from "./theme/index.js";
-function AvatarChakra(props) {
-  return /* @__PURE__ */ React15.createElement(ChakraProvider2, {
+function HeadingChakra(props) {
+  return /* @__PURE__ */ React14.createElement(ChakraProvider2, {
     resetCSS: true,
     theme: theme2
-  }, /* @__PURE__ */ React15.createElement(Avatar, __spreadValues({}, props), props.title));
+  }, /* @__PURE__ */ React14.createElement(Heading, __spreadValues({}, props), props.title));
 }
 export {
-  AvatarChakra
+  HeadingChakra
 };
 /**
  * @license React

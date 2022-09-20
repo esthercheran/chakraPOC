@@ -1,21 +1,39 @@
 // src/theme/components/switch.ts
 var Switch = {
+  parts: ["track", "thumb"],
   baseStyle: {
-    borderRadius: "switch.border-radius"
+    track: {
+      borderRadius: "100px",
+      borderColor: "switch-default-border-color",
+      bg: "gray",
+      _checked: {
+        borderColor: "switch-default-border-color",
+        bg: "yellow"
+      }
+    },
+    thumb: {
+      borderRadius: "switch-border-radius",
+      borderColor: "switch-thumb-unselected-default-background-color",
+      bg: "red",
+      _checked: {
+        borderColor: "switch-default-border-color",
+        bg: "switch-thumb-selected-default-background-color"
+      }
+    }
   },
   sizes: {
-    small: {
-      switch: {
-        height: "switch.sm.height",
-        width: "switch.sm.width"
+    sm: {
+      track: {
+        height: "16px",
+        width: "26px"
       },
       thumb: {
-        height: "switch.sm.thumb.height",
-        width: "switch.sm.thumb.width"
+        height: "10px",
+        width: "10px"
       }
     },
     md: {
-      switch: {
+      track: {
         height: "switch.md.height",
         width: "switch.md.width"
       },
@@ -25,7 +43,7 @@ var Switch = {
       }
     },
     lg: {
-      switch: {
+      track: {
         height: "switch.lg.height",
         width: "switch.lg.width"
       },
@@ -33,47 +51,6 @@ var Switch = {
         height: "switch.lg.thumb.height",
         width: "switch.lg.thumb.width"
       }
-    }
-  },
-  variants: {
-    unSelected: {
-      _defaut: {
-        switch: {
-          bg: "radio.unselected.default.background-color"
-        },
-        thumb: {
-          bg: "switch.thumb.unselected.default.background-color"
-        }
-      },
-      _disabled: {
-        switch: {
-          bg: "radio.unselected.disabled.background-color"
-        },
-        thumb: {
-          bg: "switch.thumb.unselected.default.background-color"
-        }
-      }
-    },
-    selected: {
-      _default: {
-        switch: {
-          bg: "radio.selected.default.background-color"
-        },
-        thumb: {
-          bg: "switch.thumb.selected.default.background-color"
-        }
-      },
-      _disabled: {
-        switch: {
-          bg: "radio.selected.disabled.background-color"
-        },
-        thumb: {
-          bgThumb: "switch.thumb.selected.default.background-color"
-        }
-      }
-    },
-    defaultProps: {
-      variant: "unchecked"
     }
   }
 };

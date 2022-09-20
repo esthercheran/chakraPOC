@@ -1,0 +1,92 @@
+{
+  "semantic": {
+    "fg": {
+      "default": {
+        "value": "#0C1116",
+        "type": "color"
+      },
+      "muted": {
+        "value": "#EAECEE",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{color.neutrals.white}",
+        "type": "color"
+      },
+      "on-accent": {
+        "value": "{color.neutrals.white}",
+        "type": "color"
+      }
+    },
+    "bg": {
+      "canvas": {
+        "value": "{color.NeutralGray.50}",
+        "type": "color"
+      },
+      "surface": {
+        "value": "{color.neutrals.white}",
+        "type": "color"
+      }
+    },
+    "ui": {
+      "border-radius": {
+        "value": "12px",
+        "type": "borderRadius"
+      }
+    },
+    "border-radius": {
+      "ui-card": {
+        "value": "12px",
+        "type": "borderRadius"
+      },
+      "actions": {
+        "value": "{border-radius.8}",
+        "type": "borderRadius"
+      },
+      "inputs": {
+        "value": "{border-radius.8}",
+        "type": "borderRadius"
+      }
+    },
+    "border-width": {
+      "actions": {
+        "value": "{border-width.1}",
+        "type": "borderWidth"
+      },
+      "inputs": {
+        "value": "{border-width.1}",
+        "type": "borderWidth"
+      }
+    },
+    "font-weight": {
+      "regular": {
+        "value": "Regular",
+        "type": "fontWeights"
+      },
+      "medium": {
+        "value": "Medium",
+        "type": "fontWeights"
+      },
+      "semi-bold": {
+        "value": "Semi-Bold",
+        "type": "fontWeights"
+      }
+    },
+    "spacing": {
+      "ui": {
+        "m": {
+          "space-around": {
+            "value": "{space.300}",
+            "type": "spacing"
+          }
+        }
+      }
+    }
+  },
+  "font-family": {
+    "sans-serif": {
+      "value": "General Sans",
+      "type": "fontFamilies"
+    }
+  }
+}

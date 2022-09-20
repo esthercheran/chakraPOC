@@ -1,0 +1,33 @@
+name: Transform Figma Tokens to Chakra tokens
+
+# events
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'figmaTokensChakra/**'
+
+# jobs
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js Env
+        uses: actions/setup-node@v2.4.0
+
+      # Install Dependencies
+      - run: npm install
+
+      # Transform to Chakra tokens with SD
+      - run: npm run transform2CSS
+
+      # Give write access to repo
+      - run: sudo chown -R $USER:$USER ${{ github.workspace }}
+
+      - name: Commit the changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: transformed FT to Chakra tokens with SD
