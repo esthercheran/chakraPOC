@@ -1,0 +1,176 @@
+{
+  "radio": {
+    "sm": {
+      "width": {
+        "value": "{size.175}",
+        "type": "sizing"
+      },
+      "height": {
+        "value": "{size.175}",
+        "type": "sizing"
+      },
+      "checkmark": {
+        "width": {
+          "value": "{size.75}",
+          "type": "sizing"
+        },
+        "height": {
+          "value": "{size.75}",
+          "type": "sizing"
+        }
+      }
+    },
+    "md": {
+      "width": {
+        "value": "{size.225}",
+        "type": "sizing"
+      },
+      "height": {
+        "value": "{size.225}",
+        "type": "sizing"
+      },
+      "checkmark": {
+        "width": {
+          "value": "{size.125}",
+          "type": "sizing"
+        },
+        "height": {
+          "value": "{size.125}",
+          "type": "sizing"
+        }
+      }
+    },
+    "lg": {
+      "width": {
+        "value": "{size.275}",
+        "type": "sizing"
+      },
+      "height": {
+        "value": "{size.275}",
+        "type": "sizing"
+      },
+      "checkmark": {
+        "width": {
+          "value": "{size.150}",
+          "type": "sizing"
+        },
+        "height": {
+          "value": "{size.150}",
+          "type": "sizing"
+        }
+      }
+    },
+    "unselected": {
+      "default": {
+        "border-color": {
+          "value": "{semantic.color.inputs.selected.default.border-color}",
+          "type": "color"
+        },
+        "background-color": {
+          "value": "{semantic.color.inputs.default.background-color}",
+          "type": "color"
+        }
+      },
+      "error": {
+        "border-color": {
+          "value": "{semantic.color.actions.negative.default.border}",
+          "type": "color"
+        },
+        "background-color": {
+          "value": "{semantic.color.inputs.error.background-color}",
+          "type": "color"
+        }
+      },
+      "disabled": {
+        "border-color": {
+          "value": "{semantic.color.inputs.disabled.border-color}",
+          "type": "color"
+        },
+        "background-color": {
+          "value": "{semantic.color.inputs.disabled.background-color}",
+          "type": "color"
+        }
+      },
+      "border-width": {
+        "value": "{semantic.border-width.inputs}",
+        "type": "borderWidth"
+      }
+    },
+    "selected": {
+      "default": {
+        "border-color": {
+          "value": "{semantic.color.inputs.selected.default.border-color}",
+          "type": "color"
+        },
+        "background-color": {
+          "value": "{semantic.color.inputs.selected.default.background-color}",
+          "type": "color"
+        }
+      },
+      "hover": {
+        "border-color": {
+          "value": "{semantic.color.inputs.selected.hover.border-color}",
+          "type": "color"
+        },
+        "background-color": {
+          "value": "{semantic.color.inputs.selected.hover.background-color}",
+          "type": "color"
+        }
+      },
+      "disabled": {
+        "border-color": {
+          "value": "{semantic.color.inputs.disabled.border-color}",
+          "type": "color"
+        }
+      },
+      "sm": {
+        "border-width": {
+          "value": "{border-width.3}",
+          "type": "borderWidth"
+        }
+      },
+      "md": {
+        "border-width": {
+          "value": "{border-width.4}",
+          "type": "borderWidth"
+        }
+      },
+      "lg": {
+        "border-width": {
+          "value": "6px",
+          "type": "borderWidth"
+        }
+      }
+    },
+    "checkmark": {
+      "selected": {
+        "default": {
+          "background-color": {
+            "value": "{semantic.color.inputs.default.background-color}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "value": "{semantic.color.inputs.hover.background-color}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background-color": {
+            "value": "{semantic.color.inputs.disabled.background-color}",
+            "type": "color"
+          }
+        }
+      },
+      "border-radius": {
+        "value": "{semantic.border.radius.large}",
+        "type": "borderRadius"
+      }
+    },
+    "border-radius": {
+      "value": "{semantic.border.radius.large}",
+      "type": "borderRadius"
+    }
+  }
+}
