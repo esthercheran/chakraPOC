@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react'
 
-import metadata from '../figmaTokensChakra/$metadata.json'
+import metadata from './figmaTokensChakra/$metadata.json'
 import lightTokens from './documentationTokens/light.json'
 import darkTokens from './documentationTokens/dark.json'
 
@@ -10,7 +10,7 @@ interface DocumentationComponentProps {
   tokenName: string
 }
 
-export function Documentation({ set = 'comp/button', path = '', theme = 'light', render }: { set?: string; path?: string; theme?: string; render: (data: any) => JSX.Element }) {
+export function Documentation({ set = 'core/color', path = '', theme = 'light', render }: { set?: string; path?: string; theme?: string; render: (data: any) => JSX.Element }) {
   const [data, setData] = useState<Record<string, any>>()
   const [error, setError] = useState('')
 
@@ -44,11 +44,11 @@ export function Documentation({ set = 'comp/button', path = '', theme = 'light',
         }
       } else {
         const themeData: Record<string, any> = {}
-        console.log({ data })
         Object.keys(data).forEach((key) => {
-          themeData[key] = themeFile[key]
+          themeData[key] = themeFile[key] || {}
         })
-        return themeData
+
+        return themeData || {}
       }
     }
     return {}
