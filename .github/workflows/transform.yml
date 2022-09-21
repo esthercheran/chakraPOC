@@ -19,10 +19,10 @@ jobs:
         uses: actions/setup-node@v2.4.0
 
       # Install Dependencies
-      - run: npm install
+      - run: yarn install
 
       # Transform to Chakra tokens with SD
-      - run: npm run transform2CSS
+      - run: yarn run transform2CSS
 
       # Give write access to repo
       - run: sudo chown -R $USER:$USER ${{ github.workspace }}

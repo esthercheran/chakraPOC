@@ -1,5 +1,4 @@
 // src/theme/components/iconbutton.ts
-
 var IconButton = {
   baseStyle: {
     width: "auto",
