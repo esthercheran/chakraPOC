@@ -6,29 +6,30 @@ const Avatar: ComponentStyleConfig = {
   baseStyle: {
     badge: {
       borderRadius: 'avatar-border-radius',
+      height: '100%'
     }
     // bg: 'btn-primary-default-background-color',
     // borderColor: 'btn-primary-default-background-color'
     // Width: 'checkbox.border-width'
   },
-  // Three sizes: sm md and large 
+  // Three sizes: sm md and large
   sizes: {
     sm: {
       container: {
-        height:'avatar-s-height',
-        width:'avatar-s-width'
+        height: 'avatar-s-height',
+        width: 'avatar-s-width'
       }
     },
     md: {
       container: {
-        height:'avatar-m-height',
-        width:'avatar-m-width'
+        height: 'avatar-m-height',
+        width: 'avatar-m-width'
       }
     },
     lg: {
       container: {
-        height:'avatar-l-height',
-        width:'avatar-l-width'
+        height: 'avatar-l-height',
+        width: 'avatar-l-width'
       }
     }
   },
