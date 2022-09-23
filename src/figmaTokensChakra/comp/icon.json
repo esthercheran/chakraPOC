@@ -1,0 +1,16 @@
+{
+  "icon": {
+    "width": {
+      "value": "{size.300}",
+      "type": "sizing"
+    },
+    "height": {
+      "value": "{size.300}",
+      "type": "sizing"
+    },
+    "icon-color": {
+      "value": "{semantic.fg.accent}",
+      "type": "color"
+    }
+  }
+}
