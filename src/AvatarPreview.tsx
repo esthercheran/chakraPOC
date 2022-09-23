@@ -1,14 +1,14 @@
 import React from 'react'
-import { ButtonChakra } from './Button'
+import { AvatarChakra } from './Avatar'
 import { LiveProvider, LiveEditor, LivePreview } from 'react-live'
 
-const scope = { ButtonChakra }
+const scope = { AvatarChakra }
 
 const code = `
-  <ButtonChakra variant="secondary" title="my title" />
+  <Avatar />
 `
 
-export const ButtonPreview = () => {
+export const AvatarPreview = () => {
   return (
     <LiveProvider code={code} scope={scope}>
       <LiveEditor style={{ height: '100px', background: '#000', color: '#fff' }} />
