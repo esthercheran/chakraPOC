@@ -5,7 +5,7 @@ import { LiveProvider, LiveEditor, LivePreview } from 'react-live'
 const scope = { IconButtonChakra }
 
 const code = `
-  <IconButtonChakra />
+  <IconButtonChakra  />
 `
 
 export const IconButtonPreview = () => {

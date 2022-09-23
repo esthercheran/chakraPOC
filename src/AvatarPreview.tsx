@@ -5,7 +5,7 @@ import { LiveProvider, LiveEditor, LivePreview } from 'react-live'
 const scope = { AvatarChakra }
 
 const code = `
-  <Avatar />
+  <AvatarChakra name='Ryan Florence' size="md" src='https://bit.ly/ryan-florence' />
 `
 
 export const AvatarPreview = () => {

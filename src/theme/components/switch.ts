@@ -5,13 +5,13 @@ const Switch: ComponentStyleConfig = {
   parts: ['track', 'thumb'],
   // The styles all switch have in common
   baseStyle: {
-    track:{
+    track: {
       borderRadius: '100px',
       borderColor: 'switch-default-border-color',
       bg: 'gray',
       _checked: {
         borderColor: 'switch-default-border-color',
-        bg: 'yellow',
+        bg: 'yellow'
       }
     },
     thumb: {
@@ -20,91 +20,91 @@ const Switch: ComponentStyleConfig = {
       bg: 'red',
       _checked: {
         borderColor: 'switch-default-border-color',
-        bg: 'switch-thumb-selected-default-background-color',
+        bg: 'switch-thumb-selected-default-background-color'
       }
     }
   },
   // Three sizes: sm md and lg
-  sizes: {  
+  sizes: {
     sm: {
-        track:{
-        height:'16px',
-        width:'26px'
-        },
-        thumb:{
-        height:'10px',
-        width:'10px'
-        }
+      track: {
+        height: '16px',
+        width: '26px'
+      },
+      thumb: {
+        height: '10px',
+        width: '10px'
+      }
     },
-    md: { 
-        track:{
-            height:'switch.md.height',
-            width:'switch.md.width'
-            },
-            thumb:{
-            height:'switch.md.thumb.height',
-            width:'switch.md.thumb.width'
-            }
+    md: {
+      track: {
+        height: 'switch.md.height',
+        width: 'switch.md.width'
+      },
+      thumb: {
+        height: 'switch.md.thumb.height',
+        width: 'switch.md.thumb.width'
+      }
     },
     lg: {
-        track:{
-            height:'switch.lg.height',
-            width:'switch.lg.width'
-            },
-            thumb:{
-            height:'switch.lg.thumb.height',
-            width:'switch.lg.thumb.width'
-            }
+      track: {
+        height: 'switch.lg.height',
+        width: 'switch.lg.width'
+      },
+      thumb: {
+        height: 'switch.lg.thumb.height',
+        width: 'switch.lg.thumb.width'
+      }
     }
-  },
+  }
   // Two variants: Selected and UnSelected
-//   variants: {
-//     unSelected: {
+  //   variants: {
+  //     unSelected: {
 
-//         _defaut:{
-//             switch:{
-//       bg: 'radio.unselected.default.background-color'
-//             },
-//             thumb:{
-//       bg:'switch.thumb.unselected.default.background-color'
-//             }
-//         },
+  //         _defaut:{
+  //             switch:{
+  //       bg: 'radio.unselected.default.background-color'
+  //             },
+  //             thumb:{
+  //       bg:'switch.thumb.unselected.default.background-color'
+  //             }
+  //         },
 
-//       _disabled: {
-//         switch:{
-//         bg: 'radio.unselected.disabled.background-color'
-//               },
-//         thumb:{
-//         bg:'switch.thumb.unselected.default.background-color'
-//               }
-//       }
+  //       _disabled: {
+  //         switch:{
+  //         bg: 'radio.unselected.disabled.background-color'
+  //               },
+  //         thumb:{
+  //         bg:'switch.thumb.unselected.default.background-color'
+  //               }
+  //       }
 
-//     },
-//     selected: {
+  //     },
+  //     selected: {
 
-//         _default:{
-//             switch:{
-//       bg: 'radio.selected.default.background-color'
-//             },
-//         thumb:{
-//       bg:'switch.thumb.selected.default.background-color'
-//         }
-//         },
+  //         _default:{
+  //             switch:{
+  //       bg: 'radio.selected.default.background-color'
+  //             },
+  //         thumb:{
+  //       bg:'switch.thumb.selected.default.background-color'
+  //         }
+  //         },
 
-//       _disabled: {
-//         switch:{
-//         bg: 'radio.selected.disabled.background-color'
-//         },
-//         thumb:{
-//             bgThumb:'switch.thumb.selected.default.background-color'
-//       }
-//     }
-//   },
-//   // The default size and variant values
-//   defaultProps: {
-//     variant: 'unchecked'
-//   }
-// }
+  //       _disabled: {
+  //         switch:{
+  //         bg: 'radio.selected.disabled.background-color'
+  //         },
+  //         thumb:{
+  //             bgThumb:'switch.thumb.selected.default.background-color'
+  //       }
+  //     }
+  //   },
+  //   // The default size and variant values
+  //   defaultProps: {
+  //     variant: 'unchecked'
+  //   }
+  // }
 }
 
 export default Switch

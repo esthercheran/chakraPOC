@@ -5,7 +5,7 @@ import { LiveProvider, LiveEditor, LivePreview } from 'react-live'
 const scope = { SwitchChakra }
 
 const code = `
-  <SwitchChakra />
+  <SwitchChakra title="Switch title" />
 `
 
 export const SwitchPreview = () => {

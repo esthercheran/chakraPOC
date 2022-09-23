@@ -5,7 +5,7 @@ import { LiveProvider, LiveEditor, LivePreview } from 'react-live'
 const scope = { CheckboxChakra }
 
 const code = `
-  <CheckboxChakra />
+  <CheckboxChakra title="Checkbox title" size="md" />
 `
 
 export const CheckboxPreview = () => {

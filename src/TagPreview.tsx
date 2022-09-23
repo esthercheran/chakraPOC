@@ -5,7 +5,7 @@ import { LiveProvider, LiveEditor, LivePreview } from 'react-live'
 const scope = { TagChakra }
 
 const code = `
-  <TagChakra />
+  <TagChakra title="Tag title" />
 `
 
 export const TagPreview = () => {
