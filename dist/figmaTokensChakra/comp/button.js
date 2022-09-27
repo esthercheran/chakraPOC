@@ -19,7 +19,7 @@ var btn = {
   primary: {
     default: {
       "background-color": {
-        value: "red",
+        value: "{semantic.color.actions.cta.default.background-color}",
         type: "color"
       },
       "text-color": {
