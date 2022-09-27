@@ -3984,7 +3984,7 @@ var btn = {
   primary: {
     default: {
       "background-color": {
-        value: "red",
+        value: "pink",
         type: "color"
       },
       "text-color": {
@@ -4020,7 +4020,7 @@ var btn = {
     },
     active: {
       "background-color": {
-        value: "yellow",
+        value: "purple",
         type: "color"
       },
       "text-color": {
@@ -8471,7 +8471,7 @@ var btn2 = {
   primary: {
     default: {
       "background-color": {
-        value: "red",
+        value: "pink",
         type: "color"
       },
       "text-color": {
@@ -8507,7 +8507,7 @@ var btn2 = {
     },
     active: {
       "background-color": {
-        value: "yellow",
+        value: "purple",
         type: "color"
       },
       "text-color": {
