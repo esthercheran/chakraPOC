@@ -6312,7 +6312,7 @@ import getChakraSemanticTokens from "../getChakraSemanticTokens.js";
 // src/figmaTokens.json
 var colors2 = {
   light: {
-    "btn-primary-default-background-color": "blue",
+    "btn-primary-default-background-color": "pink",
     "btn-primary-default-text-color": "#ffffff",
     "btn-primary-default-border-color": "#0ea5e9",
     "btn-primary-default-icon-color": "#ffffff",
@@ -6320,7 +6320,7 @@ var colors2 = {
     "btn-primary-hover-text-color": "#ffffff",
     "btn-primary-hover-border-color": "#38bdf8",
     "btn-primary-hover-icon-color": "#ffffff",
-    "btn-primary-active-background-color": "purple",
+    "btn-primary-active-background-color": "#bada55",
     "btn-primary-active-text-color": "#ffffff",
     "btn-primary-active-border-color": "#0284c7",
     "btn-primary-active-icon-color": "#ffffff",
@@ -7018,7 +7018,7 @@ var colors2 = {
     "tooltip-background-color": "#9ca3af"
   },
   dark: {
-    "btn-primary-default-background-color": "blue",
+    "btn-primary-default-background-color": "pink",
     "btn-primary-default-text-color": "#ffffff",
     "btn-primary-default-border-color": "#0ea5e9",
     "btn-primary-default-icon-color": "#ffffff",
@@ -7026,7 +7026,7 @@ var colors2 = {
     "btn-primary-hover-text-color": "#ffffff",
     "btn-primary-hover-border-color": "#38bdf8",
     "btn-primary-hover-icon-color": "#ffffff",
-    "btn-primary-active-background-color": "purple",
+    "btn-primary-active-background-color": "#bada55",
     "btn-primary-active-text-color": "#ffffff",
     "btn-primary-active-border-color": "#0284c7",
     "btn-primary-active-icon-color": "#ffffff",
