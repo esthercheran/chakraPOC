@@ -9,7 +9,7 @@ on:
       - 'figmaTokensChakra/**'
 
 # jobs
-jobs: 
+jobs:
   build:
     runs-on: ubuntu-latest
 
@@ -22,7 +22,7 @@ jobs:
       - run: yarn install
 
       # Transform to Chakra tokens with SD
-      - run: yarn run transform2CSS
+      - run: yarn run build
 
       # Give write access to repo
       - run: sudo chown -R $USER:$USER ${{ github.workspace }}
@@ -30,4 +30,4 @@ jobs:
       - name: Commit the changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: transformed FT to Chakra tokens with SD
+          commit_message: Built new version ready to be consumed by framer
