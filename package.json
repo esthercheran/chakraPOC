@@ -35,7 +35,7 @@
     "build": "yarn; yarn resolve-tokens; node esmbuild/esmbuild build ./src dist",
     "transform2CSS": "node transform2CSS.js",
     "transform2JSON": "node transform2JSON.js",
-    "resolve-tokens": "token-transformer src/figmaTokensChakra --theme --themeOutputPath src/documentationTokens"
+    "resolve-tokens": "token-transformer figmaTokensChakra --theme --themeOutputPath src/documentationTokens"
   },
   "eslintConfig": {
     "extends": "react-app"
