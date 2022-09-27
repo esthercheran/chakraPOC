@@ -24,11 +24,11 @@ jobs:
       # Install Dependencies
       - run: yarn install
 
-      # copy needed files for the documentation components this can be improved
-      - run: yarn copy-tokens
-
       # Transform to Chakra tokens with SD
       - run: yarn run transform2CSS
+
+      # copy needed files for the documentation components this can be improved
+      - run: yarn copy-tokens
 
       # update dist to be consumed by framer
       - run: yarn run build
