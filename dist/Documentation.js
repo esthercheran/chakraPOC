@@ -4020,7 +4020,7 @@ var btn = {
     },
     active: {
       "background-color": {
-        value: "purple",
+        value: "brown",
         type: "color"
       },
       "text-color": {
@@ -8507,7 +8507,7 @@ var btn2 = {
     },
     active: {
       "background-color": {
-        value: "purple",
+        value: "brown",
         type: "color"
       },
       "text-color": {

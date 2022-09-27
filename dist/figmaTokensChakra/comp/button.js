@@ -55,7 +55,7 @@ var btn = {
     },
     active: {
       "background-color": {
-        value: "purple",
+        value: "brown",
         type: "color"
       },
       "text-color": {
