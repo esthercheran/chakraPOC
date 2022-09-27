@@ -3905,7 +3905,7 @@ var btn = {
   primary: {
     default: {
       "background-color": {
-        value: "pink",
+        value: "red",
         type: "color"
       },
       "text-color": {
