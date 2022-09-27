@@ -39,3 +39,27 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Built new version ready to be consumed by framer
+
+      - name: purge jsdeliver
+        run: |
+          curl -X POST \
+             http://purge.jsdelivr.net/ \
+            -H 'cache-control: no-cache' \
+            -H 'content-type: application/json' \
+            -d '{
+              "path": [
+                "dist/index.js",
+                "dist/Avatar.js",
+                "dist/Button.js",
+                "dist/Checkbox.js",
+                "dist/Documentation.js",
+                "dist/figmaTokens.js",
+                "dist/Heading.js",
+                "dist/IconButton.js",
+                "dist/Image.js",
+                "dist/Switch.js",
+                "dist/Tag.js",
+                "dist/documentationTokens/dark.js",
+                "dist/documentationTokens/light.js",
+              ]
+            }'
