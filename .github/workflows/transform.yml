@@ -23,8 +23,8 @@ jobs:
       - name: copy file
         uses: canastro/copy-file-action@master
         with:
-          source: '../../figmaTokensChakra'
-          target: '../../src/figmaTokensChakra'
+          source: 'figmaTokensChakra'
+          target: 'src/figmaTokensChakra'
 
       # Install Dependencies
       - run: yarn install
