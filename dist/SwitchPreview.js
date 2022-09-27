@@ -5552,9 +5552,9 @@ var require_assign5 = __commonJS({
   }
 });
 
-// src/ButtonPreview.tsx
+// src/SwitchPreview.tsx
 var import_react3 = __toModule(require_react());
-import { ButtonChakra } from "./Button.js";
+import { SwitchChakra } from "./Switch.js";
 
 // node_modules/react-live/dist/react-live.es.js
 var import_react2 = __toModule(require_react());
@@ -19026,12 +19026,12 @@ LivePreview.defaultProps = {
   Component: "div"
 };
 
-// src/ButtonPreview.tsx
-var scope = { ButtonChakra };
+// src/SwitchPreview.tsx
+var scope = { SwitchChakra };
 var code = `
-  <ButtonChakra variant="secondary" title="my title" />
+  <SwitchChakra title="Switch title" />
 `;
-var ButtonPreview = () => {
+var SwitchPreview = () => {
   return /* @__PURE__ */ import_react3.default.createElement(LiveProvider, {
     code,
     scope
@@ -19042,7 +19042,7 @@ var ButtonPreview = () => {
   }));
 };
 export {
-  ButtonPreview
+  SwitchPreview
 };
 /*!
  * regjsgen 0.5.2

@@ -353,6 +353,14 @@ var btn = {
   "line-height": {
     value: "100%",
     type: "lineHeights"
+  },
+  "focus-ring": {
+    value: "{semantic.color.focus.border}",
+    type: "color",
+    "border-width": {
+      value: "{semantic.border-width.focus}",
+      type: "borderWidth"
+    }
   }
 };
 var semantic = {

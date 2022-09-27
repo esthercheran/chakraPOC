@@ -343,6 +343,18 @@ var semantic = {
           background: {
             value: "#f87171",
             type: "color"
+          },
+          icon: {
+            value: "#f87171",
+            type: "color"
+          },
+          "quiet-background": {
+            value: "#ffffff03",
+            type: "color"
+          },
+          "quiet-text": {
+            value: "#f87171",
+            type: "color"
           }
         },
         hover: {
@@ -356,6 +368,18 @@ var semantic = {
           },
           background: {
             value: "#fca5a5",
+            type: "color"
+          },
+          icon: {
+            value: "#fca5a5",
+            type: "color"
+          },
+          "quiet-background": {
+            value: "#fca5a5",
+            type: "color"
+          },
+          "quiet-text": {
+            value: "#ffffff",
             type: "color"
           }
         },
@@ -371,6 +395,18 @@ var semantic = {
           background: {
             value: "#ef4444",
             type: "color"
+          },
+          icon: {
+            value: "#ef4444",
+            type: "color"
+          },
+          "quiet-background": {
+            value: "#ef4444",
+            type: "color"
+          },
+          "quiet-text": {
+            value: "#ffffff",
+            type: "color"
           }
         },
         focus: {
@@ -385,6 +421,10 @@ var semantic = {
           background: {
             value: "#f87171",
             type: "color"
+          },
+          icon: {
+            value: "#f87171",
+            type: "color"
           }
         },
         disabled: {
@@ -397,6 +437,10 @@ var semantic = {
             type: "color"
           },
           border: {
+            value: "#d1d5db",
+            type: "color"
+          },
+          icon: {
             value: "#d1d5db",
             type: "color"
           }
@@ -473,6 +517,10 @@ var semantic = {
           background: {
             value: "#0ea5e9",
             type: "color"
+          },
+          "quiet-background": {
+            value: "#ffffff03",
+            type: "color"
           }
         },
         hover: {
@@ -487,6 +535,10 @@ var semantic = {
           background: {
             value: "#38bdf8",
             type: "color"
+          },
+          "quiet-background": {
+            value: "#38bdf8",
+            type: "color"
           }
         },
         active: {
@@ -499,6 +551,10 @@ var semantic = {
             type: "color"
           },
           background: {
+            value: "#0284c7",
+            type: "color"
+          },
+          "quiet-background": {
             value: "#0284c7",
             type: "color"
           }
@@ -799,6 +855,116 @@ var semantic = {
         }
       }
     },
+    feedback: {
+      info: {
+        "border-color": {
+          value: "#2dd4bf",
+          type: "color"
+        },
+        "text-color": {
+          value: "#2dd4bf",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#2dd4bf",
+          type: "color"
+        },
+        "background-color": {
+          value: "#dbeafe",
+          type: "color"
+        }
+      },
+      warning: {
+        "border-color": {
+          value: "#fbbf24",
+          type: "color"
+        },
+        "text-color": {
+          value: "#fbbf24",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#fbbf24",
+          type: "color"
+        },
+        "background-color": {
+          value: "#fef3c7",
+          type: "color"
+        }
+      },
+      success: {
+        "border-color": {
+          value: "#34d399",
+          type: "color"
+        },
+        "text-color": {
+          value: "#34d399",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#34d399",
+          type: "color"
+        },
+        "background-color": {
+          value: "#d1fae5",
+          type: "color"
+        }
+      },
+      help: {
+        "border-color": {
+          value: "#c084fc",
+          type: "color"
+        },
+        "text-color": {
+          value: "#c084fc",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#c084fc",
+          type: "color"
+        },
+        "background-color": {
+          value: "#f3e8ff",
+          type: "color"
+        }
+      },
+      neutral: {
+        "border-color": {
+          value: "#9ca3af",
+          type: "color"
+        },
+        "text-color": {
+          value: "#9ca3af",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#9ca3af",
+          type: "color"
+        },
+        "background-color": {
+          value: "#f3f4f6",
+          type: "color"
+        }
+      },
+      error: {
+        "border-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "text-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "background-color": {
+          value: "#fee2e2",
+          type: "color"
+        }
+      }
+    },
     typography: {
       default: {
         value: "#374151",
@@ -920,20 +1086,26 @@ var semantic = {
       }
     },
     navigation: {
-      "background-color": {
+      background: {
         value: "#0ea5e9",
         type: "color"
       },
-      "border-color": {
+      border: {
         value: "#0284c7",
         type: "color"
       },
-      "font-color": {
+      text: {
         value: "#ffffff",
         type: "color"
       },
-      "icon-color": {
+      icon: {
         value: "#ffffff",
+        type: "color"
+      }
+    },
+    focus: {
+      border: {
+        value: "#e0f2fe",
         type: "color"
       }
     }
@@ -971,6 +1143,24 @@ var semantic = {
         type: "fontSizes"
       },
       lg: {
+        value: "20px",
+        type: "fontSizes"
+      }
+    },
+    feedback: {
+      s: {
+        value: "14px",
+        type: "fontSizes"
+      },
+      m: {
+        value: "16px",
+        type: "fontSizes"
+      },
+      l: {
+        value: "18px",
+        type: "fontSizes"
+      },
+      xl: {
         value: "20px",
         type: "fontSizes"
       }
@@ -1045,6 +1235,28 @@ var semantic = {
         },
         xxxl: {
           value: "24px",
+          type: "fontSizes"
+        }
+      },
+      code: {
+        xs: {
+          value: "12px",
+          type: "fontSizes"
+        },
+        s: {
+          value: "14px",
+          type: "fontSizes"
+        },
+        m: {
+          value: "16px",
+          type: "fontSizes"
+        },
+        l: {
+          value: "18px",
+          type: "fontSizes"
+        },
+        xl: {
+          value: "20px",
           type: "fontSizes"
         }
       },
@@ -1273,6 +1485,24 @@ var semantic = {
         type: "spacing"
       }
     },
+    feedback: {
+      "padding-left": {
+        value: 16,
+        type: "spacing"
+      },
+      "padding-right": {
+        value: 16,
+        type: "spacing"
+      },
+      "padding-top": {
+        value: 16,
+        type: "spacing"
+      },
+      "padding-bottom": {
+        value: 16,
+        type: "spacing"
+      }
+    },
     status: {
       "space-between": {
         value: 8,
@@ -1350,6 +1580,94 @@ var semantic = {
           type: "spacing"
         }
       }
+    },
+    ui: {
+      xxs: {
+        "space-between": {
+          value: 4,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 4,
+          type: "spacing"
+        }
+      },
+      xs: {
+        "space-between": {
+          value: 8,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 6,
+          type: "spacing"
+        }
+      },
+      s: {
+        "space-between": {
+          value: 16,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 8,
+          type: "spacing"
+        }
+      },
+      m: {
+        "space-between": {
+          value: 24,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 12,
+          type: "spacing"
+        }
+      },
+      l: {
+        "space-between": {
+          value: 32,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 16,
+          type: "spacing"
+        }
+      },
+      xl: {
+        "space-between": {
+          value: 64,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 24,
+          type: "spacing"
+        }
+      },
+      xxl: {
+        "space-between": {
+          value: 96,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 32,
+          type: "spacing"
+        }
+      },
+      xxxl: {
+        "space-between": {
+          value: 160,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 64,
+          type: "spacing"
+        }
+      },
+      xxxxl: {
+        "space-around": {
+          value: 96,
+          type: "spacing"
+        }
+      }
     }
   },
   "font-family": {
@@ -1361,6 +1679,42 @@ var semantic = {
       value: "IBM Plex Sans",
       type: "fontFamilies"
     },
+    "font-family": {
+      inputs: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      actions: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      typography: {
+        serif: {
+          value: "IBM Plex Serif",
+          type: "fontFamilies"
+        },
+        "sans-serif": {
+          value: "IBM Plex Sans",
+          type: "fontFamilies"
+        },
+        mono: {
+          value: "IBM Plex Mono",
+          type: "fontFamilies"
+        }
+      },
+      feedback: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      status: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      navigation: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      }
+    },
     typography: {
       serif: {
         value: "IBM Plex Serif",
@@ -1368,6 +1722,10 @@ var semantic = {
       },
       "sans-serif": {
         value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      mono: {
+        value: "IBM Plex Mono",
         type: "fontFamilies"
       }
     },
@@ -1389,6 +1747,16 @@ var semantic = {
       value: "Regular",
       type: "fontWeights"
     },
+    feedback: {
+      regular: {
+        value: "Regular",
+        type: "fontWeights"
+      },
+      bold: {
+        value: "SemiBold",
+        type: "fontWeights"
+      }
+    },
     typography: {
       light: {
         value: "Light",
@@ -1403,7 +1771,7 @@ var semantic = {
         type: "fontWeights"
       },
       bold: {
-        value: "Bold",
+        value: "SemiBold",
         type: "fontWeights"
       }
     },
@@ -1555,6 +1923,16 @@ var semantic = {
         type: "sizing"
       }
     },
+    feedback: {
+      "icon-size": {
+        value: 16,
+        type: "sizing"
+      },
+      width: {
+        value: 72,
+        type: "sizing"
+      }
+    },
     status: {
       s: {
         height: {
@@ -1672,8 +2050,16 @@ var semantic = {
         value: "120%",
         type: "lineHeights"
       },
+      display: {
+        value: "100%",
+        type: "lineHeights"
+      },
       body: {
         value: "150%",
+        type: "lineHeights"
+      },
+      code: {
+        value: "130%",
         type: "lineHeights"
       },
       detail: {
@@ -3211,24 +3597,344 @@ var border_width = {
     type: "borderWidth"
   }
 };
+var tooltip = {
+  "border-radius": {
+    value: "4px",
+    type: "borderRadius"
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  "font-weight": {
+    value: "Regular",
+    type: "fontWeights"
+  },
+  "text-size": {
+    value: "14px",
+    type: "fontSizes"
+  },
+  "text-color": {
+    value: "#f3f4f6",
+    type: "color"
+  },
+  "background-color": {
+    value: "#9ca3af",
+    type: "color"
+  },
+  "padding-left": {
+    value: 16,
+    type: "spacing"
+  },
+  "padding-right": {
+    value: 16,
+    type: "spacing"
+  },
+  "padding-top": {
+    value: 16,
+    type: "spacing"
+  },
+  "padding-bottom": {
+    value: 16,
+    type: "spacing"
+  }
+};
+var text = {
+  xs: {
+    "text-size": {
+      value: "12px",
+      type: "fontSizes"
+    }
+  },
+  sm: {
+    "text-size": {
+      value: "14px",
+      type: "fontSizes"
+    }
+  },
+  md: {
+    "text-size": {
+      value: "16px",
+      type: "fontSizes"
+    }
+  },
+  lg: {
+    "text-size": {
+      value: "18px",
+      type: "fontSizes"
+    }
+  },
+  xl: {
+    "text-size": {
+      value: "20px",
+      type: "fontSizes"
+    }
+  },
+  "2xl": {
+    "text-size": {
+      value: "24px",
+      type: "fontSizes"
+    }
+  },
+  "3xl": {
+    "text-size": {
+      value: "30px",
+      type: "fontSizes"
+    }
+  },
+  "4xl": {
+    "text-size": {
+      value: "36px",
+      type: "fontSizes"
+    }
+  },
+  "5xl": {
+    "text-size": {
+      value: "48px",
+      type: "fontSizes"
+    }
+  },
+  "6xl": {
+    "text-size": {
+      value: "60px",
+      type: "fontSizes"
+    }
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  light: {
+    "font-weight": {
+      value: "Light",
+      type: "fontWeights"
+    }
+  },
+  regular: {
+    "font-weight": {
+      value: "Regular",
+      type: "fontWeights"
+    }
+  },
+  "semi-bold": {
+    "font-weight": {
+      value: "SemiBold",
+      type: "fontWeights"
+    }
+  },
+  bold: {
+    "font-weight": {
+      value: "Bold",
+      type: "fontWeights"
+    }
+  },
+  "text-color": {
+    value: "#374151",
+    type: "color"
+  },
+  "line-height": {
+    value: "150%",
+    type: "lineHeights"
+  }
+};
 var tag = {
   sm: {
     height: {
       value: 24,
       type: "sizing"
+    },
+    "icon-size": {
+      value: 8,
+      type: "sizing"
+    },
+    "padding-left": {
+      value: 12,
+      type: "spacing"
+    },
+    "padding-right": {
+      value: 12,
+      type: "spacing"
+    },
+    "padding-top": {
+      value: 6,
+      type: "spacing"
+    },
+    "padding-bottom": {
+      value: 6,
+      type: "spacing"
+    },
+    "text-size": {
+      value: "14px",
+      type: "fontSizes"
     }
   },
   md: {
     height: {
       value: 32,
       type: "sizing"
+    },
+    "icon-size": {
+      value: 16,
+      type: "sizing"
+    },
+    "padding-left": {
+      value: 16,
+      type: "spacing"
+    },
+    "padding-right": {
+      value: 16,
+      type: "spacing"
+    },
+    "padding-top": {
+      value: 8,
+      type: "spacing"
+    },
+    "padding-bottom": {
+      value: 8,
+      type: "spacing"
+    },
+    "text-size": {
+      value: "16px",
+      type: "fontSizes"
     }
   },
   lg: {
     height: {
       value: 40,
       type: "sizing"
+    },
+    "icon-size": {
+      value: 24,
+      type: "sizing"
+    },
+    "padding-left": {
+      value: 16,
+      type: "spacing"
+    },
+    "padding-right": {
+      value: 16,
+      type: "spacing"
+    },
+    "padding-top": {
+      value: 8,
+      type: "spacing"
+    },
+    "padding-bottom": {
+      value: 8,
+      type: "spacing"
+    },
+    "text-size": {
+      value: "18px",
+      type: "fontSizes"
     }
+  },
+  default: {
+    "background-color": {
+      value: "#9ca3af",
+      type: "color"
+    },
+    "text-color": {
+      value: "#ffffff",
+      type: "color"
+    },
+    "icon-color": {
+      value: "#ffffff",
+      type: "color"
+    }
+  },
+  "space-between": {
+    value: 8,
+    type: "spacing"
+  },
+  "font-weight": {
+    value: "Regular",
+    type: "fontWeights"
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  "border-radius": {
+    value: "100px",
+    type: "borderRadius"
+  }
+};
+var tab = {
+  unselected: {
+    line: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "text-color": {
+        value: "#0284c7",
+        type: "color"
+      }
+    },
+    soft: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "text-color": {
+        value: "#0284c7",
+        type: "color"
+      }
+    },
+    solid: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "text-color": {
+        value: "#0284c7",
+        type: "color"
+      }
+    }
+  },
+  selected: {
+    line: {
+      "text-color": {
+        value: "#0284c7",
+        type: "color"
+      },
+      "border-color": {
+        value: "#0284c7",
+        type: "color"
+      }
+    },
+    soft: {
+      "background-color": {
+        value: "#0ea5e9",
+        type: "color"
+      },
+      "text-color": {
+        value: "#ffffff",
+        type: "color"
+      }
+    },
+    solid: {
+      "background-color": {
+        value: "#0284c7",
+        type: "color"
+      },
+      "text-color": {
+        value: "#ffffff",
+        type: "color"
+      }
+    }
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  "text-size": {
+    value: "16px",
+    type: "fontSizes"
+  },
+  "font-weight": {
+    value: "Regular",
+    type: "fontWeights"
   }
 };
 var switch2 = {
@@ -4003,6 +4709,554 @@ var input = {
     type: "fontFamilies"
   }
 };
+var icon = {
+  width: {
+    value: 24,
+    type: "sizing"
+  },
+  height: {
+    value: 24,
+    type: "sizing"
+  },
+  "icon-color": {
+    value: "#0ea5e9",
+    type: "color"
+  }
+};
+var icon_button = {
+  primary: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "#0ea5e9",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#0ea5e9",
+          type: "color"
+        },
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#0ea5e9",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#0ea5e9",
+          type: "color"
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "#38bdf8",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "background-color": {
+          value: "#38bdf8",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#38bdf8",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "background-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    }
+  },
+  secondary: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "#4b5563",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#4b5563",
+          type: "color"
+        },
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "#d1d5db",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#4b5563",
+          type: "color"
+        },
+        "background-color": {
+          value: "#d1d5db",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#d1d5db",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "#6b7280",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#6b7280",
+          type: "color"
+        },
+        "background-color": {
+          value: "#6b7280",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#6b7280",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    }
+  },
+  negative: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#f87171",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#f87171",
+          type: "color"
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "#fca5a5",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "background-color": {
+          value: "#fca5a5",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#fca5a5",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "#ef4444",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#ef4444",
+          type: "color"
+        },
+        "background-color": {
+          value: "#ef4444",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#ef4444",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    }
+  },
+  disabled: {
+    solid: {
+      "background-color": {
+        value: "#d1d5db",
+        type: "color"
+      },
+      "icon-color": {
+        value: "#6b7280",
+        type: "color"
+      }
+    },
+    outlined: {
+      "border-color": {
+        value: "#d1d5db",
+        type: "color"
+      },
+      "background-color": {
+        value: "#d1d5db",
+        type: "color"
+      },
+      "icon-color": {
+        value: "#6b7280",
+        type: "color"
+      }
+    },
+    ghost: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "icon-color": {
+        value: "#d1d5db",
+        type: "color"
+      }
+    }
+  },
+  "border-radius": {
+    value: "4px",
+    type: "borderRadius"
+  },
+  round: {
+    "border-radius": {
+      value: "100px",
+      type: "borderRadius"
+    }
+  },
+  "border-width": {
+    value: 1,
+    type: "borderWidth"
+  },
+  xs: {
+    "icon-size": {
+      value: 12,
+      type: "sizing"
+    },
+    height: {
+      value: 24,
+      type: "sizing"
+    },
+    width: {
+      value: 24,
+      type: "sizing"
+    }
+  },
+  sm: {
+    "icon-size": {
+      value: 16,
+      type: "sizing"
+    },
+    height: {
+      value: 32,
+      type: "sizing"
+    },
+    width: {
+      value: 32,
+      type: "sizing"
+    }
+  },
+  md: {
+    "icon-size": {
+      value: 20,
+      type: "sizing"
+    },
+    height: {
+      value: 40,
+      type: "sizing"
+    },
+    width: {
+      value: 40,
+      type: "sizing"
+    }
+  },
+  lg: {
+    "icon-size": {
+      value: 24,
+      type: "sizing"
+    },
+    height: {
+      value: 48,
+      type: "sizing"
+    },
+    width: {
+      value: 48,
+      type: "sizing"
+    }
+  },
+  outline: {
+    "border-width": {
+      value: 4,
+      type: "borderWidth"
+    },
+    "border-color": {
+      value: "#e0f2fe",
+      type: "color"
+    }
+  }
+};
+var heading = {
+  xs: {
+    "text-size": {
+      value: "16px",
+      type: "fontSizes"
+    }
+  },
+  sm: {
+    "text-size": {
+      value: "18px",
+      type: "fontSizes"
+    }
+  },
+  md: {
+    "text-size": {
+      value: "22px",
+      type: "fontSizes"
+    }
+  },
+  lg: {
+    "text-size": {
+      value: "28px",
+      type: "fontSizes"
+    }
+  },
+  xl: {
+    "text-size": {
+      value: "36px",
+      type: "fontSizes"
+    }
+  },
+  "2xl": {
+    "text-size": {
+      value: "44px",
+      type: "fontSizes"
+    }
+  },
+  "3xl": {
+    "text-size": {
+      value: "48px",
+      type: "fontSizes"
+    }
+  },
+  "4xl": {
+    "text-size": {
+      value: "60px",
+      type: "fontSizes"
+    }
+  },
+  light: {
+    "font-weight": {
+      value: "Light",
+      type: "fontWeights"
+    }
+  },
+  regular: {
+    "font-weight": {
+      value: "Regular",
+      type: "fontWeights"
+    }
+  },
+  "semi-bold": {
+    "font-weight": {
+      value: "SemiBold",
+      type: "fontWeights"
+    }
+  },
+  bold: {
+    "font-weight": {
+      value: "Bold",
+      type: "fontWeights"
+    }
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  "text-color": {
+    value: "#374151",
+    type: "color"
+  },
+  "line-height": {
+    value: "120%",
+    type: "lineHeights"
+  }
+};
 var checkbox = {
   sm: {
     width: {
@@ -4509,6 +5763,14 @@ var btn = {
   "line-height": {
     value: "100%",
     type: "lineHeights"
+  },
+  "focus-ring": {
+    value: "#e0f2fe",
+    type: "color",
+    "border-width": {
+      value: "{semantic.border-width.focus}",
+      type: "borderWidth"
+    }
   }
 };
 var avatar = {
@@ -4568,7 +5830,7 @@ var avatar = {
       }
     },
     "border-color": {
-      value: "#ffffff",
+      value: "#0284c7",
       type: "color"
     },
     "border-radius": {
@@ -4721,7 +5983,7 @@ var avatar = {
     }
   },
   "background-color": {
-    value: "#0284c7",
+    value: "#0ea5e9",
     type: "color"
   },
   "font-family": {
@@ -4742,11 +6004,17 @@ var light_default = {
   color,
   "border-radius": border_radius,
   "border-width": border_width,
+  tooltip,
+  text,
   tag,
+  tab,
   switch: switch2,
   select,
   radio,
   input,
+  icon,
+  "icon-button": icon_button,
+  heading,
   checkbox,
   btn,
   avatar
@@ -4763,6 +6031,9 @@ export {
   font_size as "font-size",
   font_style as "font-style",
   font_weight as "font-weight",
+  heading,
+  icon,
+  icon_button as "icon-button",
   input,
   line_height as "line-height",
   opacity,
@@ -4772,5 +6043,8 @@ export {
   size,
   space,
   switch2 as switch,
-  tag
+  tab,
+  tag,
+  text,
+  tooltip
 };

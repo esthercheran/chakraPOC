@@ -1,11 +1,11 @@
 // src/figmaTokensChakra/comp/avatar.json
 var avatar = {
   "font-color": {
-    value: "{semantic.color.navigation.font-color}",
+    value: "{semantic.color.navigation.text}",
     type: "color"
   },
   "icon-color": {
-    value: "{semantic.color.navigation.icon-color}",
+    value: "{semantic.color.navigation.icon}",
     type: "color"
   },
   "border-radius": {
@@ -56,7 +56,7 @@ var avatar = {
       }
     },
     "border-color": {
-      value: "{semantic.color.navigation.font-color}",
+      value: "{semantic.color.navigation.border}",
       type: "color"
     },
     "border-radius": {
@@ -209,7 +209,7 @@ var avatar = {
     }
   },
   "background-color": {
-    value: "{semantic.color.navigation.border-color}",
+    value: "{semantic.color.navigation.background}",
     type: "color"
   },
   "font-family": {

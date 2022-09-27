@@ -3,7 +3,8 @@ var Avatar = {
   parts: ["container", "badge"],
   baseStyle: {
     badge: {
-      borderRadius: "avatar-border-radius"
+      borderRadius: "avatar-border-radius",
+      height: "100%"
     }
   },
   sizes: {

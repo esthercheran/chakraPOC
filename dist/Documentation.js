@@ -50,33 +50,8 @@ var require_react = __commonJS({
 // src/Documentation.tsx
 var import_react = __toModule(require_react());
 
-// figmaTokensChakra/$metadata.json
-var tokenSetOrder = [
-  "core/border",
-  "core/color",
-  "core/opacity",
-  "core/size",
-  "core/space",
-  "core/typography",
-  "comp/avatar",
-  "comp/button",
-  "comp/checkbox",
-  "comp/heading",
-  "comp/icon",
-  "comp/icon-button",
-  "comp/input",
-  "comp/radio",
-  "comp/select",
-  "comp/switch",
-  "comp/tab",
-  "comp/tag",
-  "comp/text",
-  "comp/tooltip",
-  "semantic/light",
-  "semantic/dark",
-  "Brand-ChakraDemo/light",
-  "Brand-ChakraDemo/dark"
-];
+// src/figmaTokensChakra/$metadata.json
+var tokenSetOrder = ["core/border", "core/color", "core/opacity", "core/size", "core/space", "core/typography", "comp/avatar", "comp/button", "comp/checkbox", "comp/heading", "comp/icon", "comp/icon-button", "comp/input", "comp/radio", "comp/select", "comp/switch", "comp/tab", "comp/tag", "comp/text", "comp/tooltip", "semantic/light", "semantic/dark", "Brand-ChakraDemo/light", "Brand-ChakraDemo/dark"];
 var metadata_default = {
   tokenSetOrder
 };
@@ -426,6 +401,18 @@ var semantic = {
           background: {
             value: "#f87171",
             type: "color"
+          },
+          icon: {
+            value: "#f87171",
+            type: "color"
+          },
+          "quiet-background": {
+            value: "#ffffff03",
+            type: "color"
+          },
+          "quiet-text": {
+            value: "#f87171",
+            type: "color"
           }
         },
         hover: {
@@ -439,6 +426,18 @@ var semantic = {
           },
           background: {
             value: "#fca5a5",
+            type: "color"
+          },
+          icon: {
+            value: "#fca5a5",
+            type: "color"
+          },
+          "quiet-background": {
+            value: "#fca5a5",
+            type: "color"
+          },
+          "quiet-text": {
+            value: "#ffffff",
             type: "color"
           }
         },
@@ -454,6 +453,18 @@ var semantic = {
           background: {
             value: "#ef4444",
             type: "color"
+          },
+          icon: {
+            value: "#ef4444",
+            type: "color"
+          },
+          "quiet-background": {
+            value: "#ef4444",
+            type: "color"
+          },
+          "quiet-text": {
+            value: "#ffffff",
+            type: "color"
           }
         },
         focus: {
@@ -468,6 +479,10 @@ var semantic = {
           background: {
             value: "#f87171",
             type: "color"
+          },
+          icon: {
+            value: "#f87171",
+            type: "color"
           }
         },
         disabled: {
@@ -480,6 +495,10 @@ var semantic = {
             type: "color"
           },
           border: {
+            value: "#d1d5db",
+            type: "color"
+          },
+          icon: {
             value: "#d1d5db",
             type: "color"
           }
@@ -556,6 +575,10 @@ var semantic = {
           background: {
             value: "#0ea5e9",
             type: "color"
+          },
+          "quiet-background": {
+            value: "#ffffff03",
+            type: "color"
           }
         },
         hover: {
@@ -570,6 +593,10 @@ var semantic = {
           background: {
             value: "#38bdf8",
             type: "color"
+          },
+          "quiet-background": {
+            value: "#38bdf8",
+            type: "color"
           }
         },
         active: {
@@ -582,6 +609,10 @@ var semantic = {
             type: "color"
           },
           background: {
+            value: "#0284c7",
+            type: "color"
+          },
+          "quiet-background": {
             value: "#0284c7",
             type: "color"
           }
@@ -882,6 +913,116 @@ var semantic = {
         }
       }
     },
+    feedback: {
+      info: {
+        "border-color": {
+          value: "#2dd4bf",
+          type: "color"
+        },
+        "text-color": {
+          value: "#2dd4bf",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#2dd4bf",
+          type: "color"
+        },
+        "background-color": {
+          value: "#dbeafe",
+          type: "color"
+        }
+      },
+      warning: {
+        "border-color": {
+          value: "#fbbf24",
+          type: "color"
+        },
+        "text-color": {
+          value: "#fbbf24",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#fbbf24",
+          type: "color"
+        },
+        "background-color": {
+          value: "#fef3c7",
+          type: "color"
+        }
+      },
+      success: {
+        "border-color": {
+          value: "#34d399",
+          type: "color"
+        },
+        "text-color": {
+          value: "#34d399",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#34d399",
+          type: "color"
+        },
+        "background-color": {
+          value: "#d1fae5",
+          type: "color"
+        }
+      },
+      help: {
+        "border-color": {
+          value: "#c084fc",
+          type: "color"
+        },
+        "text-color": {
+          value: "#c084fc",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#c084fc",
+          type: "color"
+        },
+        "background-color": {
+          value: "#f3e8ff",
+          type: "color"
+        }
+      },
+      neutral: {
+        "border-color": {
+          value: "#9ca3af",
+          type: "color"
+        },
+        "text-color": {
+          value: "#9ca3af",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#9ca3af",
+          type: "color"
+        },
+        "background-color": {
+          value: "#f3f4f6",
+          type: "color"
+        }
+      },
+      error: {
+        "border-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "text-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "background-color": {
+          value: "#fee2e2",
+          type: "color"
+        }
+      }
+    },
     typography: {
       default: {
         value: "#374151",
@@ -1003,20 +1144,26 @@ var semantic = {
       }
     },
     navigation: {
-      "background-color": {
+      background: {
         value: "#0ea5e9",
         type: "color"
       },
-      "border-color": {
+      border: {
         value: "#0284c7",
         type: "color"
       },
-      "font-color": {
+      text: {
         value: "#ffffff",
         type: "color"
       },
-      "icon-color": {
+      icon: {
         value: "#ffffff",
+        type: "color"
+      }
+    },
+    focus: {
+      border: {
+        value: "#e0f2fe",
         type: "color"
       }
     }
@@ -1054,6 +1201,24 @@ var semantic = {
         type: "fontSizes"
       },
       lg: {
+        value: "20px",
+        type: "fontSizes"
+      }
+    },
+    feedback: {
+      s: {
+        value: "14px",
+        type: "fontSizes"
+      },
+      m: {
+        value: "16px",
+        type: "fontSizes"
+      },
+      l: {
+        value: "18px",
+        type: "fontSizes"
+      },
+      xl: {
         value: "20px",
         type: "fontSizes"
       }
@@ -1128,6 +1293,28 @@ var semantic = {
         },
         xxxl: {
           value: "24px",
+          type: "fontSizes"
+        }
+      },
+      code: {
+        xs: {
+          value: "12px",
+          type: "fontSizes"
+        },
+        s: {
+          value: "14px",
+          type: "fontSizes"
+        },
+        m: {
+          value: "16px",
+          type: "fontSizes"
+        },
+        l: {
+          value: "18px",
+          type: "fontSizes"
+        },
+        xl: {
+          value: "20px",
           type: "fontSizes"
         }
       },
@@ -1356,6 +1543,24 @@ var semantic = {
         type: "spacing"
       }
     },
+    feedback: {
+      "padding-left": {
+        value: 16,
+        type: "spacing"
+      },
+      "padding-right": {
+        value: 16,
+        type: "spacing"
+      },
+      "padding-top": {
+        value: 16,
+        type: "spacing"
+      },
+      "padding-bottom": {
+        value: 16,
+        type: "spacing"
+      }
+    },
     status: {
       "space-between": {
         value: 8,
@@ -1433,6 +1638,94 @@ var semantic = {
           type: "spacing"
         }
       }
+    },
+    ui: {
+      xxs: {
+        "space-between": {
+          value: 4,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 4,
+          type: "spacing"
+        }
+      },
+      xs: {
+        "space-between": {
+          value: 8,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 6,
+          type: "spacing"
+        }
+      },
+      s: {
+        "space-between": {
+          value: 16,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 8,
+          type: "spacing"
+        }
+      },
+      m: {
+        "space-between": {
+          value: 24,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 12,
+          type: "spacing"
+        }
+      },
+      l: {
+        "space-between": {
+          value: 32,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 16,
+          type: "spacing"
+        }
+      },
+      xl: {
+        "space-between": {
+          value: 64,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 24,
+          type: "spacing"
+        }
+      },
+      xxl: {
+        "space-between": {
+          value: 96,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 32,
+          type: "spacing"
+        }
+      },
+      xxxl: {
+        "space-between": {
+          value: 160,
+          type: "spacing"
+        },
+        "space-around": {
+          value: 64,
+          type: "spacing"
+        }
+      },
+      xxxxl: {
+        "space-around": {
+          value: 96,
+          type: "spacing"
+        }
+      }
     }
   },
   "font-family": {
@@ -1444,6 +1737,42 @@ var semantic = {
       value: "IBM Plex Sans",
       type: "fontFamilies"
     },
+    "font-family": {
+      inputs: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      actions: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      typography: {
+        serif: {
+          value: "IBM Plex Serif",
+          type: "fontFamilies"
+        },
+        "sans-serif": {
+          value: "IBM Plex Sans",
+          type: "fontFamilies"
+        },
+        mono: {
+          value: "IBM Plex Mono",
+          type: "fontFamilies"
+        }
+      },
+      feedback: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      status: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      navigation: {
+        value: "IBM Plex Sans",
+        type: "fontFamilies"
+      }
+    },
     typography: {
       serif: {
         value: "IBM Plex Serif",
@@ -1451,6 +1780,10 @@ var semantic = {
       },
       "sans-serif": {
         value: "IBM Plex Sans",
+        type: "fontFamilies"
+      },
+      mono: {
+        value: "IBM Plex Mono",
         type: "fontFamilies"
       }
     },
@@ -1472,6 +1805,16 @@ var semantic = {
       value: "Regular",
       type: "fontWeights"
     },
+    feedback: {
+      regular: {
+        value: "Regular",
+        type: "fontWeights"
+      },
+      bold: {
+        value: "SemiBold",
+        type: "fontWeights"
+      }
+    },
     typography: {
       light: {
         value: "Light",
@@ -1486,7 +1829,7 @@ var semantic = {
         type: "fontWeights"
       },
       bold: {
-        value: "Bold",
+        value: "SemiBold",
         type: "fontWeights"
       }
     },
@@ -1638,6 +1981,16 @@ var semantic = {
         type: "sizing"
       }
     },
+    feedback: {
+      "icon-size": {
+        value: 16,
+        type: "sizing"
+      },
+      width: {
+        value: 72,
+        type: "sizing"
+      }
+    },
     status: {
       s: {
         height: {
@@ -1755,8 +2108,16 @@ var semantic = {
         value: "120%",
         type: "lineHeights"
       },
+      display: {
+        value: "100%",
+        type: "lineHeights"
+      },
       body: {
         value: "150%",
+        type: "lineHeights"
+      },
+      code: {
+        value: "130%",
         type: "lineHeights"
       },
       detail: {
@@ -3294,24 +3655,344 @@ var border_width = {
     type: "borderWidth"
   }
 };
+var tooltip = {
+  "border-radius": {
+    value: "4px",
+    type: "borderRadius"
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  "font-weight": {
+    value: "Regular",
+    type: "fontWeights"
+  },
+  "text-size": {
+    value: "14px",
+    type: "fontSizes"
+  },
+  "text-color": {
+    value: "#f3f4f6",
+    type: "color"
+  },
+  "background-color": {
+    value: "#9ca3af",
+    type: "color"
+  },
+  "padding-left": {
+    value: 16,
+    type: "spacing"
+  },
+  "padding-right": {
+    value: 16,
+    type: "spacing"
+  },
+  "padding-top": {
+    value: 16,
+    type: "spacing"
+  },
+  "padding-bottom": {
+    value: 16,
+    type: "spacing"
+  }
+};
+var text = {
+  xs: {
+    "text-size": {
+      value: "12px",
+      type: "fontSizes"
+    }
+  },
+  sm: {
+    "text-size": {
+      value: "14px",
+      type: "fontSizes"
+    }
+  },
+  md: {
+    "text-size": {
+      value: "16px",
+      type: "fontSizes"
+    }
+  },
+  lg: {
+    "text-size": {
+      value: "18px",
+      type: "fontSizes"
+    }
+  },
+  xl: {
+    "text-size": {
+      value: "20px",
+      type: "fontSizes"
+    }
+  },
+  "2xl": {
+    "text-size": {
+      value: "24px",
+      type: "fontSizes"
+    }
+  },
+  "3xl": {
+    "text-size": {
+      value: "30px",
+      type: "fontSizes"
+    }
+  },
+  "4xl": {
+    "text-size": {
+      value: "36px",
+      type: "fontSizes"
+    }
+  },
+  "5xl": {
+    "text-size": {
+      value: "48px",
+      type: "fontSizes"
+    }
+  },
+  "6xl": {
+    "text-size": {
+      value: "60px",
+      type: "fontSizes"
+    }
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  light: {
+    "font-weight": {
+      value: "Light",
+      type: "fontWeights"
+    }
+  },
+  regular: {
+    "font-weight": {
+      value: "Regular",
+      type: "fontWeights"
+    }
+  },
+  "semi-bold": {
+    "font-weight": {
+      value: "SemiBold",
+      type: "fontWeights"
+    }
+  },
+  bold: {
+    "font-weight": {
+      value: "Bold",
+      type: "fontWeights"
+    }
+  },
+  "text-color": {
+    value: "#374151",
+    type: "color"
+  },
+  "line-height": {
+    value: "150%",
+    type: "lineHeights"
+  }
+};
 var tag = {
   sm: {
     height: {
       value: 24,
       type: "sizing"
+    },
+    "icon-size": {
+      value: 8,
+      type: "sizing"
+    },
+    "padding-left": {
+      value: 12,
+      type: "spacing"
+    },
+    "padding-right": {
+      value: 12,
+      type: "spacing"
+    },
+    "padding-top": {
+      value: 6,
+      type: "spacing"
+    },
+    "padding-bottom": {
+      value: 6,
+      type: "spacing"
+    },
+    "text-size": {
+      value: "14px",
+      type: "fontSizes"
     }
   },
   md: {
     height: {
       value: 32,
       type: "sizing"
+    },
+    "icon-size": {
+      value: 16,
+      type: "sizing"
+    },
+    "padding-left": {
+      value: 16,
+      type: "spacing"
+    },
+    "padding-right": {
+      value: 16,
+      type: "spacing"
+    },
+    "padding-top": {
+      value: 8,
+      type: "spacing"
+    },
+    "padding-bottom": {
+      value: 8,
+      type: "spacing"
+    },
+    "text-size": {
+      value: "16px",
+      type: "fontSizes"
     }
   },
   lg: {
     height: {
       value: 40,
       type: "sizing"
+    },
+    "icon-size": {
+      value: 24,
+      type: "sizing"
+    },
+    "padding-left": {
+      value: 16,
+      type: "spacing"
+    },
+    "padding-right": {
+      value: 16,
+      type: "spacing"
+    },
+    "padding-top": {
+      value: 8,
+      type: "spacing"
+    },
+    "padding-bottom": {
+      value: 8,
+      type: "spacing"
+    },
+    "text-size": {
+      value: "18px",
+      type: "fontSizes"
     }
+  },
+  default: {
+    "background-color": {
+      value: "#9ca3af",
+      type: "color"
+    },
+    "text-color": {
+      value: "#ffffff",
+      type: "color"
+    },
+    "icon-color": {
+      value: "#ffffff",
+      type: "color"
+    }
+  },
+  "space-between": {
+    value: 8,
+    type: "spacing"
+  },
+  "font-weight": {
+    value: "Regular",
+    type: "fontWeights"
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  "border-radius": {
+    value: "100px",
+    type: "borderRadius"
+  }
+};
+var tab = {
+  unselected: {
+    line: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "text-color": {
+        value: "#0284c7",
+        type: "color"
+      }
+    },
+    soft: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "text-color": {
+        value: "#0284c7",
+        type: "color"
+      }
+    },
+    solid: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "text-color": {
+        value: "#0284c7",
+        type: "color"
+      }
+    }
+  },
+  selected: {
+    line: {
+      "text-color": {
+        value: "#0284c7",
+        type: "color"
+      },
+      "border-color": {
+        value: "#0284c7",
+        type: "color"
+      }
+    },
+    soft: {
+      "background-color": {
+        value: "#0ea5e9",
+        type: "color"
+      },
+      "text-color": {
+        value: "#ffffff",
+        type: "color"
+      }
+    },
+    solid: {
+      "background-color": {
+        value: "#0284c7",
+        type: "color"
+      },
+      "text-color": {
+        value: "#ffffff",
+        type: "color"
+      }
+    }
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  "text-size": {
+    value: "16px",
+    type: "fontSizes"
+  },
+  "font-weight": {
+    value: "Regular",
+    type: "fontWeights"
   }
 };
 var switch2 = {
@@ -4086,6 +4767,554 @@ var input = {
     type: "fontFamilies"
   }
 };
+var icon = {
+  width: {
+    value: 24,
+    type: "sizing"
+  },
+  height: {
+    value: 24,
+    type: "sizing"
+  },
+  "icon-color": {
+    value: "#0ea5e9",
+    type: "color"
+  }
+};
+var icon_button = {
+  primary: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "#0ea5e9",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#0ea5e9",
+          type: "color"
+        },
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#0ea5e9",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#0ea5e9",
+          type: "color"
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "#38bdf8",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "background-color": {
+          value: "#38bdf8",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#38bdf8",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "background-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#0284c7",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    }
+  },
+  secondary: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "#4b5563",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#4b5563",
+          type: "color"
+        },
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "#d1d5db",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#4b5563",
+          type: "color"
+        },
+        "background-color": {
+          value: "#d1d5db",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#d1d5db",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#4b5563",
+          type: "color"
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "#6b7280",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#6b7280",
+          type: "color"
+        },
+        "background-color": {
+          value: "#6b7280",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#6b7280",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    }
+  },
+  negative: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#f87171",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#f87171",
+          type: "color"
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "#fca5a5",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#f87171",
+          type: "color"
+        },
+        "background-color": {
+          value: "#fca5a5",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#fca5a5",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "#ef4444",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "#ef4444",
+          type: "color"
+        },
+        "background-color": {
+          value: "#ef4444",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "#ef4444",
+          type: "color"
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      }
+    }
+  },
+  disabled: {
+    solid: {
+      "background-color": {
+        value: "#d1d5db",
+        type: "color"
+      },
+      "icon-color": {
+        value: "#6b7280",
+        type: "color"
+      }
+    },
+    outlined: {
+      "border-color": {
+        value: "#d1d5db",
+        type: "color"
+      },
+      "background-color": {
+        value: "#d1d5db",
+        type: "color"
+      },
+      "icon-color": {
+        value: "#6b7280",
+        type: "color"
+      }
+    },
+    ghost: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "icon-color": {
+        value: "#d1d5db",
+        type: "color"
+      }
+    }
+  },
+  "border-radius": {
+    value: "4px",
+    type: "borderRadius"
+  },
+  round: {
+    "border-radius": {
+      value: "100px",
+      type: "borderRadius"
+    }
+  },
+  "border-width": {
+    value: 1,
+    type: "borderWidth"
+  },
+  xs: {
+    "icon-size": {
+      value: 12,
+      type: "sizing"
+    },
+    height: {
+      value: 24,
+      type: "sizing"
+    },
+    width: {
+      value: 24,
+      type: "sizing"
+    }
+  },
+  sm: {
+    "icon-size": {
+      value: 16,
+      type: "sizing"
+    },
+    height: {
+      value: 32,
+      type: "sizing"
+    },
+    width: {
+      value: 32,
+      type: "sizing"
+    }
+  },
+  md: {
+    "icon-size": {
+      value: 20,
+      type: "sizing"
+    },
+    height: {
+      value: 40,
+      type: "sizing"
+    },
+    width: {
+      value: 40,
+      type: "sizing"
+    }
+  },
+  lg: {
+    "icon-size": {
+      value: 24,
+      type: "sizing"
+    },
+    height: {
+      value: 48,
+      type: "sizing"
+    },
+    width: {
+      value: 48,
+      type: "sizing"
+    }
+  },
+  outline: {
+    "border-width": {
+      value: 4,
+      type: "borderWidth"
+    },
+    "border-color": {
+      value: "#e0f2fe",
+      type: "color"
+    }
+  }
+};
+var heading = {
+  xs: {
+    "text-size": {
+      value: "16px",
+      type: "fontSizes"
+    }
+  },
+  sm: {
+    "text-size": {
+      value: "18px",
+      type: "fontSizes"
+    }
+  },
+  md: {
+    "text-size": {
+      value: "22px",
+      type: "fontSizes"
+    }
+  },
+  lg: {
+    "text-size": {
+      value: "28px",
+      type: "fontSizes"
+    }
+  },
+  xl: {
+    "text-size": {
+      value: "36px",
+      type: "fontSizes"
+    }
+  },
+  "2xl": {
+    "text-size": {
+      value: "44px",
+      type: "fontSizes"
+    }
+  },
+  "3xl": {
+    "text-size": {
+      value: "48px",
+      type: "fontSizes"
+    }
+  },
+  "4xl": {
+    "text-size": {
+      value: "60px",
+      type: "fontSizes"
+    }
+  },
+  light: {
+    "font-weight": {
+      value: "Light",
+      type: "fontWeights"
+    }
+  },
+  regular: {
+    "font-weight": {
+      value: "Regular",
+      type: "fontWeights"
+    }
+  },
+  "semi-bold": {
+    "font-weight": {
+      value: "SemiBold",
+      type: "fontWeights"
+    }
+  },
+  bold: {
+    "font-weight": {
+      value: "Bold",
+      type: "fontWeights"
+    }
+  },
+  "font-family": {
+    value: "IBM Plex Sans",
+    type: "fontFamilies"
+  },
+  "text-color": {
+    value: "#374151",
+    type: "color"
+  },
+  "line-height": {
+    value: "120%",
+    type: "lineHeights"
+  }
+};
 var checkbox = {
   sm: {
     width: {
@@ -4592,6 +5821,14 @@ var btn = {
   "line-height": {
     value: "100%",
     type: "lineHeights"
+  },
+  "focus-ring": {
+    value: "#e0f2fe",
+    type: "color",
+    "border-width": {
+      value: "{semantic.border-width.focus}",
+      type: "borderWidth"
+    }
   }
 };
 var avatar = {
@@ -4651,7 +5888,7 @@ var avatar = {
       }
     },
     "border-color": {
-      value: "#ffffff",
+      value: "#0284c7",
       type: "color"
     },
     "border-radius": {
@@ -4804,7 +6041,7 @@ var avatar = {
     }
   },
   "background-color": {
-    value: "#0284c7",
+    value: "#0ea5e9",
     type: "color"
   },
   "font-family": {
@@ -4825,11 +6062,17 @@ var light_default = {
   color,
   "border-radius": border_radius,
   "border-width": border_width,
+  tooltip,
+  text,
   tag,
+  tab,
   switch: switch2,
   select,
   radio,
   input,
+  icon,
+  "icon-button": icon_button,
+  heading,
   checkbox,
   btn,
   avatar
@@ -6440,11 +7683,203 @@ var border_width2 = {
     type: "borderWidth"
   }
 };
+var tooltip2 = {
+  "border-radius": {
+    value: "{semantic.border-radius.feedback}",
+    type: "borderRadius",
+    failedToResolve: true
+  },
+  "font-family": {
+    value: "{semantic.font-family.font-family.feedback}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  "font-weight": {
+    value: "{semantic.font-weight.feedback.regular}",
+    type: "fontWeights",
+    failedToResolve: true
+  },
+  "text-size": {
+    value: "{semantic.font-size.feedback.s}",
+    type: "fontSizes",
+    failedToResolve: true
+  },
+  "text-color": {
+    value: "{semantic.color.feedback.neutral.background-color}",
+    type: "color",
+    failedToResolve: true
+  },
+  "background-color": {
+    value: "{semantic.color.feedback.neutral.border-color}",
+    type: "color",
+    failedToResolve: true
+  },
+  "padding-left": {
+    value: "{semantic.spacing.feedback.padding-left}",
+    type: "spacing",
+    failedToResolve: true
+  },
+  "padding-right": {
+    value: "{semantic.spacing.feedback.padding-right}",
+    type: "spacing",
+    failedToResolve: true
+  },
+  "padding-top": {
+    value: "{semantic.spacing.feedback.padding-top}",
+    type: "spacing",
+    failedToResolve: true
+  },
+  "padding-bottom": {
+    value: "{semantic.spacing.feedback.padding-bottom}",
+    type: "spacing",
+    failedToResolve: true
+  }
+};
+var text2 = {
+  xs: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.xs}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  sm: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.s}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  md: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.m}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  lg: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.l}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  xl: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.xl}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  "2xl": {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.xxxl}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  "3xl": {
+    "text-size": {
+      value: "30px",
+      type: "fontSizes"
+    }
+  },
+  "4xl": {
+    "text-size": {
+      value: "36px",
+      type: "fontSizes"
+    }
+  },
+  "5xl": {
+    "text-size": {
+      value: "48px",
+      type: "fontSizes"
+    }
+  },
+  "6xl": {
+    "text-size": {
+      value: "60px",
+      type: "fontSizes"
+    }
+  },
+  "font-family": {
+    value: "{semantic.font-family.typography.sans-serif}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  light: {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.light}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  regular: {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.regular}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  "semi-bold": {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.semibold}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  bold: {
+    "font-weight": {
+      value: "Bold",
+      type: "fontWeights"
+    }
+  },
+  "text-color": {
+    value: "{semantic.color.typography.default}",
+    type: "color",
+    failedToResolve: true
+  },
+  "line-height": {
+    value: "{semantic.line-height.typography.body}",
+    type: "lineHeights",
+    failedToResolve: true
+  }
+};
 var tag2 = {
   sm: {
     height: {
       value: "{semantic.sizing.status.s.height}",
       type: "sizing",
+      failedToResolve: true
+    },
+    "icon-size": {
+      value: "{semantic.sizing.status.s.icon-size}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    "padding-left": {
+      value: "{semantic.spacing.status.small.padding-left}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-right": {
+      value: "{semantic.spacing.status.small.padding-right}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-top": {
+      value: "{semantic.spacing.status.small.padding-top}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-bottom": {
+      value: "{semantic.spacing.status.small.padding-bottom}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "text-size": {
+      value: "{semantic.font-size.status.s}",
+      type: "fontSizes",
       failedToResolve: true
     }
   },
@@ -6453,6 +7888,36 @@ var tag2 = {
       value: "{semantic.sizing.status.m.height}",
       type: "sizing",
       failedToResolve: true
+    },
+    "icon-size": {
+      value: "{semantic.sizing.status.m.icon-size}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    "padding-left": {
+      value: "{semantic.spacing.status.medium.padding-left}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-right": {
+      value: "{semantic.spacing.status.medium.padding-right}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-top": {
+      value: "{semantic.spacing.status.medium.padding-top}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-bottom": {
+      value: "{semantic.spacing.status.medium.padding-bottom}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "text-size": {
+      value: "{semantic.font-size.status.m}",
+      type: "fontSizes",
+      failedToResolve: true
     }
   },
   lg: {
@@ -6460,7 +7925,165 @@ var tag2 = {
       value: "{semantic.sizing.status.l.height}",
       type: "sizing",
       failedToResolve: true
+    },
+    "icon-size": {
+      value: "{semantic.sizing.status.l.icon-size}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    "padding-left": {
+      value: "{semantic.spacing.status.large.padding-left}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-right": {
+      value: "{semantic.spacing.status.large.padding-right}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-top": {
+      value: "{semantic.spacing.status.large.padding-top}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-bottom": {
+      value: "{semantic.spacing.status.medium.padding-bottom}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "text-size": {
+      value: "{semantic.font-size.status.l}",
+      type: "fontSizes",
+      failedToResolve: true
     }
+  },
+  default: {
+    "background-color": {
+      value: "{semantic.color.status.neutral.border-color}",
+      type: "color",
+      failedToResolve: true
+    },
+    "text-color": {
+      value: "#ffffff",
+      type: "color"
+    },
+    "icon-color": {
+      value: "#ffffff",
+      type: "color"
+    }
+  },
+  "space-between": {
+    value: "{semantic.spacing.status.space-between}",
+    type: "spacing",
+    failedToResolve: true
+  },
+  "font-weight": {
+    value: "{semantic.font-weight.status}",
+    type: "fontWeights",
+    failedToResolve: true
+  },
+  "font-family": {
+    value: "{semantic.font-family.status}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  "border-radius": {
+    value: "{semantic.border-radius.status}",
+    type: "borderRadius",
+    failedToResolve: true
+  }
+};
+var tab2 = {
+  unselected: {
+    line: {
+      "background-color": {
+        value: "{semantic.color.actions.primary.default.quiet-background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    soft: {
+      "background-color": {
+        value: "{semantic.color.actions.primary.default.quiet-background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    solid: {
+      "background-color": {
+        value: "{semantic.color.actions.primary.default.quiet-background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      }
+    }
+  },
+  selected: {
+    line: {
+      "text-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      },
+      "border-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    soft: {
+      "background-color": {
+        value: "{semantic.color.navigation.background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.text}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    solid: {
+      "background-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.text}",
+        type: "color",
+        failedToResolve: true
+      }
+    }
+  },
+  "font-family": {
+    value: "{semantic.font-family.font-family.navigation}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  "text-size": {
+    value: "{semantic.font-size.navigation.xl}",
+    type: "fontSizes",
+    failedToResolve: true
+  },
+  "font-weight": {
+    value: "{semantic.font-weight.typography.regular}",
+    type: "fontWeights",
+    failedToResolve: true
   }
 };
 var switch3 = {
@@ -7358,6 +8981,647 @@ var input2 = {
     failedToResolve: true
   }
 };
+var icon2 = {
+  width: {
+    value: 24,
+    type: "sizing"
+  },
+  height: {
+    value: 24,
+    type: "sizing"
+  },
+  "icon-color": {
+    value: "{semantic.cta.default}",
+    type: "color",
+    failedToResolve: true
+  }
+};
+var icon_button2 = {
+  primary: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.default.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.default.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.primary.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.primary.default.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.default.background}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.focus.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.default.background}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.primary.active.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.primary.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.hover.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.primary.active.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.primary.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.active.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    }
+  },
+  secondary: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.secondary.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.secondary.default.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.default.border}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.default.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.default.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.secondary.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.secondary.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.hover.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.hover.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.secondary.active.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.secondary.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.active.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.active.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    }
+  },
+  negative: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.default.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.negative.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.default.border}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.default.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.default.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.negative.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.negative.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.hover.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.hover.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.negative.active.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.negative.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.active.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.active.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    }
+  },
+  disabled: {
+    solid: {
+      "background-color": {
+        value: "{semantic.color.actions.primary.disabled.background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "icon-color": {
+        value: "{semantic.color.actions.primary.disabled.text}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    outlined: {
+      "border-color": {
+        value: "{semantic.color.actions.primary.disabled.border}",
+        type: "color",
+        failedToResolve: true
+      },
+      "background-color": {
+        value: "{semantic.color.actions.primary.disabled.background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "icon-color": {
+        value: "{semantic.color.actions.primary.disabled.text}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    ghost: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "icon-color": {
+        value: "{semantic.color.actions.primary.disabled.background}",
+        type: "color",
+        failedToResolve: true
+      }
+    }
+  },
+  "border-radius": {
+    value: "{semantic.border-radius.actions}",
+    type: "borderRadius",
+    failedToResolve: true
+  },
+  round: {
+    "border-radius": {
+      value: "{semantic.border.radius.round}",
+      type: "borderRadius",
+      failedToResolve: true
+    }
+  },
+  "border-width": {
+    value: "{semantic.border-width.actions}",
+    type: "borderWidth",
+    failedToResolve: true
+  },
+  xs: {
+    "icon-size": {
+      value: 12,
+      type: "sizing"
+    },
+    height: {
+      value: 24,
+      type: "sizing"
+    },
+    width: {
+      value: 24,
+      type: "sizing"
+    }
+  },
+  sm: {
+    "icon-size": {
+      value: "{semantic.sizing.actions.icon-size.xs}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    height: {
+      value: "{semantic.sizing.actions.xs}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    width: {
+      value: "{semantic.sizing.actions.xs}",
+      type: "sizing",
+      failedToResolve: true
+    }
+  },
+  md: {
+    "icon-size": {
+      value: 20,
+      type: "sizing"
+    },
+    height: {
+      value: "{semantic.sizing.actions.sm}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    width: {
+      value: "{semantic.sizing.actions.sm}",
+      type: "sizing",
+      failedToResolve: true
+    }
+  },
+  lg: {
+    "icon-size": {
+      value: "{semantic.sizing.actions.icon-size.sm}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    height: {
+      value: "{semantic.sizing.actions.md}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    width: {
+      value: "{semantic.sizing.actions.md}",
+      type: "sizing",
+      failedToResolve: true
+    }
+  },
+  outline: {
+    "border-width": {
+      value: "{semantic.border-width.focus}",
+      type: "borderWidth",
+      failedToResolve: true
+    },
+    "border-color": {
+      value: "{semantic.color.focus.border}",
+      type: "color",
+      failedToResolve: true
+    }
+  }
+};
+var heading2 = {
+  xs: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.xs}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  sm: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.s}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  md: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.m}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  lg: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.l}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  xl: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.xl}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  "2xl": {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.xxl}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  "3xl": {
+    "text-size": {
+      value: "48px",
+      type: "fontSizes"
+    }
+  },
+  "4xl": {
+    "text-size": {
+      value: "60px",
+      type: "fontSizes"
+    }
+  },
+  light: {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.light}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  regular: {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.regular}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  "semi-bold": {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.semibold}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  bold: {
+    "font-weight": {
+      value: "Bold",
+      type: "fontWeights"
+    }
+  },
+  "font-family": {
+    value: "{semantic.font-family.typography.sans-serif}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  "text-color": {
+    value: "{semantic.color.typography.default}",
+    type: "color",
+    failedToResolve: true
+  },
+  "line-height": {
+    value: "{semantic.line-height.typography.heading}",
+    type: "lineHeights",
+    failedToResolve: true
+  }
+};
 var checkbox2 = {
   sm: {
     width: {
@@ -7957,16 +10221,25 @@ var btn2 = {
   "line-height": {
     value: "100%",
     type: "lineHeights"
+  },
+  "focus-ring": {
+    value: "{semantic.color.focus.border}",
+    type: "color",
+    "border-width": {
+      value: "{semantic.border-width.focus}",
+      type: "borderWidth"
+    },
+    failedToResolve: true
   }
 };
 var avatar2 = {
   "font-color": {
-    value: "{semantic.color.navigation.font-color}",
+    value: "{semantic.color.navigation.text}",
     type: "color",
     failedToResolve: true
   },
   "icon-color": {
-    value: "{semantic.color.navigation.icon-color}",
+    value: "{semantic.color.navigation.icon}",
     type: "color",
     failedToResolve: true
   },
@@ -8022,7 +10295,7 @@ var avatar2 = {
       }
     },
     "border-color": {
-      value: "{semantic.color.navigation.font-color}",
+      value: "{semantic.color.navigation.border}",
       type: "color",
       failedToResolve: true
     },
@@ -8209,7 +10482,7 @@ var avatar2 = {
     }
   },
   "background-color": {
-    value: "{semantic.color.navigation.border-color}",
+    value: "{semantic.color.navigation.background}",
     type: "color",
     failedToResolve: true
   },
@@ -8232,18 +10505,24 @@ var dark_default = {
   color: color2,
   "border-radius": border_radius2,
   "border-width": border_width2,
+  tooltip: tooltip2,
+  text: text2,
   tag: tag2,
+  tab: tab2,
   switch: switch3,
   select: select2,
   radio: radio2,
   input: input2,
+  icon: icon2,
+  "icon-button": icon_button2,
+  heading: heading2,
   checkbox: checkbox2,
   btn: btn2,
   avatar: avatar2
 };
 
 // src/Documentation.tsx
-function Documentation({ set = "comp/button", path = "", theme = "light", render }) {
+function Documentation({ set = "core/color", path = "", theme = "light", render }) {
   const [data, setData] = (0, import_react.useState)();
   const [error, setError] = (0, import_react.useState)("");
   (0, import_react.useEffect)(() => {
@@ -8275,11 +10554,10 @@ function Documentation({ set = "comp/button", path = "", theme = "light", render
         }
       } else {
         const themeData = {};
-        console.log({ data });
         Object.keys(data).forEach((key) => {
-          themeData[key] = themeFile[key];
+          themeData[key] = themeFile[key] || {};
         });
-        return themeData;
+        return themeData || {};
       }
     }
     return {};

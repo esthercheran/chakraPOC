@@ -1603,11 +1603,203 @@ var border_width = {
     type: "borderWidth"
   }
 };
+var tooltip = {
+  "border-radius": {
+    value: "{semantic.border-radius.feedback}",
+    type: "borderRadius",
+    failedToResolve: true
+  },
+  "font-family": {
+    value: "{semantic.font-family.font-family.feedback}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  "font-weight": {
+    value: "{semantic.font-weight.feedback.regular}",
+    type: "fontWeights",
+    failedToResolve: true
+  },
+  "text-size": {
+    value: "{semantic.font-size.feedback.s}",
+    type: "fontSizes",
+    failedToResolve: true
+  },
+  "text-color": {
+    value: "{semantic.color.feedback.neutral.background-color}",
+    type: "color",
+    failedToResolve: true
+  },
+  "background-color": {
+    value: "{semantic.color.feedback.neutral.border-color}",
+    type: "color",
+    failedToResolve: true
+  },
+  "padding-left": {
+    value: "{semantic.spacing.feedback.padding-left}",
+    type: "spacing",
+    failedToResolve: true
+  },
+  "padding-right": {
+    value: "{semantic.spacing.feedback.padding-right}",
+    type: "spacing",
+    failedToResolve: true
+  },
+  "padding-top": {
+    value: "{semantic.spacing.feedback.padding-top}",
+    type: "spacing",
+    failedToResolve: true
+  },
+  "padding-bottom": {
+    value: "{semantic.spacing.feedback.padding-bottom}",
+    type: "spacing",
+    failedToResolve: true
+  }
+};
+var text = {
+  xs: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.xs}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  sm: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.s}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  md: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.m}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  lg: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.l}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  xl: {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.xl}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  "2xl": {
+    "text-size": {
+      value: "{semantic.font-size.typography.body.xxxl}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  "3xl": {
+    "text-size": {
+      value: "30px",
+      type: "fontSizes"
+    }
+  },
+  "4xl": {
+    "text-size": {
+      value: "36px",
+      type: "fontSizes"
+    }
+  },
+  "5xl": {
+    "text-size": {
+      value: "48px",
+      type: "fontSizes"
+    }
+  },
+  "6xl": {
+    "text-size": {
+      value: "60px",
+      type: "fontSizes"
+    }
+  },
+  "font-family": {
+    value: "{semantic.font-family.typography.sans-serif}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  light: {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.light}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  regular: {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.regular}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  "semi-bold": {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.semibold}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  bold: {
+    "font-weight": {
+      value: "Bold",
+      type: "fontWeights"
+    }
+  },
+  "text-color": {
+    value: "{semantic.color.typography.default}",
+    type: "color",
+    failedToResolve: true
+  },
+  "line-height": {
+    value: "{semantic.line-height.typography.body}",
+    type: "lineHeights",
+    failedToResolve: true
+  }
+};
 var tag = {
   sm: {
     height: {
       value: "{semantic.sizing.status.s.height}",
       type: "sizing",
+      failedToResolve: true
+    },
+    "icon-size": {
+      value: "{semantic.sizing.status.s.icon-size}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    "padding-left": {
+      value: "{semantic.spacing.status.small.padding-left}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-right": {
+      value: "{semantic.spacing.status.small.padding-right}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-top": {
+      value: "{semantic.spacing.status.small.padding-top}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-bottom": {
+      value: "{semantic.spacing.status.small.padding-bottom}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "text-size": {
+      value: "{semantic.font-size.status.s}",
+      type: "fontSizes",
       failedToResolve: true
     }
   },
@@ -1616,6 +1808,36 @@ var tag = {
       value: "{semantic.sizing.status.m.height}",
       type: "sizing",
       failedToResolve: true
+    },
+    "icon-size": {
+      value: "{semantic.sizing.status.m.icon-size}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    "padding-left": {
+      value: "{semantic.spacing.status.medium.padding-left}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-right": {
+      value: "{semantic.spacing.status.medium.padding-right}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-top": {
+      value: "{semantic.spacing.status.medium.padding-top}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-bottom": {
+      value: "{semantic.spacing.status.medium.padding-bottom}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "text-size": {
+      value: "{semantic.font-size.status.m}",
+      type: "fontSizes",
+      failedToResolve: true
     }
   },
   lg: {
@@ -1623,7 +1845,165 @@ var tag = {
       value: "{semantic.sizing.status.l.height}",
       type: "sizing",
       failedToResolve: true
+    },
+    "icon-size": {
+      value: "{semantic.sizing.status.l.icon-size}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    "padding-left": {
+      value: "{semantic.spacing.status.large.padding-left}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-right": {
+      value: "{semantic.spacing.status.large.padding-right}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-top": {
+      value: "{semantic.spacing.status.large.padding-top}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "padding-bottom": {
+      value: "{semantic.spacing.status.medium.padding-bottom}",
+      type: "spacing",
+      failedToResolve: true
+    },
+    "text-size": {
+      value: "{semantic.font-size.status.l}",
+      type: "fontSizes",
+      failedToResolve: true
     }
+  },
+  default: {
+    "background-color": {
+      value: "{semantic.color.status.neutral.border-color}",
+      type: "color",
+      failedToResolve: true
+    },
+    "text-color": {
+      value: "#ffffff",
+      type: "color"
+    },
+    "icon-color": {
+      value: "#ffffff",
+      type: "color"
+    }
+  },
+  "space-between": {
+    value: "{semantic.spacing.status.space-between}",
+    type: "spacing",
+    failedToResolve: true
+  },
+  "font-weight": {
+    value: "{semantic.font-weight.status}",
+    type: "fontWeights",
+    failedToResolve: true
+  },
+  "font-family": {
+    value: "{semantic.font-family.status}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  "border-radius": {
+    value: "{semantic.border-radius.status}",
+    type: "borderRadius",
+    failedToResolve: true
+  }
+};
+var tab = {
+  unselected: {
+    line: {
+      "background-color": {
+        value: "{semantic.color.actions.primary.default.quiet-background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    soft: {
+      "background-color": {
+        value: "{semantic.color.actions.primary.default.quiet-background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    solid: {
+      "background-color": {
+        value: "{semantic.color.actions.primary.default.quiet-background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      }
+    }
+  },
+  selected: {
+    line: {
+      "text-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      },
+      "border-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    soft: {
+      "background-color": {
+        value: "{semantic.color.navigation.background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.text}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    solid: {
+      "background-color": {
+        value: "{semantic.color.navigation.border}",
+        type: "color",
+        failedToResolve: true
+      },
+      "text-color": {
+        value: "{semantic.color.navigation.text}",
+        type: "color",
+        failedToResolve: true
+      }
+    }
+  },
+  "font-family": {
+    value: "{semantic.font-family.font-family.navigation}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  "text-size": {
+    value: "{semantic.font-size.navigation.xl}",
+    type: "fontSizes",
+    failedToResolve: true
+  },
+  "font-weight": {
+    value: "{semantic.font-weight.typography.regular}",
+    type: "fontWeights",
+    failedToResolve: true
   }
 };
 var switch2 = {
@@ -2521,6 +2901,647 @@ var input = {
     failedToResolve: true
   }
 };
+var icon = {
+  width: {
+    value: 24,
+    type: "sizing"
+  },
+  height: {
+    value: 24,
+    type: "sizing"
+  },
+  "icon-color": {
+    value: "{semantic.cta.default}",
+    type: "color",
+    failedToResolve: true
+  }
+};
+var icon_button = {
+  primary: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.default.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.default.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.primary.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.primary.default.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.default.background}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.focus.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.default.background}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.primary.active.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.primary.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.hover.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.primary.active.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.primary.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.primary.active.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.primary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    }
+  },
+  secondary: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "#ffffff",
+          type: "color"
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.secondary.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.secondary.default.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.default.border}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.default.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.default.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.secondary.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.secondary.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.hover.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.hover.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.secondary.active.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.secondary.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.secondary.active.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.secondary.active.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    }
+  },
+  negative: {
+    default: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.default.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.negative.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "#ffffff03",
+          type: "color"
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.default.border}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.default.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.default.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    hover: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.negative.default.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.negative.hover.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.hover.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.hover.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.hover.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    },
+    active: {
+      solid: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      outlined: {
+        "border-color": {
+          value: "{semantic.color.actions.negative.active.border}",
+          type: "color",
+          failedToResolve: true
+        },
+        "background-color": {
+          value: "{semantic.color.actions.negative.active.background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.active.text}",
+          type: "color",
+          failedToResolve: true
+        }
+      },
+      ghost: {
+        "background-color": {
+          value: "{semantic.color.actions.negative.active.quiet-background}",
+          type: "color",
+          failedToResolve: true
+        },
+        "icon-color": {
+          value: "{semantic.color.actions.negative.active.quiet-text}",
+          type: "color",
+          failedToResolve: true
+        }
+      }
+    }
+  },
+  disabled: {
+    solid: {
+      "background-color": {
+        value: "{semantic.color.actions.primary.disabled.background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "icon-color": {
+        value: "{semantic.color.actions.primary.disabled.text}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    outlined: {
+      "border-color": {
+        value: "{semantic.color.actions.primary.disabled.border}",
+        type: "color",
+        failedToResolve: true
+      },
+      "background-color": {
+        value: "{semantic.color.actions.primary.disabled.background}",
+        type: "color",
+        failedToResolve: true
+      },
+      "icon-color": {
+        value: "{semantic.color.actions.primary.disabled.text}",
+        type: "color",
+        failedToResolve: true
+      }
+    },
+    ghost: {
+      "background-color": {
+        value: "#ffffff03",
+        type: "color"
+      },
+      "icon-color": {
+        value: "{semantic.color.actions.primary.disabled.background}",
+        type: "color",
+        failedToResolve: true
+      }
+    }
+  },
+  "border-radius": {
+    value: "{semantic.border-radius.actions}",
+    type: "borderRadius",
+    failedToResolve: true
+  },
+  round: {
+    "border-radius": {
+      value: "{semantic.border.radius.round}",
+      type: "borderRadius",
+      failedToResolve: true
+    }
+  },
+  "border-width": {
+    value: "{semantic.border-width.actions}",
+    type: "borderWidth",
+    failedToResolve: true
+  },
+  xs: {
+    "icon-size": {
+      value: 12,
+      type: "sizing"
+    },
+    height: {
+      value: 24,
+      type: "sizing"
+    },
+    width: {
+      value: 24,
+      type: "sizing"
+    }
+  },
+  sm: {
+    "icon-size": {
+      value: "{semantic.sizing.actions.icon-size.xs}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    height: {
+      value: "{semantic.sizing.actions.xs}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    width: {
+      value: "{semantic.sizing.actions.xs}",
+      type: "sizing",
+      failedToResolve: true
+    }
+  },
+  md: {
+    "icon-size": {
+      value: 20,
+      type: "sizing"
+    },
+    height: {
+      value: "{semantic.sizing.actions.sm}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    width: {
+      value: "{semantic.sizing.actions.sm}",
+      type: "sizing",
+      failedToResolve: true
+    }
+  },
+  lg: {
+    "icon-size": {
+      value: "{semantic.sizing.actions.icon-size.sm}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    height: {
+      value: "{semantic.sizing.actions.md}",
+      type: "sizing",
+      failedToResolve: true
+    },
+    width: {
+      value: "{semantic.sizing.actions.md}",
+      type: "sizing",
+      failedToResolve: true
+    }
+  },
+  outline: {
+    "border-width": {
+      value: "{semantic.border-width.focus}",
+      type: "borderWidth",
+      failedToResolve: true
+    },
+    "border-color": {
+      value: "{semantic.color.focus.border}",
+      type: "color",
+      failedToResolve: true
+    }
+  }
+};
+var heading = {
+  xs: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.xs}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  sm: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.s}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  md: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.m}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  lg: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.l}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  xl: {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.xl}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  "2xl": {
+    "text-size": {
+      value: "{semantic.font-size.typography.heading.xxl}",
+      type: "fontSizes",
+      failedToResolve: true
+    }
+  },
+  "3xl": {
+    "text-size": {
+      value: "48px",
+      type: "fontSizes"
+    }
+  },
+  "4xl": {
+    "text-size": {
+      value: "60px",
+      type: "fontSizes"
+    }
+  },
+  light: {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.light}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  regular: {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.regular}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  "semi-bold": {
+    "font-weight": {
+      value: "{semantic.font-weight.typography.semibold}",
+      type: "fontWeights",
+      failedToResolve: true
+    }
+  },
+  bold: {
+    "font-weight": {
+      value: "Bold",
+      type: "fontWeights"
+    }
+  },
+  "font-family": {
+    value: "{semantic.font-family.typography.sans-serif}",
+    type: "fontFamilies",
+    failedToResolve: true
+  },
+  "text-color": {
+    value: "{semantic.color.typography.default}",
+    type: "color",
+    failedToResolve: true
+  },
+  "line-height": {
+    value: "{semantic.line-height.typography.heading}",
+    type: "lineHeights",
+    failedToResolve: true
+  }
+};
 var checkbox = {
   sm: {
     width: {
@@ -3120,16 +4141,25 @@ var btn = {
   "line-height": {
     value: "100%",
     type: "lineHeights"
+  },
+  "focus-ring": {
+    value: "{semantic.color.focus.border}",
+    type: "color",
+    "border-width": {
+      value: "{semantic.border-width.focus}",
+      type: "borderWidth"
+    },
+    failedToResolve: true
   }
 };
 var avatar = {
   "font-color": {
-    value: "{semantic.color.navigation.font-color}",
+    value: "{semantic.color.navigation.text}",
     type: "color",
     failedToResolve: true
   },
   "icon-color": {
-    value: "{semantic.color.navigation.icon-color}",
+    value: "{semantic.color.navigation.icon}",
     type: "color",
     failedToResolve: true
   },
@@ -3185,7 +4215,7 @@ var avatar = {
       }
     },
     "border-color": {
-      value: "{semantic.color.navigation.font-color}",
+      value: "{semantic.color.navigation.border}",
       type: "color",
       failedToResolve: true
     },
@@ -3372,7 +4402,7 @@ var avatar = {
     }
   },
   "background-color": {
-    value: "{semantic.color.navigation.border-color}",
+    value: "{semantic.color.navigation.background}",
     type: "color",
     failedToResolve: true
   },
@@ -3395,11 +4425,17 @@ var dark_default = {
   color,
   "border-radius": border_radius,
   "border-width": border_width,
+  tooltip,
+  text,
   tag,
+  tab,
   switch: switch2,
   select,
   radio,
   input,
+  icon,
+  "icon-button": icon_button,
+  heading,
   checkbox,
   btn,
   avatar
@@ -3416,6 +4452,9 @@ export {
   font_size as "font-size",
   font_style as "font-style",
   font_weight as "font-weight",
+  heading,
+  icon,
+  icon_button as "icon-button",
   input,
   line_height as "line-height",
   opacity,
@@ -3425,5 +4464,8 @@ export {
   size,
   space,
   switch2 as switch,
-  tag
+  tab,
+  tag,
+  text,
+  tooltip
 };

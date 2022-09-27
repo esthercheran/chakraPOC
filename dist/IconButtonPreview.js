@@ -5552,9 +5552,9 @@ var require_assign5 = __commonJS({
   }
 });
 
-// src/ButtonPreview.tsx
+// src/IconButtonPreview.tsx
 var import_react3 = __toModule(require_react());
-import { ButtonChakra } from "./Button.js";
+import { IconButtonChakra } from "./IconButton.js";
 
 // node_modules/react-live/dist/react-live.es.js
 var import_react2 = __toModule(require_react());
@@ -19026,12 +19026,12 @@ LivePreview.defaultProps = {
   Component: "div"
 };
 
-// src/ButtonPreview.tsx
-var scope = { ButtonChakra };
+// src/IconButtonPreview.tsx
+var scope = { IconButtonChakra };
 var code = `
-  <ButtonChakra variant="secondary" title="my title" />
+  <IconButtonChakra  />
 `;
-var ButtonPreview = () => {
+var IconButtonPreview = () => {
   return /* @__PURE__ */ import_react3.default.createElement(LiveProvider, {
     code,
     scope
@@ -19042,7 +19042,7 @@ var ButtonPreview = () => {
   }));
 };
 export {
-  ButtonPreview
+  IconButtonPreview
 };
 /*!
  * regjsgen 0.5.2
