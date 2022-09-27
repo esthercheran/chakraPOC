@@ -4,7 +4,6 @@ name: Transform Figma Tokens to Chakra tokens
 on:
   push:
     branches:
-      - 'main'
       - 'test-razvan'
     paths:
       - 'figmaTokensChakra/**'
