@@ -15,6 +15,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Copy tokens for documentation component
+      - uses: MadaraUchiha/copy-action@0.0.1
+        with:
+          source: 'figmaTokensChakra'
+          target: 'src/figmaTokensChakra'
       - uses: actions/checkout@v3
       - name: Setup Node.js Env
         uses: actions/setup-node@v2.4.0
