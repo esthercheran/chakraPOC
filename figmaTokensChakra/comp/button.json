@@ -19,7 +19,7 @@
     "primary": {
       "default": {
         "background-color": {
-          "value": "{semantic.color.actions.negative.default.background}",
+          "value": "green",
           "type": "color"
         },
         "text-color": {
