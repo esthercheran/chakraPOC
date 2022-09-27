@@ -23,6 +23,9 @@ jobs:
       - run: yarn install
 
       # Transform to Chakra tokens with SD
+      - run: yarn run transform2CSS
+
+      # update dist to be consumed by framer
       - run: yarn run build
 
       # Give write access to repo
