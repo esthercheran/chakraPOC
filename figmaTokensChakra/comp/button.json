@@ -19,7 +19,7 @@
     "primary": {
       "default": {
         "background-color": {
-          "value": "yellow",
+          "value": "green",
           "type": "color"
         },
         "text-color": {
