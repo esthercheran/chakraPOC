@@ -1,11 +1,11 @@
 // src/figmaTokensChakra/core/typography.json
 var font_family = {
   serif: {
-    value: "IBM Plex Serif",
+    value: "Inter",
     type: "fontFamilies"
   },
   "sans-serif": {
-    value: "IBM Plex Sans",
+    value: "Inter",
     type: "fontFamilies"
   },
   mono: {
@@ -143,7 +143,7 @@ var font_style = {
 };
 var font_weight = {
   semiBold: {
-    value: "SemiBold",
+    value: "Semi Bold",
     type: "fontWeights",
     default: "600"
   },

@@ -1,7 +1,7 @@
 {
   "colors": {
     "light": {
-      "btn-primary-default-background-color": "green",
+      "btn-primary-default-background-color": "cyan",
       "btn-primary-default-text-color": "#ffffff",
       "btn-primary-default-border-color": "#0ea5e9",
       "btn-primary-default-icon-color": "#ffffff",
@@ -707,7 +707,7 @@
       "tooltip-background-color": "#9ca3af"
     },
     "dark": {
-      "btn-primary-default-background-color": "green",
+      "btn-primary-default-background-color": "cyan",
       "btn-primary-default-text-color": "#ffffff",
       "btn-primary-default-border-color": "#0ea5e9",
       "btn-primary-default-icon-color": "#ffffff",
