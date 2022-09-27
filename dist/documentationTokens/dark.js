@@ -3905,7 +3905,7 @@ var btn = {
   primary: {
     default: {
       "background-color": {
-        value: "pink",
+        value: "green",
         type: "color"
       },
       "text-color": {
@@ -3941,7 +3941,7 @@ var btn = {
     },
     active: {
       "background-color": {
-        value: "brown",
+        value: "purple",
         type: "color"
       },
       "text-color": {
