@@ -50,15 +50,15 @@
     },
     "cta": {
       "default": {
-        "value": "{color.sky.500}",
+        "value": "{color.purple.500}",
         "type": "color"
       },
       "emphasised": {
-        "value": "{color.sky.600}",
+        "value": "{color.purple.600}",
         "type": "color"
       },
       "muted": {
-        "value": "{color.sky.400}",
+        "value": "{color.purple.400}",
         "type": "color"
       },
       "subtle": {
@@ -72,15 +72,15 @@
     },
     "primary": {
       "default": {
-        "value": "{color.sky.500}",
+        "value": "{color.purple.500}",
         "type": "color"
       },
       "emphasised": {
-        "value": "{color.sky.600}",
+        "value": "{color.purple.600}",
         "type": "color"
       },
       "muted": {
-        "value": "{color.sky.400}",
+        "value": "{color.purple.400}",
         "type": "color"
       },
       "subtle": {
