@@ -40,8 +40,8 @@ jobs:
         with:
           commit_message: Built new version ready to be consumed by framer
 
-      - name: purge jsdeliver cache
-        uses: gacts/purge-jsdelivr-cache@v1
-        with:
-          url: |
-            https://cdn.jsdelivr.net/gh/esthercheran/chakraPOC@test-razvan/dist/
+      # - name: purge jsdeliver cache
+      #   uses: gacts/purge-jsdelivr-cache@v1
+      #   with:
+      #     url: |
+      #       https://cdn.jsdelivr.net/gh/esthercheran/chakraPOC@test-razvan/dist/
