@@ -15,21 +15,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
       - name: Setup Node.js Env
         uses: actions/setup-node@v2.4.0
 
-        run: |
-          ls -la
-      - uses: actions/checkout@master
-      - name: copy file
-        uses: canastro/copy-file-action@master
-        with:
-          source: 'figmaTokensChakra'
-          target: 'src/figmaTokensChakra'
+      - name: Checkout
+        uses: actions/checkout@master
 
       # Install Dependencies
       - run: yarn install
+
+      # copy needed files for the documentation components this can be improved
+      - run: yarn copy-tokens
 
       # Transform to Chakra tokens with SD
       - run: yarn run transform2CSS
