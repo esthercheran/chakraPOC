@@ -12102,6 +12102,7 @@ var HamburgerIcon = createIcon({
 
 // src/Button.tsx
 function ButtonChakra(props) {
+  console.log(theme2);
   return /* @__PURE__ */ React15.createElement(ChakraProvider2, {
     resetCSS: true,
     theme: theme2

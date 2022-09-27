@@ -19,7 +19,7 @@ var btn = {
   primary: {
     default: {
       "background-color": {
-        value: "{semantic.color.actions.primary.default.background}",
+        value: "blue",
         type: "color"
       },
       "text-color": {
@@ -55,7 +55,7 @@ var btn = {
     },
     active: {
       "background-color": {
-        value: "{semantic.color.actions.primary.active.background}",
+        value: "purple",
         type: "color"
       },
       "text-color": {

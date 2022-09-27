@@ -4,19 +4,21 @@ name: Transform Figma Tokens to Chakra tokens
 on:
   push:
     branches:
-      - 'main'
+      - 'test-razvan'
     paths:
       - 'figmaTokensChakra/**'
 
 # jobs
-jobs: 
+jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
       - name: Setup Node.js Env
         uses: actions/setup-node@v2.4.0
+
+      - name: Checkout
+        uses: actions/checkout@master
 
       # Install Dependencies
       - run: yarn install
@@ -24,10 +26,22 @@ jobs:
       # Transform to Chakra tokens with SD
       - run: yarn run transform2CSS
 
+      # copy needed files for the documentation components this can be improved
+      - run: yarn copy-tokens
+
+      # update dist to be consumed by framer
+      - run: yarn run build
+
       # Give write access to repo
       - run: sudo chown -R $USER:$USER ${{ github.workspace }}
 
       - name: Commit the changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: transformed FT to Chakra tokens with SD
+          commit_message: Built new version ready to be consumed by framer
+
+      # - name: purge jsdeliver cache
+      #   uses: gacts/purge-jsdelivr-cache@v1
+      #   with:
+      #     url: |
+      #       https://cdn.jsdelivr.net/gh/esthercheran/chakraPOC@test-razvan/dist/
