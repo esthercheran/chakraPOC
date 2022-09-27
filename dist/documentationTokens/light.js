@@ -3937,7 +3937,7 @@ var btn = {
     },
     active: {
       "background-color": {
-        value: "#0284c7",
+        value: "yellow",
         type: "color"
       },
       "text-color": {

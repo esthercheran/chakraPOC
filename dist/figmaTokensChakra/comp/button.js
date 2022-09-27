@@ -55,7 +55,7 @@ var btn = {
     },
     active: {
       "background-color": {
-        value: "{semantic.color.actions.primary.active.background}",
+        value: "yellow",
         type: "color"
       },
       "text-color": {

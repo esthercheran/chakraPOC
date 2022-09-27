@@ -9,7 +9,7 @@
       "btn-primary-hover-text-color": "#ffffff",
       "btn-primary-hover-border-color": "#38bdf8",
       "btn-primary-hover-icon-color": "#ffffff",
-      "btn-primary-active-background-color": "#0284c7",
+      "btn-primary-active-background-color": "yellow",
       "btn-primary-active-text-color": "#ffffff",
       "btn-primary-active-border-color": "#0284c7",
       "btn-primary-active-icon-color": "#ffffff",
