@@ -4,7 +4,7 @@ name: Transform Figma Tokens to Chakra tokens
 on:
   push:
     branches:
-      - 'test-razvan'
+      - 'main'
     paths:
       - 'figmaTokensChakra/**'
 
@@ -39,9 +39,3 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Built new version ready to be consumed by framer
-
-      # - name: purge jsdeliver cache
-      #   uses: gacts/purge-jsdelivr-cache@v1
-      #   with:
-      #     url: |
-      #       https://cdn.jsdelivr.net/gh/esthercheran/chakraPOC@test-razvan/dist/
