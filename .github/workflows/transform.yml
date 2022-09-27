@@ -48,18 +48,18 @@ jobs:
             -H 'content-type: application/json' \
             -d '{
               "path": [
-                "dist/index.js",
-                "dist/Avatar.js",
-                "dist/Button.js",
-                "dist/Checkbox.js",
-                "dist/Documentation.js",
-                "dist/figmaTokens.js",
-                "dist/Heading.js",
-                "dist/IconButton.js",
-                "dist/Image.js",
-                "dist/Switch.js",
-                "dist/Tag.js",
-                "dist/documentationTokens/dark.js",
-                "dist/documentationTokens/light.js",
+                "gh/esthercheran/chakraPOC@main/dist/index.js",
+                "gh/esthercheran/chakraPOC@main/dist/Avatar.js",
+                "gh/esthercheran/chakraPOC@main/dist/Button.js",
+                "gh/esthercheran/chakraPOC@main/dist/Checkbox.js",
+                "gh/esthercheran/chakraPOC@main/dist/Documentation.js",
+                "gh/esthercheran/chakraPOC@main/dist/figmaTokens.js",
+                "gh/esthercheran/chakraPOC@main/dist/Heading.js",
+                "gh/esthercheran/chakraPOC@main/dist/IconButton.js",
+                "gh/esthercheran/chakraPOC@main/dist/Image.js",
+                "gh/esthercheran/chakraPOC@main/dist/Switch.js",
+                "gh/esthercheran/chakraPOC@main/dist/Tag.js",
+                "gh/esthercheran/chakraPOC@main/dist/documentationTokens/dark.js",
+                "gh/esthercheran/chakraPOC@main/dist/documentationTokens/light.js",
               ]
             }'
