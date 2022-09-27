@@ -6312,7 +6312,7 @@ import getChakraSemanticTokens from "../getChakraSemanticTokens.js";
 // src/figmaTokens.json
 var colors2 = {
   light: {
-    "btn-primary-default-background-color": "cyan",
+    "btn-primary-default-background-color": "red",
     "btn-primary-default-text-color": "#ffffff",
     "btn-primary-default-border-color": "#0ea5e9",
     "btn-primary-default-icon-color": "#ffffff",
@@ -7018,7 +7018,7 @@ var colors2 = {
     "tooltip-background-color": "#9ca3af"
   },
   dark: {
-    "btn-primary-default-background-color": "cyan",
+    "btn-primary-default-background-color": "red",
     "btn-primary-default-text-color": "#ffffff",
     "btn-primary-default-border-color": "#0ea5e9",
     "btn-primary-default-icon-color": "#ffffff",

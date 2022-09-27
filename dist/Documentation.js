@@ -3984,7 +3984,7 @@ var btn = {
   primary: {
     default: {
       "background-color": {
-        value: "cyan",
+        value: "red",
         type: "color"
       },
       "text-color": {
@@ -8471,7 +8471,7 @@ var btn2 = {
   primary: {
     default: {
       "background-color": {
-        value: "cyan",
+        value: "red",
         type: "color"
       },
       "text-color": {
