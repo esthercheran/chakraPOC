@@ -15,6 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js Env
+        uses: actions/setup-node@v2.4.0
+
       - uses: actions/checkout@master
       - name: copy file
         uses: canastro/copy-file-action@master
@@ -22,9 +26,6 @@ jobs:
           source: '../../figmaTokensChakra'
           target: '../../src/figmaTokensChakra'
 
-      - uses: actions/checkout@v3
-      - name: Setup Node.js Env
-        uses: actions/setup-node@v2.4.0
       # Install Dependencies
       - run: yarn install
 
