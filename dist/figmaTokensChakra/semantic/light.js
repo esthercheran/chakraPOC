@@ -50,7 +50,7 @@ var semantic = {
   },
   cta: {
     default: {
-      value: "{color.sky.500}",
+      value: "{color.purple.500}",
       type: "color"
     },
     emphasised: {

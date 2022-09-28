@@ -109,7 +109,7 @@ var semantic = {
       type: "color"
     },
     accent: {
-      value: "#0ea5e9",
+      value: "#a855f7",
       type: "color"
     }
   },
@@ -133,7 +133,7 @@ var semantic = {
   },
   cta: {
     default: {
-      value: "#0ea5e9",
+      value: "#a855f7",
       type: "color"
     },
     emphasised: {
@@ -532,7 +532,7 @@ var semantic = {
       cta: {
         default: {
           "border-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "text-color": {
@@ -540,7 +540,7 @@ var semantic = {
             type: "color"
           },
           "background-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           }
         },
@@ -574,7 +574,7 @@ var semantic = {
         },
         focus: {
           "border-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "text-color": {
@@ -582,7 +582,7 @@ var semantic = {
             type: "color"
           },
           "background-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           }
         }
@@ -826,15 +826,15 @@ var semantic = {
       selected: {
         default: {
           "border-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "text-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "icon-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "background-color": {
@@ -1170,7 +1170,7 @@ var semantic = {
     },
     navigation: {
       background: {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       border: {
@@ -2460,7 +2460,7 @@ var tab = {
     },
     soft: {
       "background-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "text-color": {
@@ -2548,7 +2548,7 @@ var switch2 = {
   selected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       }
     },
@@ -2840,7 +2840,7 @@ var radio = {
   unselected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "background-color": {
@@ -2876,7 +2876,7 @@ var radio = {
   selected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "background-color": {
@@ -3274,7 +3274,7 @@ var icon = {
     type: "sizing"
   },
   "icon-color": {
-    value: "#0ea5e9",
+    value: "#a855f7",
     type: "color"
   }
 };
@@ -3876,7 +3876,7 @@ var checkbox = {
   unselected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "background-color": {
@@ -3908,11 +3908,11 @@ var checkbox = {
   selected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "background-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       }
     },
@@ -3984,7 +3984,7 @@ var btn = {
   primary: {
     default: {
       "background-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "text-color": {
@@ -4538,7 +4538,7 @@ var avatar = {
     }
   },
   "background-color": {
-    value: "#0ea5e9",
+    value: "#a855f7",
     type: "color"
   },
   "font-family": {
@@ -4592,7 +4592,7 @@ var semantic2 = {
       type: "color"
     },
     accent: {
-      value: "#0ea5e9",
+      value: "#a855f7",
       type: "color"
     }
   },
@@ -4616,7 +4616,7 @@ var semantic2 = {
   },
   cta: {
     default: {
-      value: "#0ea5e9",
+      value: "#a855f7",
       type: "color"
     },
     emphasised: {
@@ -5015,7 +5015,7 @@ var semantic2 = {
       cta: {
         default: {
           "border-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "text-color": {
@@ -5023,7 +5023,7 @@ var semantic2 = {
             type: "color"
           },
           "background-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           }
         },
@@ -5057,7 +5057,7 @@ var semantic2 = {
         },
         focus: {
           "border-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "text-color": {
@@ -5065,7 +5065,7 @@ var semantic2 = {
             type: "color"
           },
           "background-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           }
         }
@@ -5313,15 +5313,15 @@ var semantic2 = {
       selected: {
         default: {
           "border-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "text-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "icon-color": {
-            value: "#0ea5e9",
+            value: "#a855f7",
             type: "color"
           },
           "background-color": {
@@ -5657,7 +5657,7 @@ var semantic2 = {
     },
     navigation: {
       background: {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       border: {
@@ -6947,7 +6947,7 @@ var tab2 = {
     },
     soft: {
       "background-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "text-color": {
@@ -7035,7 +7035,7 @@ var switch3 = {
   selected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       }
     },
@@ -7327,7 +7327,7 @@ var radio2 = {
   unselected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "background-color": {
@@ -7363,7 +7363,7 @@ var radio2 = {
   selected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "background-color": {
@@ -7761,7 +7761,7 @@ var icon2 = {
     type: "sizing"
   },
   "icon-color": {
-    value: "#0ea5e9",
+    value: "#a855f7",
     type: "color"
   }
 };
@@ -8363,7 +8363,7 @@ var checkbox2 = {
   unselected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "background-color": {
@@ -8395,11 +8395,11 @@ var checkbox2 = {
   selected: {
     default: {
       "border-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "background-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       }
     },
@@ -8471,7 +8471,7 @@ var btn2 = {
   primary: {
     default: {
       "background-color": {
-        value: "#0ea5e9",
+        value: "#a855f7",
         type: "color"
       },
       "text-color": {
@@ -9025,7 +9025,7 @@ var avatar2 = {
     }
   },
   "background-color": {
-    value: "#0ea5e9",
+    value: "#a855f7",
     type: "color"
   },
   "font-family": {
