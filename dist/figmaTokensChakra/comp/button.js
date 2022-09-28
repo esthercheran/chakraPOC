@@ -55,7 +55,7 @@ var btn = {
     },
     active: {
       "background-color": {
-        value: "#bada55",
+        value: "{semantic.color.actions.cta.active.background-color}",
         type: "color"
       },
       "text-color": {
